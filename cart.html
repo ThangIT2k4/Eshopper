@@ -13,6 +13,7 @@
     <link href="css/animate.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/sweetalert2.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -300,10 +301,10 @@
 							</li>
 							<li class="single_field zip-field">
 								<label>Zip Code:</label>
-								<input type="text">
+								<input type="text" id="zipcode">
 							</li>
 						</ul>
-						<a class="btn btn-default update" href="">Get Quotes</a>
+						<a class="btn btn-default update" href="" id="check_coupon">Get Quotes</a>
 						<a class="btn btn-default check_out" href="">Continue</a>
 					</div>
 				</div>
@@ -316,7 +317,7 @@
 							<li>Total <span>$61</span></li>
 						</ul>
 							<a class="btn btn-default update" href="">Update</a>
-							<a class="btn btn-default check_out" href="">Check Out</a>
+							<a class="btn btn-default check_out" href="" id="thanh_toan">Check Out</a>
 					</div>
 				</div>
 			</div>
@@ -487,6 +488,21 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script> 
+	<script src="js/sweetalert2@11.js"></script>
 </body>
 </html>
+<script>
+    $(document).ready(function () {
+        $('#thanh_toan').click(function (e) {
+            e.preventDefault(); // Ngăn submit form nếu có
+
+            Swal.fire({
+                title: 'Thành công!',
+                text: 'Đơn hàng của bạn đã được đặt thành công.',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        });
+    });
+</script>
