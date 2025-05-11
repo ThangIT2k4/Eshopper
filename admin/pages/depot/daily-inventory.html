@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Tồn kho theo ngày</title>
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../jquery/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../../index3.html" class="brand-link">
+      <img src="../../img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">AdminLTE 3</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../../img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Alexander Pierce</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="../../index3.html" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-warehouse"></i>
+              <p>
+                Kho hàng
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="suppliers.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Nhà cung cấp</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="warehouse-list.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách kho</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="stock-in.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Nhập kho</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="stock-out.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Xuất kho</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="stock-transfer.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Chuyển kho</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="inventory.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tồn kho</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="quick-inventory.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tồn kho nhanh</p>
+                </a>
+              </li>              <li class="nav-item">
+                <a href="daily-inventory.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tồn kho theo ngày</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="stock-balance.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Cân bằng kho</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="product-list.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách sản phẩm</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="product-attributes.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thuộc tính sản phẩm</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="units.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Đơn vị tính</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="barcode.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>In mã vạch</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Báo cáo tồn kho theo ngày</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Tồn kho theo ngày</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <!-- Filter Card -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Bộ lọc báo cáo</h3>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Kho hàng</label>
+                        <select class="form-control select2" style="width: 100%;">
+                          <option selected>Tất cả kho</option>
+                          <option>Kho Hà Nội</option>
+                          <option>Kho Hồ Chí Minh</option>
+                          <option>Kho Đà Nẵng</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Khoảng thời gian:</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="far fa-calendar-alt"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control float-right" id="reservation">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Danh mục sản phẩm</label>
+                        <select class="form-control select2" style="width: 100%;">
+                          <option selected>Tất cả danh mục</option>
+                          <option>Áo nam</option>
+                          <option>Quần nam</option>
+                          <option>Áo nữ</option>
+                          <option>Quần nữ</option>
+                          <option>Váy đầm</option>
+                          <option>Phụ kiện</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Sản phẩm</label>
+                        <select class="form-control select2" style="width: 100%;">
+                          <option selected>Tất cả sản phẩm</option>
+                          <option>Áo sơ mi nam</option>
+                          <option>Quần jeans nam</option>
+                          <option>Áo phông nữ</option>
+                          <option>Váy liền thân</option>
+                          <option>Giày thể thao</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 text-right">
+                      <button type="button" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Xem báo cáo
+                      </button>
+                      <button type="button" class="btn btn-success">
+                        <i class="fas fa-file-excel"></i> Xuất Excel
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        <i class="fas fa-print"></i> In báo cáo
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+            <!-- Summary Card -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Tóm tắt báo cáo</h3>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-3 col-6">
+                    <div class="small-box bg-info">
+                      <div class="inner">
+                        <h3>150</h3>
+                        <p>Tổng SL nhập trong kỳ</p>
+                      </div>
+                      <div class="icon">
+                        <i class="fas fa-arrow-circle-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="small-box bg-success">
+                      <div class="inner">
+                        <h3>95</h3>
+                        <p>Tổng SL xuất trong kỳ</p>
+                      </div>
+                      <div class="icon">
+                        <i class="fas fa-arrow-circle-left"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="small-box bg-warning">
+                      <div class="inner">
+                        <h3>53</h3>
+                        <p>SL tồn đầu kỳ</p>
+                      </div>
+                      <div class="icon">
+                        <i class="fas fa-box"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-6">
+                    <div class="small-box bg-danger">
+                      <div class="inner">
+                        <h3>108</h3>
+                        <p>SL tồn cuối kỳ</p>
+                      </div>
+                      <div class="icon">
+                        <i class="fas fa-boxes"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Daily Inventory Table -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Báo cáo chi tiết</h3>
+              </div>
+              <div class="card-body">
+                <table id="dailyInventoryTable" class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th rowspan="2" style="vertical-align: middle;">STT</th>
+                      <th rowspan="2" style="vertical-align: middle;">Mã SP</th>
+                      <th rowspan="2" style="vertical-align: middle;">Tên sản phẩm</th>
+                      <th rowspan="2" style="vertical-align: middle;">Kho</th>
+                      <th rowspan="2" style="vertical-align: middle;">Đơn vị</th>
+                      <th rowspan="2" style="vertical-align: middle;">Tồn đầu kỳ</th>
+                      <th colspan="2" class="text-center">Nhập kho</th>
+                      <th colspan="2" class="text-center">Xuất kho</th>
+                      <th rowspan="2" style="vertical-align: middle;">Tồn cuối kỳ</th>
+                    </tr>
+                    <tr>
+                      <th>Số lượng</th>
+                      <th>Giá trị</th>
+                      <th>Số lượng</th>
+                      <th>Giá trị</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>SP001</td>
+                      <td>Áo sơ mi nam dài tay</td>
+                      <td>Kho Hà Nội</td>
+                      <td>Cái</td>
+                      <td>100</td>
+                      <td>50</td>
+                      <td>7,500,000</td>
+                      <td>30</td>
+                      <td>4,500,000</td>
+                      <td>120</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>SP002</td>
+                      <td>Quần jeans nam slim fit</td>
+                      <td>Kho Hà Nội</td>
+                      <td>Cái</td>
+                      <td>75</td>
+                      <td>30</td>
+                      <td>9,000,000</td>
+                      <td>20</td>
+                      <td>6,000,000</td>
+                      <td>85</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>SP003</td>
+                      <td>Áo phông nữ có cổ</td>
+                      <td>Kho Hồ Chí Minh</td>
+                      <td>Cái</td>
+                      <td>120</td>
+                      <td>30</td>
+                      <td>3,000,000</td>
+                      <td>55</td>
+                      <td>5,500,000</td>
+                      <td>95</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>SP004</td>
+                      <td>Giày thể thao nữ</td>
+                      <td>Kho Đà Nẵng</td>
+                      <td>Đôi</td>
+                      <td>50</td>
+                      <td>20</td>
+                      <td>6,000,000</td>
+                      <td>10</td>
+                      <td>3,000,000</td>
+                      <td>60</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>SP005</td>
+                      <td>Váy liền thân dáng chữ A</td>
+                      <td>Kho Hồ Chí Minh</td>
+                      <td>Cái</td>
+                      <td>65</td>
+                      <td>20</td>
+                      <td>5,000,000</td>
+                      <td>40</td>
+                      <td>10,000,000</td>
+                      <td>45</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr class="font-weight-bold">
+                      <td colspan="5" class="text-right">Tổng cộng:</td>
+                      <td>410</td>
+                      <td>150</td>
+                      <td>30,500,000</td>
+                      <td>155</td>
+                      <td>29,000,000</td>
+                      <td>405</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+      
+      <div class="modal fade" id="modal-default">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Thêm kho mới</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="warehouseCode">Mã kho</label>
+                  <input type="text" class="form-control" id="warehouseCode" placeholder="Nhập mã kho">
+                </div>
+                <div class="form-group">
+                  <label for="warehouseName">Tên kho</label>
+                  <input type="text" class="form-control" id="warehouseName" placeholder="Nhập tên kho">
+                </div>
+                <div class="form-group">
+                  <label for="warehouseAddress">Địa chỉ</label>
+                  <input type="text" class="form-control" id="warehouseAddress" placeholder="Nhập địa chỉ">
+                </div>
+                <div class="form-group">
+                  <label for="warehousePhone">Số điện thoại</label>
+                  <input type="text" class="form-control" id="warehousePhone" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="form-group">
+                  <label for="warehouseManager">Người quản lý</label>
+                  <input type="text" class="form-control" id="warehouseManager" placeholder="Nhập tên người quản lý">
+                </div>
+                <div class="form-group">
+                  <label for="warehouseStatus">Trạng thái</label>
+                  <select class="form-control" id="warehouseStatus">
+                    <option value="1">Hoạt động</option>
+                    <option value="0">Tạm ngưng</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+              <button type="button" class="btn btn-primary">Lưu</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+      
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../bootstrap/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../js/adminlte.min.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    //Date range picker
+    $('#reservation').daterangepicker({
+      locale: {
+        format: 'DD/MM/YYYY',
+        applyLabel: 'Áp dụng',
+        cancelLabel: 'Hủy',
+        fromLabel: 'Từ',
+        toLabel: 'Đến',
+        customRangeLabel: 'Tùy chỉnh',
+        daysOfWeek: ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'],
+        monthNames: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+        firstDay: 1
+      }
+    });
+    
+    $("#dailyInventoryTable").DataTable({
+      "responsive": true, 
+      "lengthChange": false, 
+      "autoWidth": false,
+      "pageLength": 10
+    });
+  });
+</script>
+</body>
+</html>
