@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Online Help| E-Shopper</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <style>
+        .chat-box {
+          width: 350px;
+          height: 500px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+        }
+        .chat-messages {
+          flex: 1;
+          overflow-y: auto;
+          padding: 10px;
+          background-color: #fff;
+        }
+        .chat-input {
+          border-top: 1px solid #ddd;
+          padding: 10px;
+        }
+        .message {
+          margin-bottom: 10px;
+        }
+        .message.support {
+          text-align: left;
+        }
+        .message.user {
+          text-align: right;
+        }
+        .message .bubble {
+          display: inline-block;
+          padding: 8px 12px;
+          border-radius: 15px;
+          background-color: #fff;
+          max-width: 80%;
+        }
+        .message.support .bubble {
+          background-color: #f5f5f5;
+        }
+        #emoji-btn {
+            cursor: pointer;
+            font-size: 20px;
+            position: relative;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #emoji-picker {
+            position: absolute;
+            bottom: 100%; /* Hiển thị ngay bên dưới thanh nhập */
+            right: 0;
+            width: 200px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            z-index: 1000;
+        }
+
+        .emoji {
+            font-size: 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .emoji:hover {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        .input-group {
+            position: relative; /* Đảm bảo emoji picker được định vị tương đối với input group */
+        }
+      </style>
+</head><!--/head-->
+
+<body>
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
+								<li><a href=""><i class="fa fa-envelope"></i> info@domain.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-twitter"></i></a></li>
+								<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+								<li><a href=""><i class="fa fa-dribbble"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+						</div>
+						<div class="btn-group pull-right">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									USA
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">Canada</a></li>
+									<li><a href="">UK</a></li>
+								</ul>
+							</div>
+							
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									DOLLAR
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">Canadian Dollar</a></li>
+									<li><a href="">Pound</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href=""><i class="fa fa-user"></i> Account</a></li>
+								<li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+								<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom" style="background-color: #d7d7d7;padding: 15px 0;"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li ><a href="index.html">Home</a></li>
+                                <li style="padding-left: 0px;"><i class="fa fa-angle-right"></i></li>
+								<li style="padding-left: 0px;"><p style="color: #666663; font-size: 16px;">SERVICE</p></li> 
+                                <li style="padding-left: 0px;"><i class="fa fa-angle-right"></i></li>
+								<li style="padding-left: 0px;"><a class="active">Online Help</a></li> 
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+	
+    <div class="container my-5">
+        <h2 class="text-dark text-uppercase fw-bold mb-4">Trung Tâm Trợ Giúp</h2>
+      
+        <p class="mb-4">Chào mừng bạn đến với Trung Tâm Trợ Giúp của chúng tôi! Tại đây, bạn có thể tìm thấy thông tin chi tiết về cách sử dụng website, hướng dẫn đặt hàng, theo dõi đơn hàng và giải đáp các thắc mắc thường gặp. Nếu bạn không tìm thấy câu trả lời mong muốn, vui lòng liên hệ với chúng tôi qua mục <a href="#">Liên hệ</a>.</p>
+      
+        <h4 class="text-success mb-3">📘 Hướng dẫn sử dụng website</h4>
+        <p>Để giúp bạn dễ dàng làm quen và sử dụng dịch vụ của chúng tôi, dưới đây là các bước cơ bản:</p>
+        <ul>
+          <li><strong>Đăng ký tài khoản:</strong> Nhấn vào nút “Đăng ký” ở góc trên bên phải trang web. Nhập đầy đủ thông tin cá nhân, bao gồm họ tên, email, số điện thoại và mật khẩu. Sau khi đăng ký, bạn sẽ nhận được email xác nhận. Nhấp vào đường dẫn trong email để kích hoạt tài khoản.</li>
+          <li><strong>Đăng nhập:</strong> Sau khi tài khoản đã được kích hoạt, bạn có thể đăng nhập bằng cách nhấn vào nút “Đăng nhập” và nhập email cùng mật khẩu đã đăng ký.</li>
+          <li><strong>Chọn sản phẩm:</strong> Duyệt qua danh mục sản phẩm trên trang chủ hoặc sử dụng thanh tìm kiếm để tìm sản phẩm bạn cần. Nhấn vào từng sản phẩm để xem chi tiết.</li>
+          <li><strong>Thêm vào giỏ hàng:</strong> Khi đã chọn được sản phẩm, nhấn nút “Thêm vào giỏ”. Bạn có thể tiếp tục mua sắm hoặc tiến hành đặt hàng.</li>
+          <li><strong>Thanh toán:</strong> Vào giỏ hàng, kiểm tra lại sản phẩm và số lượng. Nhấn “Thanh toán”, nhập địa chỉ nhận hàng và chọn phương thức thanh toán.</li>
+          <li><strong>Theo dõi đơn hàng:</strong> Vào mục “Order Status” trên website, nhập mã đơn hàng (được gửi qua email sau khi đặt hàng) để kiểm tra trạng thái đơn hàng.</li>
+        </ul>
+      
+        <h4 class="text-success mt-5 mb-3">🛠️ Xử lý sự cố thường gặp</h4>
+        <p>Dưới đây là một số vấn đề người dùng thường gặp và cách khắc phục nhanh chóng:</p>
+        <ul>
+          <li><strong>Không đăng nhập được:</strong> Đảm bảo bạn đã nhập đúng email và mật khẩu. Nếu quên mật khẩu, hãy nhấn vào mục “Quên mật khẩu” để đặt lại mật khẩu mới qua email.</li>
+          <li><strong>Không nhận được email xác nhận:</strong> Kiểm tra thư mục Spam hoặc Junk trong hộp thư điện tử. Nếu vẫn không tìm thấy, hãy thử gửi lại email xác nhận hoặc liên hệ bộ phận hỗ trợ khách hàng.</li>
+          <li><strong>Đơn hàng bị hủy:</strong> Có thể do sản phẩm hết hàng hoặc thanh toán không thành công. Vào mục “Order Status” để kiểm tra lý do chi tiết và đặt lại đơn nếu cần.</li>
+          <li><strong>Không tải được tài liệu:</strong> Hãy đảm bảo kết nối mạng ổn định và thử tải lại. Nếu sự cố vẫn tiếp diễn, bạn có thể liên hệ bộ phận hỗ trợ để được gửi file trực tiếp qua email.</li>
+        </ul>
+      
+        <h4 class="text-success mt-5 mb-3">📑 Tải tài liệu và hướng dẫn sử dụng</h4>
+        <p>Chúng tôi cung cấp các tài liệu hướng dẫn chi tiết giúp bạn làm quen và sử dụng dịch vụ hiệu quả:</p>
+        <ul>
+          <li><a href="#">📥 Tải file Hướng dẫn sử dụng PDF</a></li>
+          <li><a href="#">📺 Xem video hướng dẫn thao tác trên website</a></li>
+          <li><a href="#">📥 Tải file Hướng dẫn thanh toán và chính sách hoàn trả</a></li>
+        </ul>
+      
+        <h4 class="text-success mt-5 mb-3">💬 Liên hệ hỗ trợ trực tiếp</h4>
+        <p>Nếu bạn cần thêm sự trợ giúp, đừng ngần ngại liên hệ với chúng tôi:</p>
+        <ul>
+          <li>📞 Hotline: 1800 1234 567</li>
+          <li>✉️ Email: support@tenwebsite.com</li>
+          <li>💬 Live chat: Nút chat trực tuyến ở góc dưới bên phải màn hình</li>
+        </ul>
+      
+        <p class="mt-4">Chúng tôi luôn sẵn sàng hỗ trợ bạn 24/7!</p>
+      </div>
+
+        <div class="container mt-4">
+    
+            <!-- Tiêu đề -->
+            <h2 class="text-primary mb-4"><i class="bi bi-journal-text"></i> Online Help</h2>
+    
+            <!-- Thanh tìm kiếm -->
+            <div class="input-group mb-4 " style="display: flex; width: 30%; margin-bottom: 10px;">
+                <input type="text" id="searchInput" class="form-control" placeholder="Nhập câu hỏi hoặc từ khóa...">
+                <button class="btn btn-primary" id="searchBtn" style="margin: 0 0 0 10px;">Tìm kiếm</button>
+            </div>
+    
+            <!-- Mục lục -->
+            <div class="list-group mb-4">
+                <a href="#guide" class="list-group-item list-group-item-action">📘 Hướng dẫn sử dụng website</a>
+                <a href="#troubleshoot" class="list-group-item list-group-item-action">🛠️ Xử lý sự cố thường gặp</a>
+                <a href="#download" class="list-group-item list-group-item-action">📑 Tải tài liệu hướng dẫn</a>
+            </div>
+    
+            <!-- Nội dung -->
+    
+            <div id="guide" class="mb-5">
+                <h4 class="text-success">📘 Hướng dẫn sử dụng website</h4>
+                <ul>
+                    <li><b>Đăng ký / Đăng nhập:</b> Nhấn nút “Đăng ký” hoặc “Đăng nhập”, nhập thông tin cá nhân và xác thực.</li>
+                    <li><b>Đặt hàng:</b> Chọn sản phẩm → Thêm vào giỏ → Thanh toán.</li>
+                    <li><b>Theo dõi đơn hàng:</b> Vào mục “Order Status” nhập mã đơn để xem.</li>
+                </ul>
+            </div>
+    
+            <div id="troubleshoot" class="mb-5">
+                <h4 class="text-success">🛠️ Xử lý sự cố thường gặp</h4>
+                <ul>
+                    <li><b>Không đăng nhập được:</b> Kiểm tra mật khẩu/email hoặc sử dụng chức năng “Quên mật khẩu”.</li>
+                    <li><b>Đơn hàng bị hủy:</b> Xem lý do trong mục “Order Status” và đặt lại.</li>
+                    <li><b>Không nhận email xác nhận:</b> Kiểm tra thư mục Spam hoặc liên hệ CSKH.</li>
+                </ul>
+            </div>
+    
+            <div id="download" class="mb-5">
+                <h4 class="text-success">📑 Tải tài liệu hướng dẫn</h4>
+                <p>Tải file hướng dẫn và video sử dụng:</p>
+                <a href="#" class="btn btn-outline-primary mb-2">📥 Tải file PDF</a>
+                <a href="#" class="btn btn-outline-success">📺 Xem video</a>
+            </div>
+    
+        </div>
+        <div class="container mt-5 d-flex justify-content-center" style="display: none; position: fixed; bottom: 80px; right: 0; z-index: 1000;width: auto;">
+            <div class="chat-box border bg-white">
+              <div class="p-3 border-bottom  text-white" style="background-color: aliceblue;">
+                <img src="./images/home/logo.png" style="margin: 10px"><br>
+                <div style="margin: 5px 10px;"><strong >Chăm Sóc Khách Hàng</strong><br></div>
+                <div style="margin: 5px 10px;"><small >Hiện trả lời sau không đến 15 phút</small></div>
+                <button id="close-chat" class="btn btn-sm btn-light" style="position: absolute; top: 10px; right: 25px;border-radius: 50%; ">✖</button>
+              </div>
+              <div class="chat-messages" id="chat-messages">
+                <div class="message support">
+                  <div class="" style="color: rgb(161, 161, 160); margin-left: 40px;">E-Shopper Supporter</div>
+                  <div class="" style="display: flex;">
+                    <span style="width: 30px; height: 30px; border-radius: 50%; text-align: center; line-height: 30px; background-color: chocolate;
+                    color: white; font-weight: bold; margin-right: 5px;" >E</span>
+                    <div class="bubble">Chào anh/chị 👋 E-shopper có thể hỗ trợ gì cho mình hôm nay ạ?</div>
+                  </div>
+                </div>
+              </div>
+              <div class=" align-items-center" style="display: flex; padding: 10px; background-color: aliceblue;">
+                <div class=" mx-auto" style="width: 75%;">
+                    <div class="input-group w-100">
+                        <div class="position-relative" >
+                            <input type="text" id="chat-input" class="" placeholder="Trả lời ở đây..." style="padding: 5px;width: 245px;">
+                            <span id="emoji-btn" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer;">😊</span>
+                          </div>
+                        <div id="emoji-picker" class="d-none" style="display: none;">
+                          <span class="emoji">😀</span>
+                          <span class="emoji">😁</span>
+                          <span class="emoji">😂</span>
+                          <span class="emoji">🤣</span>
+                          <span class="emoji">😃</span>
+                          <span class="emoji">😄</span>
+                          <span class="emoji">😅</span>
+                          <span class="emoji">😆</span>
+                        </div>
+                      </div>
+                  </div>
+                <div class="m-0"><button class="btn btn-primary " style="margin: 0 0 0 20px;height: 34px; border-radius: 5px;" id="send-btn">Gửi</button></div>
+              </div>
+            </div>
+          </div>
+          <div id="chat-toggle" style="position: fixed; bottom: 80px; right: 10px; z-index: 1000; cursor: pointer;">
+            <button class="btn btn-primary rounded-circle" style="width: 40px; height: 40px; font-size: 15px;padding: 0;">
+              💬
+            </button>
+          </div>
+          <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+          <script>
+            $(document).ready(function(){
+              $("#send-btn").click(function(){
+                sendMessage()
+              })
+              $("#chat-input").keypress(function(e){
+                if (e.which === 13) { // Kiểm tra nếu phím Enter được nhấn
+                e.preventDefault(); // Ngăn chặn hành động mặc định (nếu có)
+                sendMessage();
+                 }
+              })
+            }) 
+             
+           
+            function sendMessage(){
+              var text = $('#chat-input').val().trim();
+              if (text !== '') {
+                $('#chat-messages').append(`
+                  <div class="message user">
+                        <div class="bubble" style="background-color:#f1f1f1">` + text + `</div>
+                  </div>
+                `);
+                $('#chat-input').val('');
+                $('#chat-messages').scrollTop($('#chat-messages')[0].scrollHeight);
+          
+                // Giả lập trả lời từ hỗ trợ
+                setTimeout(function () {
+                  $('#chat-messages').append(`
+                    <div class="message support">
+                      <div class="" style="color: rgb(161, 161, 160); margin-left: 40px;">E-Shopper Supporter</div>
+                      <div class="" style="display: flex;">
+                        <span style="width: 30px; height: 30px; border-radius: 50%; text-align: center; line-height: 30px; background-color: chocolate;
+                        color: white; font-weight: bold; margin-right: 5px;" >E</span>
+                        <div class="bubble">Dạ em chào anh/chị ạ. Anh chị vui lòng cho em biết vấn đề đang cần hỗ trợ ạ?</div>
+                      </div>
+                    </div>
+                  `);
+                  $('#chat-messages').scrollTop($('#chat-messages')[0].scrollHeight);
+                }, 1000);
+              }
+            }
+            
+          </script>
+          <script> //Hộp thoại
+              $(document).ready(function () {
+                  $("#chat-toggle").click(function () {
+                    $(".container.mt-5.d-flex.justify-content-center").show();
+                    $('#chat-toggle').hide()
+                  });
+                  $("#close-chat").click(function(){
+                    $(".container.mt-5.d-flex.justify-content-center").hide();
+                    $('#chat-toggle').show()
+                  })
+                });
+          </script>
+        <script>
+            $(document).ready(function () {
+                // Hiển thị hoặc ẩn emoji picker
+                $('#emoji-btn').click(function (e) {
+                    e.stopPropagation(); // Ngăn chặn sự kiện click lan ra ngoài
+                    $('#emoji-picker').fadeToggle(0);
+                });
+            
+                // Chèn emoji vào input khi chọn
+                $('.emoji').click(function () {
+                    const emoji = $(this).text();
+                    const input = $('#chat-input');
+                    input.val(input.val() + emoji); // Thêm emoji vào cuối nội dung input
+                   
+                });
+            
+                // Ẩn emoji picker khi click ra ngoài
+                $(document).click(function () {
+                    $('#emoji-picker').fadeOut('d-none',0);
+                });
+            });
+        </script>
+        <!-- Jquery tìm kiếm đơn giản -->
+        <script>
+            $('#searchBtn').click(function () {
+                var keyword = $('#searchInput').val().toLowerCase();
+                if (keyword.includes('đăng nhập')) {
+                    $('html, body').animate({
+                        scrollTop: $('#guide').offset().top
+                    }, 500);
+                } else if (keyword.includes('đơn hàng') || keyword.includes('hủy đơn')) {
+                    $('html, body').animate({
+                        scrollTop: $('#troubleshoot').offset().top
+                    }, 500);
+                } else {
+                    alert('Không tìm thấy nội dung phù hợp.');
+                }
+            });
+        </script>
+    
+	
+	<footer id="footer"><!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="companyinfo">
+							<h2><span>e</span>-shopper</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
+						</div>
+					</div>
+					<div class="col-sm-7">
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/home/iframe1.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/home/iframe2.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/home/iframe3.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/home/iframe4.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>Circle of Hands</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="address">
+							<img src="images/home/map.png" alt="" />
+							<p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="./onlinehelp.html">Online Help</a></li>
+								<li><a href="./contactus.html">Contact Us</a></li>
+								<li><a href="./orderstatus.html">Order Status</a></li>
+								<li><a href="./changelocation.html">Change Location</a></li>
+								<li><a href="./faq.html">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Quock Shop</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">T-Shirt</a></li>
+								<li><a href="">Mens</a></li>
+								<li><a href="">Womens</a></li>
+								<li><a href="">Gift Cards</a></li>
+								<li><a href="">Shoes</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="./termofuse.html">Terms of Use</a></li>
+								<li><a href="./privercypolicy.html">Privecy Policy</a></li>
+								<li><a href="./refundpolicy.html">Refund Policy</a></li>
+								<li><a href="./billingsystem.html">Billing System</a></li>
+								<li><a href="./ticketsystem.html">Ticket System</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">Company Information</a></li>
+								<li><a href="">Careers</a></li>
+								<li><a href="">Store Location</a></li>
+								<li><a href="">Affillate Program</a></li>
+								<li><a href="">Copyright</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-sm-offset-1">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Your email address" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+								<p>Get the most recent updates from <br />our site and be updated your self...</p>
+							</form>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+	
+
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/price-range.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
