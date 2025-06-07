@@ -2,7 +2,7 @@
 <html lang="en">
 <head>  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Danh sách sản phẩm</title>
+  <title>Admin | Danh sách sản phẩm</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -21,10 +21,10 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="../../index3.html" class="nav-link">Home</a>
+        <a href="../../index3.html" class="nav-link">Trang chủ</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#" class="nav-link">Liên hệ</a>
       </li>
     </ul>
 
@@ -67,22 +67,22 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="../../index3.html" class="brand-link">
+    <a href="/admin/index3.html" class="brand-link">
       <img src="../../img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">Admin</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- Sidebar user (optional) -->
+      <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img src="../../img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">Trịnh Trần Phương Tuấn</a>
         </div>
       </div>
 
@@ -104,95 +104,262 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="../../index3.html" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>Dashboard</p>
-            </a>
-          </li>
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-warehouse"></i>
               <p>
-                Kho hàng
+                Bảng điều khiển
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="suppliers.html" class="nav-link">
+                <a href="../../index3.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thông kê</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="../widgets.html" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Tiện ích
+                <span class="right badge badge-danger">Mới</span>
+              </p>
+            </a>
+          </li> 
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Biểu đồ
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../charts/chartjs.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Biểu đồ doanh thu</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../charts/flot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Biểu đồ người dùng</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tree"></i>
+              <p>
+                Giao diện người dùng
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../UI/general.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tổng quan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../UI/buttons.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Nút bấm</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../UI/timeline.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dòng thời gian</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Biểu mẫu
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../forms/general.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Yếu tố chung</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Bảng
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../tables/jsgrid.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách người dùng</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-header">EXAMPLES</li>
+          <li class="nav-item">
+            <a href="../calendar.html" class="nav-link">
+              <i class="nav-icon fas fa-calendar-alt"></i>
+              <p>
+                Lịch
+                <span class="badge badge-info right">2</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-envelope"></i>
+              <p>
+                Hộp thư
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../mailbox/mailbox.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Hộp thư đến</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/compose.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Soạn thư</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/read-mail.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thư đã đọc</p>
+                </a>
+              </li>
+            </ul>
+          </li>          
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-warehouse"></i>
+              <p>
+                Kho hàng
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../depot/suppliers.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Nhà cung cấp</p>
                 </a>
-              </li>              <li class="nav-item">
-                <a href="warehouse-list.html" class="nav-link">
+              </li>
+              <li class="nav-item">
+                <a href="../depot/warehouse-list.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Danh sách kho</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="stock-in.html" class="nav-link">
+                <a href="../depot/stock-in.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Nhập kho</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="stock-out.html" class="nav-link">
+                <a href="../depot/stock-out.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Xuất kho</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="stock-transfer.html" class="nav-link">
+                <a href="../depot/stock-transfer.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Chuyển kho</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="inventory.html" class="nav-link">
+                <a href="../depot/inventory.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tồn kho</p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="quick-inventory.html" class="nav-link">
+              </li>              <li class="nav-item">
+                <a href="../depot/quick-inventory.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tồn kho nhanh</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="daily-inventory.html" class="nav-link">
+                <a href="../depot/daily-inventory.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tồn kho theo ngày</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="stock-balance.html" class="nav-link">
+                <a href="../depot/stock-balance.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Cân bằng kho</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="product-list.html" class="nav-link active">
+                <a href="../depot/product-list.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Danh sách sản phẩm</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="product-attributes.html" class="nav-link">
+                <a href="../depot/product-attributes.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Thuộc tính sản phẩm</p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="units.html" class="nav-link">
+              </li>              <li class="nav-item">
+                <a href="../depot/units.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Đơn vị tính</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="barcode.html" class="nav-link">
+                <a href="../depot/barcode.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>In mã vạch</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Hóa đơn
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item active">
+                <a href="../examples/invoice.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thông tin hóa đơn</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../examples/invoice-print.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>In hóa đơn</p>
                 </a>
               </li>
             </ul>
@@ -223,219 +390,175 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Danh sách sản phẩm</h3>
-                <div class="card-tools">
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-default">
-                    <i class="fas fa-plus"></i> Thêm sản phẩm
-                  </button>
-                </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <div class="row mb-3">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label>Danh mục:</label>
-                      <select class="form-control">
-                        <option value="">Tất cả danh mục</option>
-                        <option value="1">Quần áo nam</option>
-                        <option value="2">Quần áo nữ</option>
-                        <option value="3">Thể thao</option>
-                        <option value="4">Giày dép</option>
-                        <option value="5">Phụ kiện</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label>Trạng thái:</label>
-                      <select class="form-control">
-                        <option value="">Tất cả trạng thái</option>
-                        <option value="1">Còn hàng</option>
-                        <option value="0">Hết hàng</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>Tìm kiếm:</label>
-                      <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Tìm theo tên, mã sản phẩm...">
-                        <div class="input-group-append">
-                          <button type="button" class="btn btn-primary">
-                            <i class="fas fa-search"></i> Tìm kiếm
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <table id="example1" class="table table-bordered table-striped">
-                  <thead>
-                  <tr>
-                    <th style="width: 40px;">STT</th>
-                    <th style="width: 100px;">Hình ảnh</th>
-                    <th>Mã sản phẩm</th>
-                    <th>Tên sản phẩm</th>
-                    <th>Danh mục</th>
-                    <th>Giá bán</th>
-                    <th>Tồn kho</th>
-                    <th>Trạng thái</th>
-                    <th style="width: 100px;">Thao tác</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td><img src="../../img/prod-1.jpg" alt="Product Image" class="img-thumbnail" width="80"></td>
-                    <td>SP001</td>
-                    <td>Áo thun nam cổ tròn</td>
-                    <td>Quần áo nam</td>
-                    <td>250.000 VNĐ</td>
-                    <td>50</td>
-                    <td><span class="badge badge-success">Còn hàng</span></td>
-                    <td>
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-info" title="Sửa"><i class="fas fa-edit"></i></button>
-                        <button type="button" class="btn btn-sm btn-danger" title="Xóa"><i class="fas fa-trash"></i></button>
-                        <button type="button" class="btn btn-sm btn-success" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td><img src="../../img/prod-2.jpg" alt="Product Image" class="img-thumbnail" width="80"></td>
-                    <td>SP002</td>
-                    <td>Quần jeans nữ ống suông</td>
-                    <td>Quần áo nữ</td>
-                    <td>450.000 VNĐ</td>
-                    <td>35</td>
-                    <td><span class="badge badge-success">Còn hàng</span></td>
-                    <td>
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-info" title="Sửa"><i class="fas fa-edit"></i></button>
-                        <button type="button" class="btn btn-sm btn-danger" title="Xóa"><i class="fas fa-trash"></i></button>
-                        <button type="button" class="btn btn-sm btn-success" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td><img src="../../img/prod-3.jpg" alt="Product Image" class="img-thumbnail" width="80"></td>
-                    <td>SP003</td>
-                    <td>Giày thể thao nam</td>
-                    <td>Giày dép</td>
-                    <td>650.000 VNĐ</td>
-                    <td>20</td>
-                    <td><span class="badge badge-success">Còn hàng</span></td>
-                    <td>
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-info" title="Sửa"><i class="fas fa-edit"></i></button>
-                        <button type="button" class="btn btn-sm btn-danger" title="Xóa"><i class="fas fa-trash"></i></button>
-                        <button type="button" class="btn btn-sm btn-success" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td><img src="../../img/prod-4.jpg" alt="Product Image" class="img-thumbnail" width="80"></td>
-                    <td>SP004</td>
-                    <td>Đồng hồ thời trang</td>
-                    <td>Phụ kiện</td>
-                    <td>850.000 VNĐ</td>
-                    <td>0</td>
-                    <td><span class="badge badge-danger">Hết hàng</span></td>
-                    <td>
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-info" title="Sửa"><i class="fas fa-edit"></i></button>
-                        <button type="button" class="btn btn-sm btn-danger" title="Xóa"><i class="fas fa-trash"></i></button>
-                        <button type="button" class="btn btn-sm btn-success" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td><img src="../../img/prod-5.jpg" alt="Product Image" class="img-thumbnail" width="80"></td>
-                    <td>SP005</td>
-                    <td>Áo khoác thể thao</td>
-                    <td>Thể thao</td>
-                    <td>550.000 VNĐ</td>
-                    <td>15</td>
-                    <td><span class="badge badge-success">Còn hàng</span></td>
-                    <td>
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-info" title="Sửa"><i class="fas fa-edit"></i></button>
-                        <button type="button" class="btn btn-sm btn-danger" title="Xóa"><i class="fas fa-trash"></i></button>
-                        <button type="button" class="btn btn-sm btn-success" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
-                      </div>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
+    <section class="content">      
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+          <h3 class="card-title">Danh sách giày</h3>
+          <div class="card-tools">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-default">
+            <i class="fas fa-plus"></i> Thêm giày
+            </button>
           </div>
-          <!-- /.col -->
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body">
+          <div class="row mb-3">
+            <div class="col-md-3">
+            <div class="form-group">
+              <label>Danh mục:</label>
+              <select class="form-control">
+              <option value="">Tất cả danh mục</option>
+              <option value="1">Giày nam</option>
+              <option value="2">Giày nữ</option>
+              <option value="3">Giày thể thao</option>
+              <option value="4">Giày cao gót</option>
+              <option value="5">Giày trẻ em</option>
+              </select>
+            </div>
+            </div>
+            <div class="col-md-3">
+            <div class="form-group">
+              <label>Trạng thái:</label>
+              <select class="form-control">
+              <option value="">Tất cả trạng thái</option>
+              <option value="1">Còn hàng</option>
+              <option value="0">Hết hàng</option>
+              </select>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="form-group">
+              <label>Tìm kiếm:</label>
+              <div class="input-group">
+              <input type="text" class="form-control" placeholder="Tìm theo tên, mã giày...">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-primary">
+                <i class="fas fa-search"></i> Tìm kiếm
+                </button>
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <table id="example1" class="table table-bordered table-striped">
+            <thead>
+            <tr>
+            <th style="width: 40px;">STT</th>
+            <th style="width: 100px;">Hình ảnh</th>
+            <th>Mã giày</th>
+            <th>Tên giày</th>
+            <th>Danh mục</th>
+            <th>Giá bán</th>
+            <th>Tồn kho</th>
+            <th>Trạng thái</th>
+            <th style="width: 100px;">Thao tác</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>1</td>
+            <td><img src="../../img/prod-1.jpg" alt="Product Image" class="img-thumbnail" width="80"></td>
+            <td>GY001</td>
+            <td>Giày thể thao nam</td>
+            <td>Giày thể thao</td>
+            <td>650.000 VNĐ</td>
+            <td>20</td>
+            <td><span class="badge badge-success">Còn hàng</span></td>
+            <td>
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-info" title="Sửa"><i class="fas fa-edit"></i></button>
+              <button type="button" class="btn btn-sm btn-danger" title="Xóa"><i class="fas fa-trash"></i></button>
+              <button type="button" class="btn btn-sm btn-success" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+              </div>
+            </td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td><img src="../../img/prod-2.jpg" alt="Product Image" class="img-thumbnail" width="80"></td>
+            <td>GY002</td>
+            <td>Giày cao gót nữ</td>
+            <td>Giày cao gót</td>
+            <td>850.000 VNĐ</td>
+            <td>15</td>
+            <td><span class="badge badge-success">Còn hàng</span></td>
+            <td>
+              <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-info" title="Sửa"><i class="fas fa-edit"></i></button>
+              <button type="button" class="btn btn-sm btn-danger" title="Xóa"><i class="fas fa-trash"></i></button>
+              <button type="button" class="btn btn-sm btn-success" title="Xem chi tiết"><i class="fas fa-eye"></i></button>
+              </div>
+            </td>
+            </tr>
+            </tbody>
+          </table>
+          </div>
+          <!-- /.card-body -->
         </div>
-        <!-- /.row -->
+        <!-- /.card -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
       </div>
       <!-- /.container-fluid -->
       
       <div class="modal fade" id="modal-default">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Thêm kho mới</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="warehouseCode">Mã kho</label>
-                  <input type="text" class="form-control" id="warehouseCode" placeholder="Nhập mã kho">
-                </div>
-                <div class="form-group">
-                  <label for="warehouseName">Tên kho</label>
-                  <input type="text" class="form-control" id="warehouseName" placeholder="Nhập tên kho">
-                </div>
-                <div class="form-group">
-                  <label for="warehouseAddress">Địa chỉ</label>
-                  <input type="text" class="form-control" id="warehouseAddress" placeholder="Nhập địa chỉ">
-                </div>
-                <div class="form-group">
-                  <label for="warehousePhone">Số điện thoại</label>
-                  <input type="text" class="form-control" id="warehousePhone" placeholder="Nhập số điện thoại">
-                </div>
-                <div class="form-group">
-                  <label for="warehouseManager">Người quản lý</label>
-                  <input type="text" class="form-control" id="warehouseManager" placeholder="Nhập tên người quản lý">
-                </div>
-                <div class="form-group">
-                  <label for="warehouseStatus">Trạng thái</label>
-                  <select class="form-control" id="warehouseStatus">
-                    <option value="1">Hoạt động</option>
-                    <option value="0">Tạm ngưng</option>
-                  </select>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-              <button type="button" class="btn btn-primary">Lưu</button>
-            </div>
-          </div>
-          <!-- /.modal-content -->
+      <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Thêm giày mới</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <!-- /.modal-dialog -->
+        <div class="modal-body">
+          <form>
+          <div class="form-group">
+            <label for="shoeCode">Mã giày</label>
+            <input type="text" class="form-control" id="shoeCode" placeholder="Nhập mã giày">
+          </div>
+          <div class="form-group">
+            <label for="shoeName">Tên giày</label>
+            <input type="text" class="form-control" id="shoeName" placeholder="Nhập tên giày">
+          </div>
+          <div class="form-group">
+            <label for="shoeCategory">Danh mục</label>
+            <select class="form-control" id="shoeCategory">
+            <option value="1">Giày nam</option>
+            <option value="2">Giày nữ</option>
+            <option value="3">Giày thể thao</option>
+            <option value="4">Giày cao gót</option>
+            <option value="5">Giày trẻ em</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="shoePrice">Giá bán</label>
+            <input type="text" class="form-control" id="shoePrice" placeholder="Nhập giá bán">
+          </div>
+          <div class="form-group">
+            <label for="shoeStock">Tồn kho</label>
+            <input type="number" class="form-control" id="shoeStock" placeholder="Nhập số lượng tồn kho">
+          </div>
+          <div class="form-group">
+            <label for="shoeStatus">Trạng thái</label>
+            <select class="form-control" id="shoeStatus">
+            <option value="1">Còn hàng</option>
+            <option value="0">Hết hàng</option>
+            </select>
+          </div>
+          </form>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+          <button type="button" class="btn btn-primary">Lưu</button>
+        </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
       </div>
       <!-- /.modal -->
       
@@ -448,7 +571,7 @@
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 3.2.0
     </div>
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2025 - 2026</strong> All rights reserved.
   </footer>
 
   <!-- Control Sidebar -->
