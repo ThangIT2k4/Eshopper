@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Tồn kho nhanh</title>
+  <title>Admin | Tồn kho nhanh</title>
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="../../jquery/all.min.css">
+  
   <!-- Theme style -->
   <link rel="stylesheet" href="../../css/adminlte.min.css">
 </head>
@@ -21,10 +23,10 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="../../index3.html" class="nav-link">Home</a>
+        <a href="../../index3.html" class="nav-link">Trang chủ</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#" class="nav-link">Liên hệ</a>
       </li>
     </ul>
 
@@ -69,20 +71,20 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="../../index3.html" class="brand-link">
+    <a href="/admin/index3.html" class="brand-link">
       <img src="../../img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">Admin</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- Sidebar user (optional) -->
+      <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img src="../../img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">Trịnh Trần Phương Tuấn</a>
         </div>
       </div>
 
@@ -104,95 +106,263 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="../../index3.html" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>Dashboard</p>
-            </a>
-          </li>
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-warehouse"></i>
               <p>
-                Kho hàng
+                Bảng điều khiển
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="suppliers.html" class="nav-link">
+                <a href="../../index3.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thông kê</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="../widgets.html" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Tiện ích
+                <span class="right badge badge-danger">Mới</span>
+              </p>
+            </a>
+          </li> 
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Biểu đồ
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../charts/chartjs.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Biểu đồ doanh thu</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../charts/flot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Biểu đồ người dùng</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tree"></i>
+              <p>
+                Giao diện người dùng
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../UI/general.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tổng quan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../UI/buttons.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Nút bấm</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../UI/timeline.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dòng thời gian</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Biểu mẫu
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../forms/general.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Yếu tố chung</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Bảng
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../tables/jsgrid.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách người dùng</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-header">EXAMPLES</li>
+          <li class="nav-item">
+            <a href="../calendar.html" class="nav-link">
+              <i class="nav-icon fas fa-calendar-alt"></i>
+              <p>
+                Lịch
+                <span class="badge badge-info right">2</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-envelope"></i>
+              <p>
+                Hộp thư
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../mailbox/mailbox.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Hộp thư đến</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/compose.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Soạn thư</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/read-mail.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thư đã đọc</p>
+                </a>
+              </li>
+            </ul>
+          </li>          
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-warehouse"></i>
+              <p>
+                Kho hàng
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../depot/suppliers.html" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Nhà cung cấp</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="warehouse-list.html" class="nav-link active">
+                <a href="../depot/warehouse-list.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Danh sách kho</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="stock-in.html" class="nav-link">
+                <a href="../depot/stock-in.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Nhập kho</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="stock-out.html" class="nav-link">
+                <a href="../depot/stock-out.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Xuất kho</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="stock-transfer.html" class="nav-link">
+                <a href="../depot/stock-transfer.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Chuyển kho</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="inventory.html" class="nav-link">
+                <a href="../depot/inventory.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tồn kho</p>
                 </a>
-              </li>              <li class="nav-item">
-                <a href="quick-inventory.html" class="nav-link active">
+              </li>              
+              <li class="nav-item">
+                <a href="../depot/quick-inventory.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tồn kho nhanh</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="daily-inventory.html" class="nav-link">
+                <a href="../depot/daily-inventory.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tồn kho theo ngày</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="stock-balance.html" class="nav-link">
+                <a href="../depot/stock-balance.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Cân bằng kho</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="product-list.html" class="nav-link">
+                <a href="../depot/product-list.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Danh sách sản phẩm</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="product-attributes.html" class="nav-link">
+                <a href="../depot/product-attributes.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Thuộc tính sản phẩm</p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="units.html" class="nav-link">
+              </li>              <li class="nav-item">
+                <a href="../depot/units.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Đơn vị tính</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="barcode.html" class="nav-link">
+                <a href="../depot/barcode.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>In mã vạch</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Hóa đơn
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item active">
+                <a href="../examples/invoice.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thông tin hóa đơn</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../examples/invoice-print.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>In hóa đơn</p>
                 </a>
               </li>
             </ul>
@@ -497,7 +667,7 @@
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 3.2.0
     </div>
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2025 - 2026</strong> All rights reserved.
   </footer>
 
   <!-- Control Sidebar -->
