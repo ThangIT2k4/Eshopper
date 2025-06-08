@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>FAQ’s | E-Shopper</title>
+    <title>Điều Khoản Sử Dụng | E-Shopper</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -28,7 +28,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        .section p, .container p{
+        .container>p{
             font-size: 20px;
         }
         .text-center h1 { color: black;}
@@ -68,51 +68,82 @@
 			</div>
 		</div><!--/header_top-->
 		
-		<div class="header-middle"><!--header-middle-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="logo pull-left">
-							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
-						</div>
-						<div class="btn-group pull-right">
-							<div class="btn-group">
-								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									USA
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu">
-									<li><a href="">Canada</a></li>
-									<li><a href="">UK</a></li>
-								</ul>
-							</div>
-							
-							<div class="btn-group">
-								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-									DOLLAR
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu">
-									<li><a href="">Canadian Dollar</a></li>
-									<li><a href="">Pound</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-8">
-						<div class="shop-menu pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href=""><i class="fa fa-user"></i> Account</a></li>
-								<li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
-								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header-middle-->
+		<div class="header-middle">
+        <!--header-middle-->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="logo pull-left">
+                <a href="index.html"
+                  ><img src="images/home/logo.png" alt=""
+                /></a>
+              </div>
+              <div class="btn-group pull-right">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-default dropdown-toggle usa"
+                    data-toggle="dropdown"
+                  >
+                    Việt Nam
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Mỹ</a></li>
+                    <li><a href="">Nhật Bản</a></li>
+                  </ul>
+                </div>
+
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-default dropdown-toggle usa"
+                    data-toggle="dropdown"
+                  >
+                    VND
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Canadian Dollar</a></li>
+                    <li><a href="">Dollar</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <div class="shop-menu pull-right">
+                <ul class="nav navbar-nav">
+                  <li>
+                    <a href="account.html"
+                      ><i class="fa fa-user"></i> Tài khoản</a
+                    >
+                  </li>
+                  <li>
+                    <a href="wishlist.html"
+                      ><i class="fa fa-star"></i> Yêu thích</a
+                    >
+                  </li>
+                  <li>
+                    <a href="checkout.html"
+                      ><i class="fa fa-crosshairs"></i> Thanh toán</a
+                    >
+                  </li>
+                  <li>
+                    <a href="cart.html"
+                      ><i class="fa fa-shopping-cart"></i> Giỏ hàng</a
+                    >
+                  </li>
+                  <li>
+                    <a href="login.html"
+                      ><i class="fa fa-lock"></i> Đăng nhập</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 	
 		<div class="header-bottom" style="background-color: #e6f0ff;padding: 15px 0;"><!--header-bottom-->
 			<div class="container" style="margin-bottom: 0;">
@@ -120,11 +151,11 @@
 					<div class="col-sm-9">
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li ><a href="index.html" style="padding-bottom: 0;">Home</a></li>
+								<li ><a href="index.html" style="padding-bottom: 0;">Trang Chủ</a></li>
                                 <li style="padding-left: 0px;"><i class="fa fa-angle-right"></i></li>
-								<li style="padding-left: 0px; padding-bottom: 0;"><p style="color: #666663; font-size: 16px;margin-bottom: 0;">POLICIES</p></li> 
+								<li style="padding-left: 0px; padding-bottom: 0;"><p style="color: #666663; font-size: 16px;margin-bottom: 0;">Chính Sách</p></li> 
                                 <li style="padding-left: 0px;"><i class="fa fa-angle-right"></i></li>
-								<li style="padding-left: 0px;" ><a class="active" style=" padding-bottom: 0;">Term Of User</a></li> 
+								<li style="padding-left: 0px;" ><a class="active" style=" padding-bottom: 0;">Điều khoản sử dụng</a></li> 
 							</ul>
 						</div>
 					</div>
@@ -137,11 +168,11 @@
                 <div class="text-center">
                     <h1>Điều khoản sử dụng</h1>
                 </div>
-            <p>Chào mừng bạn đến với website E-Shopper.vn. Khi truy cập và sử dụng website, bạn đồng ý chịu sự ràng buộc bởi các Điều khoản sử dụng dưới đây. Nếu không đồng ý, vui lòng ngừng truy cập và sử dụng dịch vụ.</p>
+            <p style="font-size: 20px;">Chào mừng bạn đến với website E-Shopper.vn. Khi truy cập và sử dụng website, bạn đồng ý chịu sự ràng buộc bởi các Điều khoản sử dụng dưới đây. Nếu không đồng ý, vui lòng ngừng truy cập và sử dụng dịch vụ.</p>
 
             <div class="section">
                 <h4>1. Giới thiệu chung</h4>
-                <p>Website E-Shopper.vn do Công ty TNHH E-Shopper quản lý và vận hành. Các điều khoản sử dụng này điều chỉnh mối quan hệ giữa người dùng và E-Shopper trong việc truy cập và sử dụng website.</p>
+                <p style="font-size: 20px;">Website E-Shopper.vn do Công ty TNHH E-Shopper quản lý và vận hành. Các điều khoản sử dụng này điều chỉnh mối quan hệ giữa người dùng và E-Shopper trong việc truy cập và sử dụng website.</p>
             </div>
 
             <div class="section">
@@ -174,7 +205,7 @@
 
             <div class="section">
                 <h4>5. Quy định về bản quyền nội dung</h4>
-                <p>Tất cả hình ảnh, nội dung, mã nguồn website thuộc quyền sở hữu của E-Shopper. Nghiêm cấm sao chép, sử dụng với mục đích thương mại khi chưa có sự cho phép bằng văn bản từ chúng tôi.</p>
+                <p style="font-size: 20px;">Tất cả hình ảnh, nội dung, mã nguồn website thuộc quyền sở hữu của E-Shopper. Nghiêm cấm sao chép, sử dụng với mục đích thương mại khi chưa có sự cho phép bằng văn bản từ chúng tôi.</p>
             </div>
 
             <div class="section">
@@ -198,163 +229,184 @@
             <a href="./index.html" class="btn btn-primary" style="margin-bottom: 20px;">Quay lại Trang chủ</a>
         </div>
     </body>
-	<footer id="footer"><!--Footer-->
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-						<div class="companyinfo">
-							<h2><span>e</span>-shopper</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
-						</div>
-					</div>
-					<div class="col-sm-7">
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe1.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe2.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe3.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="images/home/iframe4.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="address">
-							<img src="images/home/map.png" alt="" />
-							<p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="footer-widget">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>Service</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="./onlinehelp.html">Online Help</a></li>
-								<li><a href="./contactus.html">Contact Us</a></li>
-								<li><a href="./orderstatus.html">Order Status</a></li>
-								<li><a href="./changelocation.html">Change Location</a></li>
-								<li><a href="./faq.html">FAQ’s</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>Quock Shop</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="tshirt.html">T-Shirt</a></li>
-								<li><a href="mens.html">Mens</a></li>
-								<li><a href="womens.html">Womens</a></li>
-								<li><a href="cart.html">Gift Cards</a></li>
-								<li><a href="shoes.html">Shoes</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>Policies</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="./termofuse.html">Terms of Use</a></li>
-								<li><a href="./privercypolicy.html">Privecy Policy</a></li>
-								<li><a href="./refundpolicy.html">Refund Policy</a></li>
-								<li><a href="./billingsystem.html">Billing System</a></li>
-								<li><a href="./ticketsystem.html">Ticket System</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="single-widget">
-							<h2>About Shopper</h2>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="companyinformation.html">Company Information</a></li>
-								<li><a href="careers.html">Careers</a></li>
-								<li><a href="storelocation.html">Store Location</a></li>
-								<li><a href="affilateprogram.html">Affillate Program</a></li>
-								<li><a href="coppyright.html">Copyright</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-3 col-sm-offset-1">
-						<div class="single-widget">
-							<h2>About Shopper</h2>
-							<form action="#" class="searchform">
-								<input type="text" placeholder="Your email address" />
-								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
-								<p>Get the most recent updates from <br />our site and be updated your self...</p>
-							</form>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-		
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
-					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
-				</div>
-			</div>
-		</div>
-		
-	</footer><!--/Footer-->
+	<footer id="footer">
+      <!--Footer-->
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="companyinfo">
+                <h2><span>e</span>-shop</h2>
+                <p>
+                  Một hệ thống bán điện thoại online uy tín số một Việt Nam. Dễ
+                  dàng sử dụng, thanh toán nhanh chóng, tiện lợi.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="col-sm-3">
+                <div class="video-gallery text-center">
+                  <a href="#">
+                    <div class="iframe-img">
+                      <img src="images/home/iframe1.png" alt="" />
+                    </div>
+                    <div class="overlay-icon">
+                      <i class="fa fa-play-circle-o"></i>
+                    </div>
+                  </a>
+                  <p>Circle of Hands</p>
+                  <h2>24 DEC 2025</h2>
+                </div>
+              </div>
+
+              <div class="col-sm-3">
+                <div class="video-gallery text-center">
+                  <a href="#">
+                    <div class="iframe-img">
+                      <img src="images/home/iframe2.png" alt="" />
+                    </div>
+                    <div class="overlay-icon">
+                      <i class="fa fa-play-circle-o"></i>
+                    </div>
+                  </a>
+                  <p>Circle of Hands</p>
+                  <h2>24 DEC 2025</h2>
+                </div>
+              </div>
+
+              <div class="col-sm-3">
+                <div class="video-gallery text-center">
+                  <a href="#">
+                    <div class="iframe-img">
+                      <img src="images/home/iframe3.png" alt="" />
+                    </div>
+                    <div class="overlay-icon">
+                      <i class="fa fa-play-circle-o"></i>
+                    </div>
+                  </a>
+                  <p>Circle of Hands</p>
+                  <h2>24 DEC 2025</h2>
+                </div>
+              </div>
+
+              <div class="col-sm-3">
+                <div class="video-gallery text-center">
+                  <a href="#">
+                    <div class="iframe-img">
+                      <img src="images/home/iframe4.png" alt="" />
+                    </div>
+                    <div class="overlay-icon">
+                      <i class="fa fa-play-circle-o"></i>
+                    </div>
+                  </a>
+                  <p>Circle of Hands</p>
+                  <h2>24 DEC 2025</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="address">
+                <img src="images/home/map.png" alt="" />
+                <p>
+                  Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội, Việt Nam
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-widget">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2">
+              <div class="single-widget">
+                <h2>Dịch vụ</h2>
+                <ul class="nav nav-pills nav-stacked">
+                  <li><a href="./onlinehelp.html">Trợ giúp trực tuyến</a></li>
+                  <li><a href="./contactus.html">Liên hệ chúng tôi</a></li>
+                  <li><a href="./orderstatus.html">Trạng thái đơn hàng</a></li>
+                  <li><a href="./changelocation.html">Thay đổi vị trí</a></li>
+                  <li><a href="./faq.html">FAQ’s</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="single-widget">
+                <h2>Cửa hàng</h2>
+                <ul class="nav nav-pills nav-stacked">
+                  <li><a href="./tshirt.html">Áo thun</a></li>
+                  <li><a href="mens.html">Nam giới</a></li>
+                  <li><a href="womens.html">Nữ giới</a></li>
+                  <li><a href="./giftcart.html">Thẻ quà tặng</a></li>
+                  <li><a href="shoes.html">Giày</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="single-widget">
+                <h2>Chính sách</h2>
+                <ul class="nav nav-pills nav-stacked">
+                  <li><a href="./termofuse.html">Điều khoản sử dụng</a></li>
+                  <li>
+                    <a href="./privercypolicy.html">Chính sách bảo mật</a>
+                  </li>
+                  <li>
+                    <a href="./refundpolicy.html">Chính sách hoàn tiền</a>
+                  </li>
+                  <li>
+                    <a href="./billingsystem.html">Hệ thống thanh toán</a>
+                  </li>
+                  <li><a href="./ticketsystem.html">Hệ thống vé</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="single-widget">
+                <h2>About Shop</h2>
+                <ul class="nav nav-pills nav-stacked">
+                  <li>
+                    <a href="./companyinformation.html">Thông tin công ty</a>
+                  </li>
+                  <li><a href="./careers.html">Nghề nghiệp</a></li>
+                  <li><a href="./storelocation.html">Vị trí cửa hàng</a></li>
+                  <li><a href="./affilateprogram.html">Liên kết</a></li>
+                  <li><a href="./coppyright.html">Bản quyền</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3 col-sm-offset-1">
+              <div class="single-widget">
+                <h2>About Shopper</h2>
+                <form action="#" class="searchform">
+                  <input type="text" placeholder="Your email address" />
+                  <button type="submit" class="btn btn-default">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                  </button>
+                  <p>
+                    Nhận những cập nhật mới nhất từ <br />trang web của chúng
+                    tôi và tự cập nhật...
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <p class="pull-left">
+              Copyright © 2025 E-SHOP Inc. All rights reserved.
+            </p>
+            <p class="pull-right">
+              Designed by <span><a target="_blank" href="#">Nhóm 11</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 	
 
   

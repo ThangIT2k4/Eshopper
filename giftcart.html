@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Hệ Thống Vé | E-Shopper</title>
+    <title>Bản Quyền | E-Shopper</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/prettyPhoto.css" rel="stylesheet" />
@@ -38,20 +38,19 @@
       href="images/ico/apple-touch-icon-57-precomposed.png"
     />
     <style>
-      .status-open {
-        color: red;
-        font-weight: bold;
+      h1,
+      h2 {
+        color: #222;
       }
-      .status-inprogress {
-        color: orange;
-        font-weight: bold;
+      #body ul li {
+        list-style-type: disc;
+        font-size: 17px;
       }
-      .status-resolved {
-        color: green;
-        font-weight: bold;
+      #body p {
+        font-size: 20px;
       }
-      #create:hover {
-        background-color: orange;
+      img {
+        max-width: 100%;
       }
     </style></head
   ><!--/head-->
@@ -208,7 +207,7 @@
                     <i class="fa fa-angle-right"></i>
                   </li>
                   <li style="padding-left: 0px">
-                    <a class="active" style="padding-bottom: 0">Hệ thống vé</a>
+                    <a class="active" style="padding-bottom: 0">Thẻ quà tặng</a>
                   </li>
                 </ul>
               </div>
@@ -219,184 +218,120 @@
       <!--/header-bottom-->
     </header>
     <!--/header-->
-    <body class="bg-light">
-      <div class="container py-4">
-        <h2 class="mb-4">🎫 Quản lý Ticket hỗ trợ</h2>
-
-        <!-- Nút tạo ticket -->
-        <button
-          class="btn btn-primary"
-          id="create"
-          style="margin-bottom: 10px; border-radius: 5px"
-          data-bs-toggle="modal"
-          data-bs-target="#createTicketModal"
+    <body>
+      <div class="container" style="margin-top: 10px">
+        <div>
+          <img
+            src="./images/giftcart/banner_blog_banner_membership_banner_membership_master.webp"
+            alt=""
+            style="object-fit: cover"
+          />
+        </div>
+        <h2>THÔNG BÁO CẬP NHẬT QUY ĐỊNH THẺ THÀNH VIÊN</h2>
+        <p>
+          JOHN HENRY xin gửi đến Quý khách hàng thông tin cập nhật mới nhất về
+          quy định thẻ thành viên, áp dụng từ ngày
+          <strong>01/05/2025</strong> như sau:
+        </p>
+        <ul>
+          <li>
+            Thẻ thành viên có giá trị trong 12 tháng. Nếu trong 12 tháng không
+            phát sinh hóa đơn mua hàng, thẻ sẽ tự động giảm một cấp bậc.​
+          </li>
+          <li>
+            Nếu trong 24 tháng không có giao dịch, thẻ sẽ bị giảm về cấp bậc
+            BRONZE
+          </li>
+        </ul>
+        <i
+          >Từ 01/05/2025, hệ thống sẽ tự động cập nhật cấp bậc thành viên theo
+          quy định mới. Quý khách vui lòng kiểm tra trạng thái thẻ và tiếp tục
+          mua sắm để duy trì hạng mức thành viên cùng những ưu đãi đặc quyền. ​
+        </i>
+        <h2 class="text-center">Hạng thành viên</h2>
+        <p class="text-center">
+          Khi đạt mức chi tiêu, hạng thành viên sẽ tự động được nâng cấp và
+          hưởng ưu đãi đặc biệt*.
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 100px;
+            margin-top: 50px;
+            justify-content: space-around;
+          "
         >
-          + Tạo Ticket mới
-        </button>
-
-        <!-- Bảng ticket -->
-        <table class="table table-bordered bg-white">
-          <thead class="table-light">
-            <tr>
-              <th>Mã Ticket</th>
-              <th>Loại vấn đề</th>
-              <th>Tiêu đề</th>
-              <th>Ưu tiên</th>
-              <th>Trạng thái</th>
-              <th>Ngày tạo</th>
-              <th>Hành Động</th>
-            </tr>
-          </thead>
-          <tbody id="ticketTableBody">
-            <tr>
-              <td>TK-001</td>
-              <td>Giao hàng</td>
-              <td>Chậm giao hàng</td>
-              <td>Trung bình</td>
-              <td><span class="status-inprogress">Đang xử lý</span></td>
-              <td>09/05/2025</td>
-              <td>
-                <button class="btn btn-sm btn-outline-primary" id="check">
-                  Xem chi tiết
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Modal Tạo Ticket -->
-      <div
-        class=""
-        id="createTicketModal"
-        style="z-index: 1000; position: fixed; top: 0; left: 30%; display: none"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <form id="ticketForm">
-              <div
-                class="modal-header"
-                style="display: flex; justify-content: space-between"
+          <img
+            src="./images/giftcart/lv_bronze_grande.webp"
+            alt=""
+            width="413px"
+            height="334px"
+          />
+          <img
+            src="./images/giftcart/lv_sliver__1_.webp"
+            alt=""
+            width="413px"
+            height="334px"
+          />
+        </div>
+        <div
+          style="
+            display: flex;
+            gap: 100px;
+            margin-top: 50px;
+            justify-content: space-around;
+          "
+        >
+          <img
+            src="./images/giftcart/lv_gold__1_.webp"
+            alt=""
+            width="413px"
+            height="334px"
+          />
+          <img
+            src="./images/giftcart/lv_platinum_grande.webp"
+            alt=""
+            width="413px"
+            height="334px"
+          />
+        </div>
+        <div
+          style="margin-top: 30px; display: flex; justify-content: space-around"
+        >
+          <div>
+            <strong>*Lưu ý</strong>
+            <ul>
+              <li>- 1 điểm = 10.000Đ</li>
+              <li>- Áp dụng với hàng nguyên giá</li>
+              <li>
+                - Không áp dụng chung với các chương trình giảm giá khuyến mãi
+                khác
+              </li>
+              <li>
+                - Quý khách đọc số điện thoại để tích điểm, nâng cấp ưu đãi
+                trong tất cả các lần mua sắm
+              </li>
+              <li>- Chúng tôi sẽ cập nhật khi chính sách thay đổi</li>
+            </ul>
+          </div>
+          <div>
+            <div class="text-center">
+              <img
+                src="./images/giftcart/member_grande.png"
+                alt=""
+                width="160px"
+                height="160px"
+              />
+            </div>
+            <h3>
+              <strong class="text-center" style="margin-top: 10px"
+                >Quét mã tạo thành viên</strong
               >
-                <h3 class="modal-title">Tạo Ticket mới</h3>
-                <button type="button" class="btn-close" id="close">✖</button>
-              </div>
-
-              <div
-                class="modal-body"
-                style="padding-bottom: 0; overflow-y: auto; max-height: 300px"
-              >
-                <div class="" style="margin-bottom: 10px">
-                  <label class="form-label">Loại vấn đề</label>
-                  <select class="form-select" required id="issueType">
-                    <option disabled selected>Chọn loại vấn đề</option>
-                    <option>Giao hàng</option>
-                    <option>Đổi trả</option>
-                    <option>Sản phẩm lỗi</option>
-                    <option>Khác</option>
-                  </select>
-                </div>
-                <div>
-                  <textarea
-                    class="form-control"
-                    rows="3"
-                    required
-                    id="different"
-                    placeholder="Điền thông tin"
-                    style="display: none"
-                  ></textarea>
-                </div>
-                <div style="margin-bottom: 10px">
-                  <label class="form-label">Mã đơn hàng (nếu có)</label>
-                  <input type="text" class="form-control" id="id" />
-                </div>
-                <div style="margin-bottom: 10px">
-                  <label class="form-label">Tiêu đề</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    required
-                    id="ticketTitle"
-                  />
-                </div>
-                <div style="margin-bottom: 10px">
-                  <label class="form-label">Mô tả chi tiết</label>
-                  <textarea
-                    class="form-control"
-                    rows="3"
-                    required
-                    id="ticketDesc"
-                  ></textarea>
-                </div>
-                <div style="margin-bottom: 10px">
-                  <label class="form-label">Ưu tiên</label>
-                  <div style="display: flex; flex-direction: column">
-                    <label for="low"
-                      ><input
-                        type="radio"
-                        name="priority"
-                        value="Thấp"
-                        id="low"
-                        style="margin-right: 10px"
-                      />Thấp</label
-                    >
-                    <label for="normal"
-                      ><input
-                        type="radio"
-                        name="priority"
-                        value="Trung bình"
-                        class="ms-2"
-                        id="normal"
-                        style="margin-right: 10px"
-                      />
-                      Trung bình</label
-                    >
-                    <label for="high"
-                      ><input
-                        type="radio"
-                        name="priority"
-                        value="Cao"
-                        class="ms-2"
-                        id="high"
-                        style="margin-right: 10px"
-                      />
-                      Cao</label
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer" style="margin: 0">
-                <button type="submit" class="btn btn-success" id="send">
-                  Gửi ticket
-                </button>
-              </div>
-            </form>
+            </h3>
           </div>
         </div>
       </div>
-
-      <div
-        id="successAlert"
-        class="alert alert-success"
-        style="
-          display: none;
-          position: fixed;
-          top: 20px;
-          right: 20px;
-          z-index: 9999;
-        "
-      >
-        Ticket đã được gửi thành công!
-        <button
-          type="button"
-          class="btn-close float-end"
-          onclick="$('#successAlert').hide()"
-        >
-          ✖
-        </button>
-      </div>
     </body>
-
     <footer id="footer">
       <!--Footer-->
       <div class="footer-top">
@@ -584,90 +519,5 @@
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-    <script>
-      // Xử lý form gửi ticket
-      $(document).ready(function () {
-        $("#create").click(function () {
-          $("#createTicketModal").show();
-        });
-        $("#close").click(function (e) {
-          $("#createTicketModal").hide();
-          e.stopPropagation();
-        });
-        $(document).click(function (e) {
-          if (
-            !$(e.target).closest("#createTicketModal").length &&
-            !$(e.target).is("#create")
-          ) {
-            $("#createTicketModal").hide();
-            e.stopPropagation();
-          }
-        });
-
-        $("#createTicketModal").draggable({
-          handle: "#ticketForm",
-        });
-
-        let ticketCounter = 2;
-        $("#issueType").on("change", function () {
-          if ($(this).val() === "Khác") {
-            $("#different").slideDown();
-            $("#different").attr("required", true);
-          } else {
-            $("#different").slideUp();
-            $("#different").removeAttr("required");
-          }
-        });
-        $("#ticketForm").submit(function (e) {
-          e.preventDefault();
-
-          // Lấy dữ liệu form
-          let issueType = $("#issueType").val();
-          let ticketCode = $("#id").val();
-          let different = $("#different").val();
-          const title = $("#ticketTitle").val();
-          const desc = $("#ticketDesc").val();
-          const priority = $('input[name="priority"]:checked').val();
-          const status = "Chờ xử lý";
-          const today = new Date().toLocaleDateString("vi-VN", {
-            day: "2-digit",
-            month: "2-digit",
-            year: "numeric",
-          });
-
-          // Tạo mã ticket
-          if (ticketCode == "") {
-            ticketCode = "TK-" + String(ticketCounter).padStart(3, "0");
-          }
-          if (issueType == "Khác") {
-            issueType = different;
-          }
-          // Thêm ticket mới vào bảng
-          const newRow = `
-            <tr>
-                <td>${ticketCode}</td>
-                <td>${issueType}</td>
-                <td>${title}</td>
-                <td>${priority}</td>
-                <td><span class="status-open">Chờ xử lý</span></td>
-                <td>${today}</td>
-                <td><button class="btn btn-sm btn-outline-primary" id="check">Xem chi tiết</button></td>
-            </tr>
-            `;
-          $("#ticketTableBody").append(newRow);
-
-          // Tăng số đếm ticket
-          ticketCounter++;
-          $("#successAlert").show();
-
-          // Ẩn sau 3 giây
-          setTimeout(function () {
-            $("#successAlert").hide();
-          }, 3000);
-          // Reset form
-          this.reset(0);
-        });
-      });
-    </script>
   </body>
 </html>
