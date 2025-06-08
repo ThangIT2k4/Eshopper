@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Wishlist | E-Shopper</title>
+    <title>Yêu thích | E-Shopper</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -89,18 +89,18 @@
                     <div class="col-sm-8">
                         <div class="shop-menu pull-right">
                             <ul class="nav navbar-nav">
-                                <li class="dropdown"><a href="#"><i class="fa fa-user"></i>Account</a>
+                                <li class="dropdown"><a href="#"><i class="fa fa-user"></i>Tài khoản</a>
                                     <ul role="menu" class="dropdown-menu sub-menu">
                                         <li><a href="account.html"
-                                                style="color: rgb(94, 90, 90); font-weight: 300">User</a></li>
+                                                style="color: rgb(94, 90, 90); font-weight: 300">Người dùng</a></li>
                                         <li><a href="admin/index3.html"
-                                                style="color: rgb(94, 90, 90); font-weight: 300">Admin</a></li>
+                                                style="color: rgb(94, 90, 90); font-weight: 300">Quản trị</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="wishlist.html"><i class="fa fa-star"></i> Wishlist</a></li>
-                                <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-                                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-                                <li><a href="login.html" class="active"><i class="fa fa-lock"></i> Login</a></li>
+                                <li><a href="wishlist.html"><i class="fa fa-star"></i> Yêu thích</a></li>
+                                <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Thanh toán</a></li>
+                                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
+                                <li><a href="login.html" class="active"><i class="fa fa-lock"></i> Đăng nhập</a></li>
                             </ul>
                         </div>
                     </div>
@@ -123,24 +123,24 @@
                         </div>
                         <div class="mainmenu pull-left">
                             <ul class="nav navbar-nav collapse navbar-collapse">
-                                <li><a href="index.html">Home</a></li>
-                                <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li class="dropdown"><a href="#">Cửa hàng<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="shop.html">Products</a></li>
-                                        <li><a href="product-details.html">Product Details</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="login.html" class="active">Login</a></li>
+                                        <li><a href="shop.html">Sản phẩm</a></li>
+                                        <li><a href="product-details.html">Thông tin sản phẩm</a></li>
+                                        <li><a href="checkout.html">Thanh toán</a></li>
+                                        <li><a href="cart.html">Giỏ hàng</a></li>
+                                        <li><a href="login.html" class="active">Đăng nhập</a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
+                                <li class="dropdown"><a href="#">Đánh giá<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="blog.html">Blog List</a></li>
-                                        <li><a href="blog-single.html">Blog Single</a></li>
+                                        <li><a href="blog.html">Danh sách đánh giá</a></li>
+                                        <li><a href="blog-single.html">Đánh giá của bạn</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="404.html">404</a></li>
-                                <li><a href="contact-us.html">Contact</a></li>
+                                <li><a href="contact-us.html">Liên hệ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -154,15 +154,16 @@
         </div><!--/header-bottom-->
     </header><!--/header-->
 
-    <div class="breadcrumbs" style="margin-left: 195px;">
-        <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li class="active">Wishlist</li>
-        </ol>
-    </div><!--/breadcrums-->
+
     <!-- wishlist container -->
     <section id="wishlist" class="container py-5">
-        <h2 class="text-center mb-4">My Wishlist</h2>
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li><a href="#">Trang chủ</a></li>
+                <li class="active">Yêu thích</li>
+            </ol>
+        </div><!--/breadcrums-->
+        <h2 class="text-center mb-4">Danh sách yêu thích</h2>
         <div class="wishlist-container">
             <!-- Wishlist items sẽ được thêm động bằng jQuery -->
         </div>
@@ -181,8 +182,10 @@
                 <div class="row">
                     <div class="col-sm-2">
                         <div class="companyinfo">
-                            <h2><span>e</span>-shopper</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
+                            <h2><span>e</span>-shop</h2>
+                            <p>Một hệ thống bán điện thoại online uy tín số một Việt Nam. Dễ dàng sử dụng, thanh toán
+                                nhanh
+                                chóng, tiện lợi.</p>
                         </div>
                     </div>
                     <div class="col-sm-7">
@@ -197,7 +200,7 @@
                                     </div>
                                 </a>
                                 <p>Circle of Hands</p>
-                                <h2>24 DEC 2014</h2>
+                                <h2>24 DEC 2025</h2>
                             </div>
                         </div>
 
@@ -212,7 +215,7 @@
                                     </div>
                                 </a>
                                 <p>Circle of Hands</p>
-                                <h2>24 DEC 2014</h2>
+                                <h2>24 DEC 2025</h2>
                             </div>
                         </div>
 
@@ -227,7 +230,7 @@
                                     </div>
                                 </a>
                                 <p>Circle of Hands</p>
-                                <h2>24 DEC 2014</h2>
+                                <h2>24 DEC 2025</h2>
                             </div>
                         </div>
 
@@ -242,14 +245,14 @@
                                     </div>
                                 </a>
                                 <p>Circle of Hands</p>
-                                <h2>24 DEC 2014</h2>
+                                <h2>24 DEC 2025</h2>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="address">
                             <img src="images/home/map.png" alt="" />
-                            <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
+                            <p>Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội, Việt Nam</p>
                         </div>
                     </div>
                 </div>
@@ -261,49 +264,49 @@
                 <div class="row">
                     <div class="col-sm-2">
                         <div class="single-widget">
-                            <h2>Service</h2>
+                            <h2>Dịch vụ</h2>
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="">Online Help</a></li>
-                                <li><a href="">Contact Us</a></li>
-                                <li><a href="">Order Status</a></li>
-                                <li><a href="">Change Location</a></li>
+                                <li><a href="">Trợ giúp trực tuyến</a></li>
+                                <li><a href="">Liên hệ chúng tôi</a></li>
+                                <li><a href="">Trạng thái đơn hàng</a></li>
+                                <li><a href="">Thay đổi vị trí</a></li>
                                 <li><a href="">FAQ’s</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-2">
                         <div class="single-widget">
-                            <h2>Quock Shop</h2>
+                            <h2>Cửa hàng</h2>
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="">T-Shirt</a></li>
-                                <li><a href="">Mens</a></li>
-                                <li><a href="">Womens</a></li>
-                                <li><a href="">Gift Cards</a></li>
-                                <li><a href="">Shoes</a></li>
+                                <li><a href="">Áo thun</a></li>
+                                <li><a href="">Nam giới</a></li>
+                                <li><a href="">Nữ giới</a></li>
+                                <li><a href="">Thẻ quà tặng</a></li>
+                                <li><a href="">Quần âu</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-2">
                         <div class="single-widget">
-                            <h2>Policies</h2>
+                            <h2>Chính sách</h2>
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="">Terms of Use</a></li>
-                                <li><a href="">Privecy Policy</a></li>
-                                <li><a href="">Refund Policy</a></li>
-                                <li><a href="">Billing System</a></li>
-                                <li><a href="">Ticket System</a></li>
+                                <li><a href="">Điều khoản sử dụng</a></li>
+                                <li><a href="">Chính sách bảo mật</a></li>
+                                <li><a href="">Chính sách hoàn tiền</a></li>
+                                <li><a href="">Hệ thống thanh toán</a></li>
+                                <li><a href="">Hệ thống vé</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-2">
                         <div class="single-widget">
-                            <h2>About Shopper</h2>
+                            <h2>About Shop</h2>
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="">Company Information</a></li>
-                                <li><a href="">Careers</a></li>
-                                <li><a href="">Store Location</a></li>
-                                <li><a href="">Affillate Program</a></li>
-                                <li><a href="">Copyright</a></li>
+                                <li><a href="">Thông tin công ty</a></li>
+                                <li><a href="">Nghề nghiệp</a></li>
+                                <li><a href="">Vị trí cửa hàng</a></li>
+                                <li><a href="">Liên kết</a></li>
+                                <li><a href="">Bản quyền</a></li>
                             </ul>
                         </div>
                     </div>
@@ -314,7 +317,7 @@
                                 <input type="text" placeholder="Your email address" />
                                 <button type="submit" class="btn btn-default"><i
                                         class="fa fa-arrow-circle-o-right"></i></button>
-                                <p>Get the most recent updates from <br />our site and be updated your self...</p>
+                                <p>Nhận những cập nhật mới nhất từ <br />trang web của chúng tôi và tự cập nhật...</p>
                             </form>
                         </div>
                     </div>
@@ -323,13 +326,11 @@
             </div>
         </div>
 
-
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
-                    <p class="pull-right">Designed by <span><a target="_blank"
-                                href="http://www.themeum.com">Themeum</a></span></p>
+                    <p class="pull-left">Copyright © 2025 E-SHOP Inc. All rights reserved.</p>
+                    <p class="pull-right">Designed by <span><a target="_blank" href="#">Nhóm 11</a></span></p>
                 </div>
             </div>
         </div>
@@ -369,16 +370,16 @@
         $(document).ready(function () {
             // Dữ liệu mẫu cho wishlist
             const wishlistItems = [
-                { id: 1, name: "Stylish T-Shirt", category: "Clothing", price: "$25.00", image: "images/home/gallery1.jpg", availability: "In Stock" },
-                { id: 2, name: "Elegant Dress", category: "Fashion", price: "$45.00", image: "images/home/gallery2.jpg", availability: "Out of Stock" },
-                { id: 3, name: "Running Shoes", category: "Footwear", price: "$60.00", image: "images/home/gallery3.jpg", availability: "In Stock" },
-                { id: 4, name: "Casual Shirt", category: "Clothing", price: "$30.00", image: "images/home/gallery4.jpg", availability: "In Stock" },
-                { id: 5, name: "Leather Jacket", category: "Fashion", price: "$120.00", image: "images/home/gallery1.jpg", availability: "In Stock" },
-                { id: 6, name: "Sports Watch", category: "Accessories", price: "$80.00", image: "images/home/gallery2.jpg", availability: "In Stock" },
-                { id: 7, name: "Formal Shoes", category: "Footwear", price: "$70.00", image: "images/home/gallery4.jpg", availability: "Out of Stock" },
-                { id: 8, name: "Denim Jeans", category: "Clothing", price: "$50.00", image: "images/home/gallery3.jpg", availability: "In Stock" },
-                { id: 9, name: "Sunglasses", category: "Accessories", price: "$25.00", image: "images/home/gallery1.jpg", availability: "In Stock" },
-                { id: 10, name: "Handbag", category: "Fashion", price: "$90.00", image: "images/shop/product7.jpg", availability: "In Stock" },
+                { id: 1, name: "Stylish T-Shirt", category: "Clothing", price: "250.000 VNĐ", image: "images/home/gallery1.jpg", availability: "còn hàng" },
+                { id: 2, name: "Elegant Dress", category: "Fashion", price: "450.000 VNĐ", image: "images/home/gallery2.jpg", availability: "hết hàng" },
+                { id: 3, name: "Running Shoes", category: "Footwear", price: "600.000 VNĐ", image: "images/home/gallery3.jpg", availability: "còn hàng" },
+                { id: 4, name: "Casual Shirt", category: "Clothing", price: "300.000 VNĐ", image: "images/home/gallery4.jpg", availability: "còn hàng" },
+                { id: 5, name: "Leather Jacket", category: "Fashion", price: "120.000 VNĐ", image: "images/home/gallery1.jpg", availability: "còn hàng" },
+                { id: 6, name: "Sports Watch", category: "Accessories", price: "800.000 VNĐ", image: "images/home/gallery2.jpg", availability: "còn hàng" },
+                { id: 7, name: "Formal Shoes", category: "Footwear", price: "700.000 VNĐ", image: "images/home/gallery4.jpg", availability: "hết hàng" },
+                { id: 8, name: "Denim Jeans", category: "Clothing", price: "500.000 VNĐ", image: "images/home/gallery3.jpg", availability: "còn hàng" },
+                { id: 9, name: "Sunglasses", category: "Accessories", price: "250.000 VNĐ", image: "images/home/gallery1.jpg", availability: "còn hàng" },
+                { id: 10, name: "Handbag", category: "Fashion", price: "900.000 VNĐ", image: "images/shop/product7.jpg", availability: "còn hàng" },
             ];
 
             const itemsPerPage = 5; // Số sản phẩm trên mỗi trang
@@ -386,8 +387,8 @@
 
             // Hàm tạo HTML cho một wishlist item
             function createWishlistItem(item) {
-                const availabilityClass = item.availability === "In Stock" ? "text-success" : "text-danger";
-                const addToCartDisabled = item.availability === "In Stock" ? "" : "disabled";
+                const availabilityClass = item.availability === "còn hàng" ? "text-success" : "text-danger";
+                const addToCartDisabled = item.availability === "còn hàng" ? "" : "disabled";
 
                 return `
                         <div class="wishlist-item shadow-sm">
@@ -397,15 +398,15 @@
                                 </div>
                                 <div class="col-md-5">
                                     <h5>${item.name}</h5>
-                                    <p class="text-muted">Category: ${item.category}</p>
-                                    <p class="text-muted">Availability: <span class="${availabilityClass}">${item.availability}</span></p>
+                                    <p class="text-muted">Loại: ${item.category}</p>
+                                    <p class="text-muted">Tình trạng: <span class="${availabilityClass}">${item.availability}</span></p>
                                 </div>
                                 <div class="col-md-2">
                                     <h5>${item.price}</h5>
                                 </div>
                                 <div class="col-md-2 text-center">
-                                    <button class="btn btn-success btn-sm mb-2 add-to-cart" ${addToCartDisabled}>Add to Cart</button>
-                                    <button class="btn btn-danger btn-sm remove-item">Remove</button>
+                                    <button class="btn btn-success btn-sm mb-2 add-to-cart" ${addToCartDisabled}>Thêm vào giỏ</button>
+                                    <button class="btn btn-danger btn-sm remove-item">Xoá</button>
                                 </div>
                             </div>
                         </div>
