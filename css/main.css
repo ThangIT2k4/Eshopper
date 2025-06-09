@@ -906,7 +906,6 @@ h2.title {
 .product-overlay {
   background: #FE980F;
   top: 0;
-  display: none;
   height: 0;
   position: absolute;
   transition: height 500ms ease 0s;
@@ -918,6 +917,7 @@ h2.title {
 .single-products:hover .product-overlay {
   display: block;
   height: 100%;
+  opacity: 1;
 }
 
 
