@@ -242,109 +242,6 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="cart_product">
-                  <a href=""><img src="images/cart/one.png" alt="" /></a>
-                </td>
-                <td class="cart_description">
-                  <h4><a href="">Colorblock Scuba</a></h4>
-                  <p>Web ID: 1089772</p>
-                </td>
-                <td class="cart_price">
-                  <p>$59</p>
-                </td>
-                <td class="cart_quantity">
-                  <div class="cart_quantity_button">
-                    <a class="cart_quantity_up" href=""> + </a>
-                    <input
-                      class="cart_quantity_input"
-                      type="text"
-                      name="quantity"
-                      value="1"
-                      autocomplete="off"
-                      size="2"
-                    />
-                    <a class="cart_quantity_down" href=""> - </a>
-                  </div>
-                </td>
-                <td class="cart_total">
-                  <p class="cart_total_price">$59</p>
-                </td>
-                <td class="cart_delete">
-                  <a class="cart_quantity_delete" href=""
-                    ><i class="fa fa-times"></i
-                  ></a>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="cart_product">
-                  <a href=""><img src="images/cart/two.png" alt="" /></a>
-                </td>
-                <td class="cart_description">
-                  <h4><a href="">Colorblock Scuba</a></h4>
-                  <p>Web ID: 1089772</p>
-                </td>
-                <td class="cart_price">
-                  <p>$59</p>
-                </td>
-                <td class="cart_quantity">
-                  <div class="cart_quantity_button">
-                    <a class="cart_quantity_up" href=""> + </a>
-                    <input
-                      class="cart_quantity_input"
-                      type="text"
-                      name="quantity"
-                      value="1"
-                      autocomplete="off"
-                      size="2"
-                    />
-                    <a class="cart_quantity_down" href=""> - </a>
-                  </div>
-                </td>
-                <td class="cart_total">
-                  <p class="cart_total_price">$59</p>
-                </td>
-                <td class="cart_delete">
-                  <a class="cart_quantity_delete" href=""
-                    ><i class="fa fa-times"></i
-                  ></a>
-                </td>
-              </tr>
-              <tr>
-                <td class="cart_product">
-                  <a href=""><img src="images/cart/three.png" alt="" /></a>
-                </td>
-                <td class="cart_description">
-                  <h4><a href="">Colorblock Scuba</a></h4>
-                  <p>Web ID: 1089772</p>
-                </td>
-                <td class="cart_price">
-                  <p>$59</p>
-                </td>
-                <td class="cart_quantity">
-                  <div class="cart_quantity_button">
-                    <a class="cart_quantity_up" href=""> + </a>
-                    <input
-                      class="cart_quantity_input"
-                      type="text"
-                      name="quantity"
-                      value="1"
-                      autocomplete="off"
-                      size="2"
-                    />
-                    <a class="cart_quantity_down" href=""> - </a>
-                  </div>
-                </td>
-                <td class="cart_total">
-                  <p class="cart_total_price">$59</p>
-                </td>
-                <td class="cart_delete">
-                  <a class="cart_quantity_delete" href=""
-                    ><i class="fa fa-times"></i
-                  ></a>
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
@@ -623,7 +520,6 @@
     <script>
       $(document).ready(function () {
         $("#thanh_toan").click(function (e) {
-          e.preventDefault(); // Ngăn submit form nếu có
 
           Swal.fire({
             title: "Thành công!",
@@ -632,7 +528,492 @@
             confirmButtonText: "OK",
           });
         });
+      });      $(document).ready(function () {        const products = [
+          {
+            id: 1,
+            name: "Áo Blazer Nữ Công Sở",
+            webId: "ABN001",
+            price: 850000,
+            image: "images/cart/one.png",
+            quantity: 1
+          },
+          {
+            id: 2,
+            name: "Áo Cardigan Nữ Hồng",
+            webId: "ACN002",
+            price: 650000,
+            image: "images/cart/two.png",
+            quantity: 2
+          },
+          {
+            id: 3,
+            name: "Áo Thun Nữ Basic",
+            webId: "ATN003",
+            price: 450000,
+            image: "images/cart/three.png",
+            quantity: 1
+          }
+        ];
+
+        let discountSettings = {
+          useCoupon: false,
+          useGiftCard: false,
+          useShippingEstimate: false,
+          couponCode: '',
+          couponDiscount: 0,
+          giftCardAmount: 0,
+          selectedCountry: 'Vietnam',
+          selectedState: 'Hanoi',
+          zipCode: ''
+        };
+
+        function formatCurrency(amount) {
+          return new Intl.NumberFormat('vi-VN', {
+            style: 'currency',
+            currency: 'VND'
+          }).format(amount);
+        }
+
+        function renderProducts() {
+          const tbody = $('.table-responsive tbody');
+          tbody.empty();
+
+          products.forEach(product => {
+            const total = product.price * product.quantity;
+            const row = `
+              <tr data-product-id="${product.id}">
+                <td class="cart_product">
+                  <a href=""><img src="${product.image}" alt="${product.name}" /></a>
+                </td>
+                <td class="cart_description">
+                  <h4><a href="">${product.name}</a></h4>
+                  <p>Web ID: ${product.webId}</p>
+                </td>
+                <td class="cart_price">
+                  <p data-price="${product.price}">${formatCurrency(product.price)}</p>
+                </td>
+                <td class="cart_quantity">
+                  <div class="cart_quantity_button">
+                    <a class="cart_quantity_down" href="#"> - </a>
+                    <input
+                      class="cart_quantity_input"
+                      type="text"
+                      name="quantity"
+                      value="${product.quantity}"
+                      autocomplete="off"
+                      size="2"
+                      data-product-id="${product.id}"
+                    />
+                    <a class="cart_quantity_up" href="#"> + </a>
+                  </div>
+                </td>
+                <td class="cart_total">
+                  <p class="cart_total_price">${formatCurrency(total)}</p>
+                </td>
+                <td class="cart_delete">
+                  <a class="cart_quantity_delete" href="#" data-product-id="${product.id}">
+                    <i class="fa fa-times"></i>
+                  </a>
+                </td>
+              </tr>
+            `;
+            tbody.append(row);
+          });
+
+          updateTotalArea();
+        }        function updateTotalArea() {
+          let subtotal = 0;
+          products.forEach(product => {
+            subtotal += product.price * product.quantity;
+          });
+
+          let taxRate = 0.1; 
+          if (discountSettings.useShippingEstimate) {
+            switch(discountSettings.selectedCountry) {
+              case 'Vietnam': taxRate = 0.1; break;
+              case 'United States': taxRate = 0.08; break;
+              case 'Japan': taxRate = 0.1; break;
+              case 'Singapore': taxRate = 0.07; break;
+              default: taxRate = 0.1;
+            }
+          }
+
+          const tax = subtotal * taxRate;
+
+
+          let shipping = 0;
+          if (discountSettings.useShippingEstimate) {
+            if (discountSettings.selectedCountry === 'Vietnam') {
+              shipping = subtotal > 2000000 ? 0 : 50000; 
+            } else {
+              shipping = subtotal > 5000000 ? 0 : 500000; 
+            }
+          } else {
+            shipping = subtotal > 2000000 ? 0 : 50000;
+          }
+
+
+          let couponDiscount = 0;
+          if (discountSettings.useCoupon && discountSettings.couponDiscount > 0) {
+            couponDiscount = subtotal * (discountSettings.couponDiscount / 100);
+          }
+
+          let giftCardDiscount = 0;
+          if (discountSettings.useGiftCard && discountSettings.giftCardAmount > 0) {
+            giftCardDiscount = Math.min(discountSettings.giftCardAmount, subtotal);
+          }
+
+          const total = subtotal + tax + shipping - couponDiscount - giftCardDiscount;
+
+          let totalHTML = `
+            <li>Tổng giá Sản phẩm <span>${formatCurrency(subtotal)}</span></li>
+            <li>Thuế (${(taxRate * 100).toFixed(0)}%) <span>${formatCurrency(tax)}</span></li>
+            <li>Phí vận chuyển <span>${shipping === 0 ? 'Miễn phí' : formatCurrency(shipping)}</span></li>
+          `;
+
+          if (couponDiscount > 0) {
+            totalHTML += `<li style="color: green;">Giảm giá mã (-${discountSettings.couponDiscount}%) <span>-${formatCurrency(couponDiscount)}</span></li>`;
+          }
+
+          if (giftCardDiscount > 0) {
+            totalHTML += `<li style="color: green;">Phiếu quà tặng <span>-${formatCurrency(giftCardDiscount)}</span></li>`;
+          }
+
+          totalHTML += `<li><strong>Tổng Tiền <span>${formatCurrency(Math.max(0, total))}</span></strong></li>`;
+
+          $('.total_area ul').html(totalHTML);
+        }
+
+        $(document).on('click', '.cart_quantity_up', function(e) {
+          e.preventDefault();
+          const input = $(this).siblings('.cart_quantity_input');
+          const productId = parseInt(input.data('product-id'));
+          const product = products.find(p => p.id === productId);
+          
+          if (product) {
+            product.quantity++;
+            input.val(product.quantity);
+            updateRowTotal(productId);
+            updateTotalArea();
+          }
+        });
+
+        $(document).on('click', '.cart_quantity_down', function(e) {
+          e.preventDefault();
+          const input = $(this).siblings('.cart_quantity_input');
+          const productId = parseInt(input.data('product-id'));
+          const product = products.find(p => p.id === productId);
+          
+          if (product && product.quantity > 1) {
+            product.quantity--;
+            input.val(product.quantity);
+            updateRowTotal(productId);
+            updateTotalArea();
+          }
+        });
+
+        $(document).on('change', '.cart_quantity_input', function() {
+          const productId = parseInt($(this).data('product-id'));
+          const newQuantity = parseInt($(this).val()) || 1;
+          const product = products.find(p => p.id === productId);
+          
+          if (product) {
+            product.quantity = Math.max(1, newQuantity);
+            $(this).val(product.quantity);
+            updateRowTotal(productId);
+            updateTotalArea();
+          }
+        });
+
+
+        $(document).on('click', '.cart_quantity_delete', function(e) {
+          e.preventDefault();
+          const productId = parseInt($(this).data('product-id'));
+          const index = products.findIndex(p => p.id === productId);
+          
+          if (index !== -1) {
+            products.splice(index, 1);
+            $(`tr[data-product-id="${productId}"]`).remove();
+            updateTotalArea();
+          }
+        });        function updateRowTotal(productId) {
+          const product = products.find(p => p.id === productId);
+          if (product) {
+            const total = product.price * product.quantity;
+            $(`tr[data-product-id="${productId}"] .cart_total_price`).text(formatCurrency(total));
+          }
+        }
+
+        $(document).on('change', '.user_option input[type="checkbox"]', function() {
+          const label = $(this).next('label').text();
+          const isChecked = $(this).is(':checked');
+
+          if (label.includes('mã phiếu giảm giá')) {
+            discountSettings.useCoupon = isChecked;
+            if (isChecked) {
+              showCouponInput();
+            } else {
+              hideCouponInput();
+              discountSettings.couponDiscount = 0;
+            }
+          } else if (label.includes('Phiếu Quà Tặng')) {
+            discountSettings.useGiftCard = isChecked;
+            if (isChecked) {
+              showGiftCardInput();
+            } else {
+              hideGiftCardInput();
+              discountSettings.giftCardAmount = 0;
+            }
+          } else if (label.includes('Ước tính vận chuyển')) {
+            discountSettings.useShippingEstimate = isChecked;
+            if (isChecked) {
+              $('.user_info').show();
+            } else {
+              $('.user_info').hide();
+            }
+          }
+          updateTotalArea();
+        });
+
+        function showCouponInput() {
+          if (!$('#coupon-input').length) {
+            const couponHTML = `
+              <li class="single_field" id="coupon-input">
+                <label>Mã giảm giá:</label>
+                <input type="text" id="coupon-code" placeholder="Nhập mã giảm giá" />
+                <button type="button" id="apply-coupon" class="btn btn-sm btn-primary">Áp dụng</button>
+              </li>
+            `;
+            $('.user_info').prepend(couponHTML);
+          }
+        }
+
+        function hideCouponInput() {
+          $('#coupon-input').remove();
+        }
+
+        function showGiftCardInput() {
+          if (!$('#gift-card-input').length) {
+            const giftCardHTML = `
+              <li class="single_field" id="gift-card-input">
+                <label>Mã phiếu quà tặng:</label>
+                <input type="text" id="gift-card-code" placeholder="Nhập mã phiếu quà tặng" />
+                <button type="button" id="apply-gift-card" class="btn btn-sm btn-success">Áp dụng</button>
+              </li>
+            `;
+            $('.user_info').prepend(giftCardHTML);
+          }
+        }
+
+        function hideGiftCardInput() {
+          $('#gift-card-input').remove();
+        }        $(document).on('click', '#apply-coupon', function() {
+          const couponCode = $('#coupon-code').val().trim().toUpperCase();
+          
+          const validCoupons = {
+            'SAVE10': 10,    // Giảm 10%
+            'SAVE20': 20,    // Giảm 20%
+            'WELCOME15': 15, // Giảm 15%
+            'STUDENT5': 5    // Giảm 5%
+          };
+
+          if (validCoupons[couponCode]) {
+            discountSettings.couponCode = couponCode;
+            discountSettings.couponDiscount = validCoupons[couponCode];
+            $('#coupon-code').css('border-color', 'green');
+            
+            Swal.fire({
+              title: "Thành công!",
+              text: `Áp dụng mã giảm giá ${couponCode} (${validCoupons[couponCode]}%) thành công!`,
+              icon: "success",
+              timer: 2000
+            });
+          } else {
+            $('#coupon-code').css('border-color', 'red');
+            discountSettings.couponDiscount = 0;
+            
+            Swal.fire({
+              title: "Lỗi!",
+              text: "Mã giảm giá không hợp lệ!",
+              icon: "error",
+              timer: 2000
+            });
+          }
+          updateTotalArea();
+        });
+
+        $(document).on('click', '#apply-gift-card', function() {
+          const giftCardCode = $('#gift-card-code').val().trim().toUpperCase();
+          
+          const validGiftCards = {
+            'GIFT100K': 100000,
+            'GIFT200K': 200000,
+            'GIFT500K': 500000,
+            'GIFT1M': 1000000
+          };
+
+          if (validGiftCards[giftCardCode]) {
+            discountSettings.giftCardAmount = validGiftCards[giftCardCode];
+            $('#gift-card-code').css('border-color', 'green');
+            
+            Swal.fire({
+              title: "Thành công!",
+              text: `Áp dụng phiếu quà tặng ${formatCurrency(validGiftCards[giftCardCode])} thành công!`,
+              icon: "success",
+              timer: 2000
+            });
+          } else {
+            $('#gift-card-code').css('border-color', 'red');
+            discountSettings.giftCardAmount = 0;
+            
+            Swal.fire({
+              title: "Lỗi!",
+              text: "Mã phiếu quà tặng không hợp lệ!",
+              icon: "error",
+              timer: 2000
+            });
+          }
+          updateTotalArea();
+        });
+
+        $('.user_info select').first().html(`
+          <option value="Vietnam">Việt Nam</option>
+          <option value="United States">Hoa Kỳ</option>
+          <option value="Japan">Nhật Bản</option>
+          <option value="Singapore">Singapore</option>
+          <option value="Thailand">Thái Lan</option>
+        `);
+
+        $('.user_info select').last().html(`
+          <option value="Hanoi">Hà Nội</option>
+          <option value="HoChiMinh">TP. Hồ Chí Minh</option>
+          <option value="DaNang">Đà Nẵng</option>
+          <option value="CanTho">Cần Thơ</option>
+          <option value="HaiPhong">Hải Phòng</option>
+        `);
+
+        $(document).on('change', '.user_info select', function() {
+          if ($(this).is(':first-child')) {
+            discountSettings.selectedCountry = $(this).val();
+          } else {
+            discountSettings.selectedState = $(this).val();
+          }
+          
+          if (discountSettings.useShippingEstimate) {
+            updateTotalArea();
+          }
+        });
+
+        $('.user_info').hide();
+
+        $(document).on('click', '#check_coupon', function(e) {
+          e.preventDefault();
+          
+          if (discountSettings.useShippingEstimate) {
+            const country = $('.user_info select').first().val();
+            const state = $('.user_info select').last().val();
+            const zipCode = $('#zipcode').val();
+            
+            discountSettings.selectedCountry = country;
+            discountSettings.selectedState = state;
+            discountSettings.zipCode = zipCode;
+            
+            updateTotalArea();
+            
+            Swal.fire({
+              title: "Cập nhật thành công!",
+              text: `Đã cập nhật thông tin vận chuyển cho ${country}, ${state}`,
+              icon: "success",
+              timer: 2000
+            });
+          } else {
+            Swal.fire({
+              title: "Thông báo!",
+              text: "Vui lòng chọn 'Ước tính vận chuyển và thuế' để sử dụng chức năng này.",
+              icon: "info"
+            });
+          }
+        });        $("#thanh_toan").click(function (e) {
+          e.preventDefault();
+
+          if (products.length === 0) {
+            Swal.fire({
+              title: "Giỏ hàng trống!",
+              text: "Vui lòng thêm sản phẩm vào giỏ hàng trước khi thanh toán.",
+              icon: "warning",
+              confirmButtonText: "OK",
+            });
+            return;
+          }
+
+          let subtotal = 0;
+          products.forEach(product => {
+            subtotal += product.price * product.quantity;
+          });
+
+          let taxRate = 0.1;
+          if (discountSettings.useShippingEstimate) {
+            switch(discountSettings.selectedCountry) {
+              case 'Vietnam': taxRate = 0.1; break;
+              case 'United States': taxRate = 0.08; break;
+              case 'Japan': taxRate = 0.1; break;
+              case 'Singapore': taxRate = 0.07; break;
+              default: taxRate = 0.1;
+            }
+          }
+
+          const tax = subtotal * taxRate;
+
+          let shipping = 0;
+          if (discountSettings.useShippingEstimate) {
+            if (discountSettings.selectedCountry === 'Vietnam') {
+              shipping = subtotal > 2000000 ? 0 : 50000;
+            } else {
+              shipping = subtotal > 5000000 ? 0 : 500000;
+            }
+          } else {
+            shipping = subtotal > 2000000 ? 0 : 50000;
+          }
+
+          let couponDiscount = 0;
+          if (discountSettings.useCoupon && discountSettings.couponDiscount > 0) {
+            couponDiscount = subtotal * (discountSettings.couponDiscount / 100);
+          }
+
+          let giftCardDiscount = 0;
+          if (discountSettings.useGiftCard && discountSettings.giftCardAmount > 0) {
+            giftCardDiscount = Math.min(discountSettings.giftCardAmount, subtotal);
+          }
+
+          const total = subtotal + tax + shipping - couponDiscount - giftCardDiscount;
+
+          Swal.fire({
+            title: "Xác nhận thanh toán",
+            html: `
+              <div style="text-align: left;">
+                <p><strong>Số sản phẩm:</strong> ${products.reduce((sum, p) => sum + p.quantity, 0)}</p>
+                <p><strong>Tổng tiền:</strong> ${formatCurrency(Math.max(0, total))}</p>
+              </div>
+            `,
+            icon: "question",
+            showCancelButton: true,
+            confirmButtonText: "Xác nhận thanh toán",
+            cancelButtonText: "Hủy",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire({
+                title: "Thành công!",
+                text: "Đơn hàng của bạn đã được đặt thành công.",
+                icon: "success",
+                confirmButtonText: "OK",
+              });
+            }
+          });
+        });
+
+        renderProducts();
       });
+
     </script>
   </body>
 </html>
