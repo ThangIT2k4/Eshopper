@@ -552,22 +552,6 @@
             price: 450000,
             image: "images/cart/three.png",
             quantity: 1
-          },
-          {
-            id: 4,
-            name: "Áo Hoodie Unisex",
-            webId: "AHU004",
-            price: 750000,
-            image: "images/cart/one.png",
-            quantity: 2
-          },
-          {
-            id: 5,
-            name: "Áo Sơ Mi Nữ Trắng",
-            webId: "ASM005",
-            price: 550000,
-            image: "images/cart/two.png",
-            quantity: 1
           }
         ];
 
@@ -826,7 +810,6 @@
         }        $(document).on('click', '#apply-coupon', function() {
           const couponCode = $('#coupon-code').val().trim().toUpperCase();
           
-          // Danh sách mã giảm giá có sẵn
           const validCoupons = {
             'SAVE10': 10,    // Giảm 10%
             'SAVE20': 20,    // Giảm 20%
