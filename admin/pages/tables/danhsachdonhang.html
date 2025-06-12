@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Admin | Quản lý người dùng</title>
+    <title>Admin | Quản lý Đơn Hàng</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link
@@ -573,12 +573,12 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Danh sách người dùng</h1>
+                <h1>Danh sách Đơn Hàng</h1>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                   <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-                  <li class="breadcrumb-item active">Danh sách người dùng</li>
+                  <li class="breadcrumb-item active">Quản lý đơn hàng</li>
                 </ol>
               </div>
             </div>
@@ -590,11 +590,11 @@
         <section class="content">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Danh sách người dùng</h3>
+              <h3 class="card-title">Danh sách Đơn Hàng</h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
-              <div id="jsGrid1"></div>
+              <div id="jsGridOrder"></div>
             </div>
             <!-- /.card-body -->
           </div>
@@ -621,7 +621,7 @@
     <!-- Bootstrap 4 -->
     <script src="../../bootstrap/bootstrap.bundle.min.js"></script>
     <!-- jsGrid -->
-    <script src="../../plugins/jsgrid/demos/db.js"></script>
+    <script src="../../plugins/jsgrid/demos/dbdh.js"></script>
     <script src="../../plugins/jsgrid/jsgrid.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../js/adminlte.min.js"></script>
@@ -630,28 +630,33 @@
     <!-- Page specific script -->
     <script>
       $(function () {
-        $("#jsGrid1").jsGrid({
-          height: "100%",
+        $("#jsGridOrder").jsGrid({
+          height: "600px", // Tăng chiều cao bảng tại đây
           width: "100%",
-
           sorting: true,
           paging: true,
           inserting: true,
-
-          data: db.clients,
-
+          editing: true,
+          data: db.orders,
           fields: [
-            { name: "Name", type: "text", width: 150 },
-            { name: "Age", type: "number", width: 50 },
-            { name: "Address", type: "text", width: 200 },
+            { name: "OrderId", type: "number", title: "Mã đơn", width: 60 },
+            { name: "Customer", type: "text", title: "Khách hàng", width: 120 },
+            { name: "Date", type: "text", title: "Ngày đặt", width: 90 },
             {
-              name: "Country",
+              name: "Total",
+              type: "number",
+              title: "Tổng tiền (VNĐ)",
+              width: 100,
+            },
+            {
+              name: "Status",
               type: "select",
-              items: db.countries,
+              title: "Trạng thái",
+              items: db.statuses,
               valueField: "Id",
               textField: "Name",
+              width: 100,
             },
-            { name: "Married", type: "checkbox", title: "Is Married" },
             { type: "control" },
           ],
         });
