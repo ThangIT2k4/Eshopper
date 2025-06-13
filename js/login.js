@@ -91,7 +91,7 @@ if (loginForm) {
             alert(`Chào ${foundUser.name}!`);
 
             if (foundUser.role === "admin") {
-                window.location.href = "admin/index3.html";
+                window.location.href = "admin/pages/charts/chartjs.html";
             } else {
                 window.location.href = "index.html";
             }
