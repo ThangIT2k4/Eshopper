@@ -1,590 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Giỏ Hàng | E-Shopper</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <link href="css/prettyPhoto.css" rel="stylesheet" />
-    <link href="css/price-range.css" rel="stylesheet" />
-    <link href="css/animate.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
-    <link href="css/responsive.css" rel="stylesheet" />
-    <link href="css/sweetalert2.min.css" rel="stylesheet" />
-    <!--[if lt IE 9]>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Giỏ Hàng | E-Shopper</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/prettyPhoto.css" rel="stylesheet" />
+  <link href="css/price-range.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="css/sweetalert2.min.css" rel="stylesheet" />
+  <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico" />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="144x144"
-      href="images/ico/apple-touch-icon-144-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="114x114"
-      href="images/ico/apple-touch-icon-114-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="72x72"
-      href="images/ico/apple-touch-icon-72-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="images/ico/apple-touch-icon-57-precomposed.png"
-    /></head
-  ><!--/head-->
+  <link rel="shortcut icon" href="images/ico/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png" />
+</head><!--/head-->
 
-  <body>
-    <header id="header">
-      <!--header-->
-      <div class="header_top">
-        <!--header_top-->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="contactinfo">
-                <ul class="nav nav-pills">
-                  <li>
-                    <a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a>
-                  </li>
-                  <li>
-                    <a href=""
-                      ><i class="fa fa-envelope"></i> info@domain.com</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="social-icons pull-right">
-                <ul class="nav navbar-nav">
-                  <li>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-dribbble"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/header_top-->
-
-      <div class="header-middle">
-        <!--header-middle-->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="logo pull-left">
-                <a href="index.html"
-                  ><img src="images/home/logo.png" alt=""
-                /></a>
-              </div>
-              <div class="btn-group pull-right">
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-default dropdown-toggle usa"
-                    data-toggle="dropdown"
-                  >
-                    Việt Nam
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Mỹ</a></li>
-                    <li><a href="">Nhật Bản</a></li>
-                  </ul>
-                </div>
-
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-default dropdown-toggle usa"
-                    data-toggle="dropdown"
-                  >
-                    VND
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Canadian Dollar</a></li>
-                    <li><a href="">Dollar</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-8">
-              <div class="shop-menu pull-right">
-                <ul class="nav navbar-nav">
-                  <li>
-                    <a href="account.html"
-                      ><i class="fa fa-user"></i> Tài khoản</a
-                    >
-                  </li>
-                  <li>
-                    <a href="wishlist.html"
-                      ><i class="fa fa-star"></i> Yêu thích</a
-                    >
-                  </li>
-                  <li>
-                    <a href="checkout.html"
-                      ><i class="fa fa-crosshairs"></i> Thanh toán</a
-                    >
-                  </li>
-                  <li>
-                    <a href="cart.html"
-                      ><i class="fa fa-shopping-cart"></i> Giỏ hàng</a
-                    >
-                  </li>
-                  <li>
-                    <a href="login.html"
-                      ><i class="fa fa-lock"></i> Đăng nhập</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="header-bottom">
-        <!--header-bottom-->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-9">
-              <div class="navbar-header">
-                <button
-                  type="button"
-                  class="navbar-toggle"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse"
-                >
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-              <div class="mainmenu pull-left">
-                <ul class="nav navbar-nav collapse navbar-collapse">
-                  <li><a href="index.html">Trang Chủ</a></li>
-                  <li class="dropdown">
-                    <a href="#">Cửa Hàng<i class="fa fa-angle-down"></i></a>
-                    <ul role="menu" class="sub-menu">
-                      <li><a href="shop.html">Sản Phẩm</a></li>
-                      <li>
-                        <a href="product-details.html">Chi Tiết Sản Phẩm</a>
-                      </li>
-                      <li><a href="checkout.html">Thanh Toán</a></li>
-                      <li><a href="cart.html" class="active">Giỏ Hàng</a></li>
-                      <li><a href="login.html">Đăng Nhập</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#">Đánh Giá<i class="fa fa-angle-down"></i></a>
-                    <ul role="menu" class="sub-menu">
-                      <li><a href="blog.html">Danh sách Đánh Giá</a></li>
-                      <li><a href="blog-single.html">Đánh giá của bạn</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="404.html">404</a></li>
-                  <li><a href="contact-us.html">Liên Hệ</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="search_box pull-right">
-                <input type="text" placeholder="Tìm kiếm" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/header-bottom-->
-    </header>
-    <!--/header-->
-
-    <section id="cart_items">
+<body>
+  <header id="header">
+    <!--header-->
+    <div class="header_top">
+      <!--header_top-->
       <div class="container">
-        <div class="breadcrumbs">
-          <ol class="breadcrumb">
-            <li><a href="#">Trang Chủ</a></li>
-            <li class="active">Giỏ Hàng</li>
-          </ol>
-        </div>
-        <div class="table-responsive cart_info">
-          <table class="table table-condensed">
-            <thead>
-              <tr class="cart_menu">
-                <td class="image">Hình Ảnh</td>
-                <td class="description">Mô Tả</td>
-                <td class="price">Giá</td>
-                <td class="quantity">Số Lượng</td>
-                <td class="total">Tổng Tiền</td>
-                <td></td>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-    <!--/#cart_items-->
-
-    <section id="do_action">
-      <div class="container">
-        <div class="heading">
-          <h3>Bạn có muốn làm gì tiếp theo không?</h3>
-          <p>
-            Chọn nếu bạn có mã giảm giá hoặc điểm thưởng mà bạn muốn sử dụng
-            hoặc muốn ước tính chi phí giao hàng của mình.
-          </p>
-        </div>
         <div class="row">
           <div class="col-sm-6">
-            <div class="chose_area">
-              <ul class="user_option">
+            <div class="contactinfo">
+              <ul class="nav nav-pills">
                 <li>
-                  <input type="checkbox" />
-                  <label>Sử dụng mã phiếu giảm giá</label>
+                  <a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a>
                 </li>
                 <li>
-                  <input type="checkbox" />
-                  <label>Sử dụng Phiếu Quà Tặng</label>
-                </li>
-                <li>
-                  <input type="checkbox" />
-                  <label>Ước tính vận chuyển và thuế</label>
+                  <a href=""><i class="fa fa-envelope"></i> info@domain.com</a>
                 </li>
               </ul>
-              <ul class="user_info">
-                <li class="single_field">
-                  <label>Quốc Gia:</label>
-                  <select>
-                    <option>United States</option>
-                    <option>Bangladesh</option>
-                    <option>UK</option>
-                    <option>India</option>
-                    <option>Pakistan</option>
-                    <option>Ucrane</option>
-                    <option>Canada</option>
-                    <option>Dubai</option>
-                  </select>
-                </li>
-                <li class="single_field">
-                  <label>Vùng / Tiểu Bang:</label>
-                  <select>
-                    <option>Lựa Chọn</option>
-                    <option>Dhaka</option>
-                    <option>London</option>
-                    <option>Dillih</option>
-                    <option>Lahore</option>
-                    <option>Alaska</option>
-                    <option>Canada</option>
-                    <option>Dubai</option>
-                  </select>
-                </li>
-                <li class="single_field zip-field">
-                  <label>Mã Zip:</label>
-                  <input type="text" id="zipcode" />
-                </li>
-              </ul>
-              <a class="btn btn-default update" href="" id="check_coupon"
-                >Nhận báo giá</a
-              >
-              <a class="btn btn-default check_out" href="">Tiếp tục</a>
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="total_area">
-              <ul>
-                <li>Tổng giá Sản phẩm <span>$59</span></li>
-                <li>Thuế <span>$2</span></li>
-                <li>Phí vận chuyển <span>Free</span></li>
-                <li>Tổng Tiền <span>$61</span></li>
+            <div class="social-icons pull-right">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                </li>
               </ul>
-              <a class="btn btn-default update" href="">Cập Nhật</a>
-              <a class="btn btn-default check_out" href="" id="thanh_toan"
-                >Thanh Toán</a
-              >
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--/#do_action-->
+    </div>
+    <!--/header_top-->
 
-    <footer id="footer">
-      <!--Footer-->
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-2">
-              <div class="companyinfo">
-                <h2><span>e</span>-shop</h2>
-                <p>
-                  Một hệ thống bán quần áo online uy tín số một Việt Nam. Dễ
-                  dàng sử dụng, thanh toán nhanh chóng, tiện lợi.
-                </p>
+    <div class="header-middle">
+      <!--header-middle-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="logo pull-left">
+              <a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+            </div>
+            <div class="btn-group pull-right">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                  Việt Nam
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="">Mỹ</a></li>
+                  <li><a href="">Nhật Bản</a></li>
+                </ul>
+              </div>
+
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                  VND
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="">Canadian Dollar</a></li>
+                  <li><a href="">Dollar</a></li>
+                </ul>
               </div>
             </div>
-            <div class="col-sm-7">
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe1.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe2.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe3.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe4.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="shop-menu pull-right">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="account.html"><i class="fa fa-user"></i> Tài khoản</a>
+                </li>
+                <li>
+                  <a href="wishlist.html"><i class="fa fa-star"></i> Yêu thích</a>
+                </li>
+                <li>
+                  <a href="checkout.html"><i class="fa fa-crosshairs"></i> Thanh toán</a>
+                </li>
+                <li>
+                  <a href="cart.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a>
+                </li>
+                <li>
+                  <a href="login.html"><i class="fa fa-lock"></i> Đăng nhập</a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <!--header-bottom-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="mainmenu pull-left">
+              <ul class="nav navbar-nav collapse navbar-collapse">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li class="dropdown">
+                  <a href="#">Cửa Hàng<i class="fa fa-angle-down"></i></a>
+                  <ul role="menu" class="sub-menu">
+                    <li><a href="shop.html">Sản Phẩm</a></li>
+                    <li>
+                      <a href="product-details.html">Chi Tiết Sản Phẩm</a>
+                    </li>
+                    <li><a href="checkout.html">Thanh Toán</a></li>
+                    <li><a href="cart.html" class="active">Giỏ Hàng</a></li>
+                    <li><a href="login.html">Đăng Nhập</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Đánh Giá<i class="fa fa-angle-down"></i></a>
+                  <ul role="menu" class="sub-menu">
+                    <li><a href="blog.html">Danh sách Đánh Giá</a></li>
+                    <li><a href="blog-single.html">Đánh giá của bạn</a></li>
+                  </ul>
+                </li>
+                <li><a href="404.html">404</a></li>
+                <li><a href="contact-us.html">Liên Hệ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="search_box pull-right">
+              <input type="text" placeholder="Tìm kiếm" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/header-bottom-->
+  </header>
+  <!--/header-->
+
+  <section id="cart_items">
+    <div class="container">
+      <div class="breadcrumbs">
+        <ol class="breadcrumb">
+          <li><a href="#">Trang Chủ</a></li>
+          <li class="active">Giỏ Hàng</li>
+        </ol>
+      </div>
+      <div class="table-responsive cart_info">
+        <table class="table table-condensed">
+          <thead>
+            <tr class="cart_menu">
+              <td class="image">Hình Ảnh</td>
+              <td class="description">Mô Tả</td>
+              <td class="price">Giá</td>
+              <td class="quantity">Số Lượng</td>
+              <td class="total">Tổng Tiền</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <!--/#cart_items-->
+
+  <section id="do_action">
+    <div class="container">
+      <div class="heading">
+        <h3>Bạn có muốn làm gì tiếp theo không?</h3>
+        <p>
+          Chọn nếu bạn có mã giảm giá hoặc điểm thưởng mà bạn muốn sử dụng
+          hoặc muốn ước tính chi phí giao hàng của mình.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="chose_area">
+            <ul class="user_option">
+              <li>
+                <input type="checkbox" />
+                <label>Sử dụng mã phiếu giảm giá</label>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <label>Sử dụng Phiếu Quà Tặng</label>
+              </li>
+              <li>
+                <input type="checkbox" />
+                <label>Ước tính vận chuyển và thuế</label>
+              </li>
+            </ul>
+            <ul class="user_info">
+              <li class="single_field">
+                <label>Quốc Gia:</label>
+                <select>
+                  <option>United States</option>
+                  <option>Bangladesh</option>
+                  <option>UK</option>
+                  <option>India</option>
+                  <option>Pakistan</option>
+                  <option>Ucrane</option>
+                  <option>Canada</option>
+                  <option>Dubai</option>
+                </select>
+              </li>
+              <li class="single_field">
+                <label>Vùng / Tiểu Bang:</label>
+                <select>
+                  <option>Lựa Chọn</option>
+                  <option>Dhaka</option>
+                  <option>London</option>
+                  <option>Dillih</option>
+                  <option>Lahore</option>
+                  <option>Alaska</option>
+                  <option>Canada</option>
+                  <option>Dubai</option>
+                </select>
+              </li>
+              <li class="single_field zip-field">
+                <label>Mã Zip:</label>
+                <input type="text" id="zipcode" />
+              </li>
+            </ul>
+            <a class="btn btn-default update" href="" id="check_coupon">Nhận báo giá</a>
+            <a class="btn btn-default check_out" href="">Tiếp tục</a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="total_area">
+            <ul>
+              <li>Tổng giá Sản phẩm <span>$59</span></li>
+              <li>Thuế <span>$2</span></li>
+              <li>Phí vận chuyển <span>Free</span></li>
+              <li>Tổng Tiền <span>$61</span></li>
+            </ul>
+            <a class="btn btn-default update" href="">Cập Nhật</a>
+            <a class="btn btn-default check_out" href="" id="thanh_toan">Thanh Toán</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/#do_action-->
+
+  <footer id="footer">
+    <!--Footer-->
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="companyinfo">
+              <h2><span>e</span>-shop</h2>
+              <p>
+                Một hệ thống bán quần áo online uy tín số một Việt Nam. Dễ
+                dàng sử dụng, thanh toán nhanh chóng, tiện lợi.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-7">
             <div class="col-sm-3">
-              <div class="address">
-                <img src="images/home/map.png" alt="" />
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe1.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe2.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe3.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe4.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="address">
+              <img src="images/home/map.png" alt="" />
+              <p>
+                Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội, Việt Nam
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-widget">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>Dịch vụ</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="./onlinehelp.html">Trợ giúp trực tuyến</a></li>
+                <li><a href="./contactus.html">Liên hệ chúng tôi</a></li>
+                <li><a href="./orderstatus.html">Trạng thái đơn hàng</a></li>
+                <li><a href="./changelocation.html">Thay đổi vị trí</a></li>
+                <li><a href="./faq.html">FAQ’s</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>Cửa hàng</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="./tshirt.html">Áo thun</a></li>
+                <li><a href="mens.html">Nam giới</a></li>
+                <li><a href="womens.html">Nữ giới</a></li>
+                <li><a href="./giftcart.html">Thẻ quà tặng</a></li>
+                <li><a href="shoes.html">Giày</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>Chính sách</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="./termofuse.html">Điều khoản sử dụng</a></li>
+                <li>
+                  <a href="./privercypolicy.html">Chính sách bảo mật</a>
+                </li>
+                <li>
+                  <a href="./refundpolicy.html">Chính sách hoàn tiền</a>
+                </li>
+                <li>
+                  <a href="./billingsystem.html">Hệ thống thanh toán</a>
+                </li>
+                <li><a href="./ticketsystem.html">Hệ thống vé</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>About Shop</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li>
+                  <a href="./companyinformation.html">Thông tin công ty</a>
+                </li>
+                <li><a href="./careers.html">Nghề nghiệp</a></li>
+                <li><a href="./storelocation.html">Vị trí cửa hàng</a></li>
+                <li><a href="./affilateprogram.html">Liên kết</a></li>
+                <li><a href="./coppyright.html">Bản quyền</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1">
+            <div class="single-widget">
+              <h2>About Shopper</h2>
+              <form action="#" class="searchform">
+                <input type="text" placeholder="Your email address" />
+                <button type="submit" class="btn btn-default">
+                  <i class="fa fa-arrow-circle-o-right"></i>
+                </button>
                 <p>
-                  Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội, Việt Nam
+                  Nhận những cập nhật mới nhất từ <br />trang web của chúng
+                  tôi và tự cập nhật...
                 </p>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="footer-widget">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>Dịch vụ</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="./onlinehelp.html">Trợ giúp trực tuyến</a></li>
-                  <li><a href="./contactus.html">Liên hệ chúng tôi</a></li>
-                  <li><a href="./orderstatus.html">Trạng thái đơn hàng</a></li>
-                  <li><a href="./changelocation.html">Thay đổi vị trí</a></li>
-                  <li><a href="./faq.html">FAQ’s</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>Cửa hàng</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="./tshirt.html">Áo thun</a></li>
-                  <li><a href="mens.html">Nam giới</a></li>
-                  <li><a href="womens.html">Nữ giới</a></li>
-                  <li><a href="./giftcart.html">Thẻ quà tặng</a></li>
-                  <li><a href="shoes.html">Giày</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>Chính sách</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="./termofuse.html">Điều khoản sử dụng</a></li>
-                  <li>
-                    <a href="./privercypolicy.html">Chính sách bảo mật</a>
-                  </li>
-                  <li>
-                    <a href="./refundpolicy.html">Chính sách hoàn tiền</a>
-                  </li>
-                  <li>
-                    <a href="./billingsystem.html">Hệ thống thanh toán</a>
-                  </li>
-                  <li><a href="./ticketsystem.html">Hệ thống vé</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>About Shop</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li>
-                    <a href="./companyinformation.html">Thông tin công ty</a>
-                  </li>
-                  <li><a href="./careers.html">Nghề nghiệp</a></li>
-                  <li><a href="./storelocation.html">Vị trí cửa hàng</a></li>
-                  <li><a href="./affilateprogram.html">Liên kết</a></li>
-                  <li><a href="./coppyright.html">Bản quyền</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-3 col-sm-offset-1">
-              <div class="single-widget">
-                <h2>About Shopper</h2>
-                <form action="#" class="searchform">
-                  <input type="text" placeholder="Your email address" />
-                  <button type="submit" class="btn btn-default">
-                    <i class="fa fa-arrow-circle-o-right"></i>
-                  </button>
-                  <p>
-                    Nhận những cập nhật mới nhất từ <br />trang web của chúng
-                    tôi và tự cập nhật...
-                  </p>
-                </form>
-              </div>
-            </div>
-          </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <p class="pull-left">
+            Copyright © 2025 E-SHOP Inc. All rights reserved.
+          </p>
+          <p class="pull-right">
+            Designed by <span><a target="_blank" href="#">Nhóm 11</a></span>
+          </p>
         </div>
       </div>
+    </div>
+  </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sweetalert2@11.js"></script>
 
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <p class="pull-left">
-              Copyright © 2025 E-SHOP Inc. All rights reserved.
-            </p>
-            <p class="pull-right">
-              Designed by <span><a target="_blank" href="#">Nhóm 11</a></span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/sweetalert2@11.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        $("#thanh_toan").click(function (e) {
-          Swal.fire({
-            title: "Thành công!",
-            text: "Đơn hàng của bạn đã được đặt thành công.",
-            icon: "success",
-            confirmButtonText: "OK",
-          });
+  <script>
+    $(document).ready(function () {
+      $("#thanh_toan").click(function (e) {
+        Swal.fire({
+          title: "Thành công!",
+          text: "Đơn hàng của bạn đã được đặt thành công.",
+          icon: "success",
+          confirmButtonText: "OK",
         });
       });
-      $(document).ready(function () {
-        const products = [
-          {
-            id: 1,
-            name: "Áo Blazer Nữ Công Sở",
-            webId: "ABN001",
-            price: 850000,
-            image: "images/cart/one.png",
-            quantity: 1,
-          },
-          {
-            id: 2,
-            name: "Áo Cardigan Nữ Hồng",
-            webId: "ACN002",
-            price: 650000,
-            image: "images/cart/two.png",
-            quantity: 2,
-          },
-          {
-            id: 3,
-            name: "Áo Thun Nữ Basic",
-            webId: "ATN003",
-            price: 450000,
-            image: "images/cart/three.png",
-            quantity: 1,
-          },
-        ];
+    });
+    $(document).ready(function () {
+      const products = [
+        {
+          id: 1,
+          name: "Áo Blazer Nữ Công Sở",
+          webId: "ABN001",
+          price: 850000,
+          image: "images/cart/one.png",
+          quantity: 1,
+        },
+        {
+          id: 2,
+          name: "Áo Cardigan Nữ Hồng",
+          webId: "ACN002",
+          price: 650000,
+          image: "images/cart/two.png",
+          quantity: 2,
+        },
+        {
+          id: 3,
+          name: "Áo Thun Nữ Basic",
+          webId: "ATN003",
+          price: 450000,
+          image: "images/cart/three.png",
+          quantity: 1,
+        },
+      ];
 
-        let discountSettings = {
-          useCoupon: false,
-          useGiftCard: false,
-          useShippingEstimate: false,
-          couponCode: "",
-          couponDiscount: 0,
-          giftCardAmount: 0,
-          selectedCountry: "Vietnam",
-          selectedState: "Hanoi",
-          zipCode: "",
-        };
+      let discountSettings = {
+        useCoupon: false,
+        useGiftCard: false,
+        useShippingEstimate: false,
+        couponCode: "",
+        couponDiscount: 0,
+        giftCardAmount: 0,
+        selectedCountry: "Vietnam",
+        selectedState: "Hanoi",
+        zipCode: "",
+      };
 
-        function formatCurrency(amount) {
-          return new Intl.NumberFormat("vi-VN", {
-            style: "currency",
-            currency: "VND",
-          }).format(amount);
-        }
+      function formatCurrency(amount) {
+        return new Intl.NumberFormat("vi-VN", {
+          style: "currency",
+          currency: "VND",
+        }).format(amount);
+      }
 
-        function renderProducts() {
-          const tbody = $(".table-responsive tbody");
-          tbody.empty();
+      function renderProducts() {
+        const tbody = $(".table-responsive tbody");
+        tbody.empty();
 
-          products.forEach((product) => {
-            const total = product.price * product.quantity;
-            const row = `
+        products.forEach((product) => {
+          const total = product.price * product.quantity;
+          const row = `
               <tr data-product-id="${product.id}">
                 <td class="cart_product">
-                  <a href=""><img src="${product.image}" alt="${
-              product.name
+                  <a href=""><img src="${product.image}" alt="${product.name
             }" /></a>
                 </td>
                 <td class="cart_description">
@@ -615,311 +569,308 @@
                   <p class="cart_total_price">${formatCurrency(total)}</p>
                 </td>
                 <td class="cart_delete">
-                  <a class="cart_quantity_delete" href="#" data-product-id="${
-                    product.id
-                  }">
+                  <a class="cart_quantity_delete" href="#" data-product-id="${product.id
+            }">
                     <i class="fa fa-times"></i>
                   </a>
                 </td>
               </tr>
             `;
-            tbody.append(row);
-          });
+          tbody.append(row);
+        });
 
-          updateTotalArea();
+        updateTotalArea();
+      }
+      function updateTotalArea() {
+        let subtotal = 0;
+        products.forEach((product) => {
+          subtotal += product.price * product.quantity;
+        });
+
+        let taxRate = 0.1;
+        if (discountSettings.useShippingEstimate) {
+          switch (discountSettings.selectedCountry) {
+            case "Vietnam":
+              taxRate = 0.1;
+              break;
+            case "United States":
+              taxRate = 0.08;
+              break;
+            case "Japan":
+              taxRate = 0.1;
+              break;
+            case "Singapore":
+              taxRate = 0.07;
+              break;
+            default:
+              taxRate = 0.1;
+          }
         }
-        function updateTotalArea() {
-          let subtotal = 0;
-          products.forEach((product) => {
-            subtotal += product.price * product.quantity;
-          });
 
-          let taxRate = 0.1;
-          if (discountSettings.useShippingEstimate) {
-            switch (discountSettings.selectedCountry) {
-              case "Vietnam":
-                taxRate = 0.1;
-                break;
-              case "United States":
-                taxRate = 0.08;
-                break;
-              case "Japan":
-                taxRate = 0.1;
-                break;
-              case "Singapore":
-                taxRate = 0.07;
-                break;
-              default:
-                taxRate = 0.1;
-            }
-          }
+        const tax = subtotal * taxRate;
 
-          const tax = subtotal * taxRate;
-
-          let shipping = 0;
-          if (discountSettings.useShippingEstimate) {
-            if (discountSettings.selectedCountry === "Vietnam") {
-              shipping = subtotal > 2000000 ? 0 : 50000;
-            } else {
-              shipping = subtotal > 5000000 ? 0 : 500000;
-            }
-          } else {
+        let shipping = 0;
+        if (discountSettings.useShippingEstimate) {
+          if (discountSettings.selectedCountry === "Vietnam") {
             shipping = subtotal > 2000000 ? 0 : 50000;
+          } else {
+            shipping = subtotal > 5000000 ? 0 : 500000;
           }
+        } else {
+          shipping = subtotal > 2000000 ? 0 : 50000;
+        }
 
-          let couponDiscount = 0;
-          if (
-            discountSettings.useCoupon &&
-            discountSettings.couponDiscount > 0
-          ) {
-            couponDiscount = subtotal * (discountSettings.couponDiscount / 100);
-          }
+        let couponDiscount = 0;
+        if (
+          discountSettings.useCoupon &&
+          discountSettings.couponDiscount > 0
+        ) {
+          couponDiscount = subtotal * (discountSettings.couponDiscount / 100);
+        }
 
-          let giftCardDiscount = 0;
-          if (
-            discountSettings.useGiftCard &&
-            discountSettings.giftCardAmount > 0
-          ) {
-            giftCardDiscount = Math.min(
-              discountSettings.giftCardAmount,
-              subtotal
-            );
-          }
+        let giftCardDiscount = 0;
+        if (
+          discountSettings.useGiftCard &&
+          discountSettings.giftCardAmount > 0
+        ) {
+          giftCardDiscount = Math.min(
+            discountSettings.giftCardAmount,
+            subtotal
+          );
+        }
 
-          const total =
-            subtotal + tax + shipping - couponDiscount - giftCardDiscount;
+        const total =
+          subtotal + tax + shipping - couponDiscount - giftCardDiscount;
 
-          let totalHTML = `
+        let totalHTML = `
             <li>Tổng giá Sản phẩm <span>${formatCurrency(subtotal)}</span></li>
             <li>Thuế (${(taxRate * 100).toFixed(0)}%) <span>${formatCurrency(
-            tax
-          )}</span></li>
-            <li>Phí vận chuyển <span>${
-              shipping === 0 ? "Miễn phí" : formatCurrency(shipping)
-            }</span></li>
+          tax
+        )}</span></li>
+            <li>Phí vận chuyển <span>${shipping === 0 ? "Miễn phí" : formatCurrency(shipping)
+          }</span></li>
           `;
 
-          if (couponDiscount > 0) {
-            totalHTML += `<li style="color: green;">Giảm giá mã (-${
-              discountSettings.couponDiscount
+        if (couponDiscount > 0) {
+          totalHTML += `<li style="color: green;">Giảm giá mã (-${discountSettings.couponDiscount
             }%) <span>-${formatCurrency(couponDiscount)}</span></li>`;
-          }
-
-          if (giftCardDiscount > 0) {
-            totalHTML += `<li style="color: green;">Phiếu quà tặng <span>-${formatCurrency(
-              giftCardDiscount
-            )}</span></li>`;
-          }
-
-          totalHTML += `<li><strong>Tổng Tiền <span>${formatCurrency(
-            Math.max(0, total)
-          )}</span></strong></li>`;
-
-          $(".total_area ul").html(totalHTML);
         }
 
-        $(document).on("click", ".cart_quantity_up", function (e) {
-          e.preventDefault();
-          const input = $(this).siblings(".cart_quantity_input");
-          const productId = parseInt(input.data("product-id"));
-          const product = products.find((p) => p.id === productId);
-
-          if (product) {
-            product.quantity++;
-            input.val(product.quantity);
-            updateRowTotal(productId);
-            updateTotalArea();
-          }
-        });
-
-        $(document).on("click", ".cart_quantity_down", function (e) {
-          e.preventDefault();
-          const input = $(this).siblings(".cart_quantity_input");
-          const productId = parseInt(input.data("product-id"));
-          const product = products.find((p) => p.id === productId);
-
-          if (product && product.quantity > 1) {
-            product.quantity--;
-            input.val(product.quantity);
-            updateRowTotal(productId);
-            updateTotalArea();
-          }
-        });
-
-        $(document).on("change", ".cart_quantity_input", function () {
-          const productId = parseInt($(this).data("product-id"));
-          const newQuantity = parseInt($(this).val()) || 1;
-          const product = products.find((p) => p.id === productId);
-
-          if (product) {
-            product.quantity = Math.max(1, newQuantity);
-            $(this).val(product.quantity);
-            updateRowTotal(productId);
-            updateTotalArea();
-          }
-        });
-
-        $(document).on("click", ".cart_quantity_delete", function (e) {
-          e.preventDefault();
-          const productId = parseInt($(this).data("product-id"));
-          const index = products.findIndex((p) => p.id === productId);
-
-          if (index !== -1) {
-            products.splice(index, 1);
-            $(`tr[data-product-id="${productId}"]`).remove();
-            updateTotalArea();
-          }
-        });
-        function updateRowTotal(productId) {
-          const product = products.find((p) => p.id === productId);
-          if (product) {
-            const total = product.price * product.quantity;
-            $(`tr[data-product-id="${productId}"] .cart_total_price`).text(
-              formatCurrency(total)
-            );
-          }
+        if (giftCardDiscount > 0) {
+          totalHTML += `<li style="color: green;">Phiếu quà tặng <span>-${formatCurrency(
+            giftCardDiscount
+          )}</span></li>`;
         }
 
-        $(document).on(
-          "change",
-          '.user_option input[type="checkbox"]',
-          function () {
-            const label = $(this).next("label").text();
-            const isChecked = $(this).is(":checked");
+        totalHTML += `<li><strong>Tổng Tiền <span>${formatCurrency(
+          Math.max(0, total)
+        )}</span></strong></li>`;
 
-            if (label.includes("mã phiếu giảm giá")) {
-              discountSettings.useCoupon = isChecked;
-              if (isChecked) {
-                showCouponInput();
-              } else {
-                hideCouponInput();
-                discountSettings.couponDiscount = 0;
-              }
-            } else if (label.includes("Phiếu Quà Tặng")) {
-              discountSettings.useGiftCard = isChecked;
-              if (isChecked) {
-                showGiftCardInput();
-              } else {
-                hideGiftCardInput();
-                discountSettings.giftCardAmount = 0;
-              }
-            } else if (label.includes("Ước tính vận chuyển")) {
-              discountSettings.useShippingEstimate = isChecked;
-              if (isChecked) {
-                $(".user_info").show();
-              } else {
-                $(".user_info").hide();
-              }
+        $(".total_area ul").html(totalHTML);
+      }
+
+      $(document).on("click", ".cart_quantity_up", function (e) {
+        e.preventDefault();
+        const input = $(this).siblings(".cart_quantity_input");
+        const productId = parseInt(input.data("product-id"));
+        const product = products.find((p) => p.id === productId);
+
+        if (product) {
+          product.quantity++;
+          input.val(product.quantity);
+          updateRowTotal(productId);
+          updateTotalArea();
+        }
+      });
+
+      $(document).on("click", ".cart_quantity_down", function (e) {
+        e.preventDefault();
+        const input = $(this).siblings(".cart_quantity_input");
+        const productId = parseInt(input.data("product-id"));
+        const product = products.find((p) => p.id === productId);
+
+        if (product && product.quantity > 1) {
+          product.quantity--;
+          input.val(product.quantity);
+          updateRowTotal(productId);
+          updateTotalArea();
+        }
+      });
+
+      $(document).on("change", ".cart_quantity_input", function () {
+        const productId = parseInt($(this).data("product-id"));
+        const newQuantity = parseInt($(this).val()) || 1;
+        const product = products.find((p) => p.id === productId);
+
+        if (product) {
+          product.quantity = Math.max(1, newQuantity);
+          $(this).val(product.quantity);
+          updateRowTotal(productId);
+          updateTotalArea();
+        }
+      });
+
+      $(document).on("click", ".cart_quantity_delete", function (e) {
+        e.preventDefault();
+        const productId = parseInt($(this).data("product-id"));
+        const index = products.findIndex((p) => p.id === productId);
+
+        if (index !== -1) {
+          products.splice(index, 1);
+          $(`tr[data-product-id="${productId}"]`).remove();
+          updateTotalArea();
+        }
+      });
+      function updateRowTotal(productId) {
+        const product = products.find((p) => p.id === productId);
+        if (product) {
+          const total = product.price * product.quantity;
+          $(`tr[data-product-id="${productId}"] .cart_total_price`).text(
+            formatCurrency(total)
+          );
+        }
+      }
+
+      $(document).on(
+        "change",
+        '.user_option input[type="checkbox"]',
+        function () {
+          const label = $(this).next("label").text();
+          const isChecked = $(this).is(":checked");
+
+          if (label.includes("mã phiếu giảm giá")) {
+            discountSettings.useCoupon = isChecked;
+            if (isChecked) {
+              showCouponInput();
+            } else {
+              hideCouponInput();
+              discountSettings.couponDiscount = 0;
             }
-            updateTotalArea();
+          } else if (label.includes("Phiếu Quà Tặng")) {
+            discountSettings.useGiftCard = isChecked;
+            if (isChecked) {
+              showGiftCardInput();
+            } else {
+              hideGiftCardInput();
+              discountSettings.giftCardAmount = 0;
+            }
+          } else if (label.includes("Ước tính vận chuyển")) {
+            discountSettings.useShippingEstimate = isChecked;
+            if (isChecked) {
+              $(".user_info").show();
+            } else {
+              $(".user_info").hide();
+            }
           }
-        );
+          updateTotalArea();
+        }
+      );
 
-        function showCouponInput() {
-          if (!$("#coupon-input").length) {
-            const couponHTML = `
+      function showCouponInput() {
+        if (!$("#coupon-input").length) {
+          const couponHTML = `
               <li class="single_field" id="coupon-input">
                 <label>Mã giảm giá:</label>
                 <input type="text" id="coupon-code" placeholder="Nhập mã giảm giá" />
                 <button type="button" id="apply-coupon" class="btn btn-sm btn-primary">Áp dụng</button>
               </li>
             `;
-            $(".user_info").prepend(couponHTML);
-          }
+          $(".user_info").prepend(couponHTML);
         }
+      }
 
-        function hideCouponInput() {
-          $("#coupon-input").remove();
-        }
+      function hideCouponInput() {
+        $("#coupon-input").remove();
+      }
 
-        function showGiftCardInput() {
-          if (!$("#gift-card-input").length) {
-            const giftCardHTML = `
+      function showGiftCardInput() {
+        if (!$("#gift-card-input").length) {
+          const giftCardHTML = `
               <li class="single_field" id="gift-card-input">
                 <label>Mã phiếu quà tặng:</label>
                 <input type="text" id="gift-card-code" placeholder="Nhập mã phiếu quà tặng" />
                 <button type="button" id="apply-gift-card" class="btn btn-sm btn-success">Áp dụng</button>
               </li>
             `;
-            $(".user_info").prepend(giftCardHTML);
-          }
+          $(".user_info").prepend(giftCardHTML);
         }
+      }
 
-        function hideGiftCardInput() {
-          $("#gift-card-input").remove();
+      function hideGiftCardInput() {
+        $("#gift-card-input").remove();
+      }
+      $(document).on("click", "#apply-coupon", function () {
+        const couponCode = $("#coupon-code").val().trim().toUpperCase();
+
+        const validCoupons = {
+          SAVE10: 10, // Giảm 10%
+          SAVE20: 20, // Giảm 20%
+          WELCOME15: 15, // Giảm 15%
+          STUDENT5: 5, // Giảm 5%
+        };
+
+        if (validCoupons[couponCode]) {
+          discountSettings.couponCode = couponCode;
+          discountSettings.couponDiscount = validCoupons[couponCode];
+          $("#coupon-code").css("border-color", "green");
+
+          Swal.fire({
+            title: "Thành công!",
+            text: `Áp dụng mã giảm giá ${couponCode} (${validCoupons[couponCode]}%) thành công!`,
+            icon: "success",
+            timer: 2000,
+          });
+        } else {
+          $("#coupon-code").css("border-color", "red");
+          discountSettings.couponDiscount = 0;
+
+          Swal.fire({
+            title: "Lỗi!",
+            text: "Mã giảm giá không hợp lệ!",
+            icon: "error",
+            timer: 2000,
+          });
         }
-        $(document).on("click", "#apply-coupon", function () {
-          const couponCode = $("#coupon-code").val().trim().toUpperCase();
+        updateTotalArea();
+      });
 
-          const validCoupons = {
-            SAVE10: 10, // Giảm 10%
-            SAVE20: 20, // Giảm 20%
-            WELCOME15: 15, // Giảm 15%
-            STUDENT5: 5, // Giảm 5%
-          };
+      $(document).on("click", "#apply-gift-card", function () {
+        const giftCardCode = $("#gift-card-code").val().trim().toUpperCase();
 
-          if (validCoupons[couponCode]) {
-            discountSettings.couponCode = couponCode;
-            discountSettings.couponDiscount = validCoupons[couponCode];
-            $("#coupon-code").css("border-color", "green");
+        const validGiftCards = {
+          GIFT100K: 100000,
+          GIFT200K: 200000,
+          GIFT500K: 500000,
+          GIFT1M: 1000000,
+        };
 
-            Swal.fire({
-              title: "Thành công!",
-              text: `Áp dụng mã giảm giá ${couponCode} (${validCoupons[couponCode]}%) thành công!`,
-              icon: "success",
-              timer: 2000,
-            });
-          } else {
-            $("#coupon-code").css("border-color", "red");
-            discountSettings.couponDiscount = 0;
+        if (validGiftCards[giftCardCode]) {
+          discountSettings.giftCardAmount = validGiftCards[giftCardCode];
+          $("#gift-card-code").css("border-color", "green");
 
-            Swal.fire({
-              title: "Lỗi!",
-              text: "Mã giảm giá không hợp lệ!",
-              icon: "error",
-              timer: 2000,
-            });
-          }
-          updateTotalArea();
-        });
+          Swal.fire({
+            title: "Thành công!",
+            text: `Áp dụng phiếu quà tặng ${formatCurrency(
+              validGiftCards[giftCardCode]
+            )} thành công!`,
+            icon: "success",
+            timer: 2000,
+          });
+        } else {
+          $("#gift-card-code").css("border-color", "red");
+          discountSettings.giftCardAmount = 0;
 
-        $(document).on("click", "#apply-gift-card", function () {
-          const giftCardCode = $("#gift-card-code").val().trim().toUpperCase();
+          Swal.fire({
+            title: "Lỗi!",
+            text: "Mã phiếu quà tặng không hợp lệ!",
+            icon: "error",
+            timer: 2000,
+          });
+        }
+        updateTotalArea();
+      });
 
-          const validGiftCards = {
-            GIFT100K: 100000,
-            GIFT200K: 200000,
-            GIFT500K: 500000,
-            GIFT1M: 1000000,
-          };
-
-          if (validGiftCards[giftCardCode]) {
-            discountSettings.giftCardAmount = validGiftCards[giftCardCode];
-            $("#gift-card-code").css("border-color", "green");
-
-            Swal.fire({
-              title: "Thành công!",
-              text: `Áp dụng phiếu quà tặng ${formatCurrency(
-                validGiftCards[giftCardCode]
-              )} thành công!`,
-              icon: "success",
-              timer: 2000,
-            });
-          } else {
-            $("#gift-card-code").css("border-color", "red");
-            discountSettings.giftCardAmount = 0;
-
-            Swal.fire({
-              title: "Lỗi!",
-              text: "Mã phiếu quà tặng không hợp lệ!",
-              icon: "error",
-              timer: 2000,
-            });
-          }
-          updateTotalArea();
-        });
-
-        $(".user_info select").first().html(`
+      $(".user_info select").first().html(`
           <option value="Vietnam">Việt Nam</option>
           <option value="United States">Hoa Kỳ</option>
           <option value="Japan">Nhật Bản</option>
@@ -927,7 +878,7 @@
           <option value="Thailand">Thái Lan</option>
         `);
 
-        $(".user_info select").last().html(`
+      $(".user_info select").last().html(`
           <option value="Hanoi">Hà Nội</option>
           <option value="HoChiMinh">TP. Hồ Chí Minh</option>
           <option value="DaNang">Đà Nẵng</option>
@@ -935,152 +886,153 @@
           <option value="HaiPhong">Hải Phòng</option>
         `);
 
-        $(document).on("change", ".user_info select", function () {
-          if ($(this).is(":first-child")) {
-            discountSettings.selectedCountry = $(this).val();
-          } else {
-            discountSettings.selectedState = $(this).val();
-          }
+      $(document).on("change", ".user_info select", function () {
+        if ($(this).is(":first-child")) {
+          discountSettings.selectedCountry = $(this).val();
+        } else {
+          discountSettings.selectedState = $(this).val();
+        }
 
-          if (discountSettings.useShippingEstimate) {
-            updateTotalArea();
-          }
-        });
+        if (discountSettings.useShippingEstimate) {
+          updateTotalArea();
+        }
+      });
 
-        $(".user_info").hide();
+      $(".user_info").hide();
 
-        $(document).on("click", "#check_coupon", function (e) {
-          e.preventDefault();
+      $(document).on("click", "#check_coupon", function (e) {
+        e.preventDefault();
 
-          if (discountSettings.useShippingEstimate) {
-            const country = $(".user_info select").first().val();
-            const state = $(".user_info select").last().val();
-            const zipCode = $("#zipcode").val();
+        if (discountSettings.useShippingEstimate) {
+          const country = $(".user_info select").first().val();
+          const state = $(".user_info select").last().val();
+          const zipCode = $("#zipcode").val();
 
-            discountSettings.selectedCountry = country;
-            discountSettings.selectedState = state;
-            discountSettings.zipCode = zipCode;
+          discountSettings.selectedCountry = country;
+          discountSettings.selectedState = state;
+          discountSettings.zipCode = zipCode;
 
-            updateTotalArea();
-
-            Swal.fire({
-              title: "Cập nhật thành công!",
-              text: `Đã cập nhật thông tin vận chuyển cho ${country}, ${state}`,
-              icon: "success",
-              timer: 2000,
-            });
-          } else {
-            Swal.fire({
-              title: "Thông báo!",
-              text: "Vui lòng chọn 'Ước tính vận chuyển và thuế' để sử dụng chức năng này.",
-              icon: "info",
-            });
-          }
-        });
-        $("#thanh_toan").click(function (e) {
-          e.preventDefault();
-
-          if (products.length === 0) {
-            Swal.fire({
-              title: "Giỏ hàng trống!",
-              text: "Vui lòng thêm sản phẩm vào giỏ hàng trước khi thanh toán.",
-              icon: "warning",
-              confirmButtonText: "OK",
-            });
-            return;
-          }
-
-          let subtotal = 0;
-          products.forEach((product) => {
-            subtotal += product.price * product.quantity;
-          });
-
-          let taxRate = 0.1;
-          if (discountSettings.useShippingEstimate) {
-            switch (discountSettings.selectedCountry) {
-              case "Vietnam":
-                taxRate = 0.1;
-                break;
-              case "United States":
-                taxRate = 0.08;
-                break;
-              case "Japan":
-                taxRate = 0.1;
-                break;
-              case "Singapore":
-                taxRate = 0.07;
-                break;
-              default:
-                taxRate = 0.1;
-            }
-          }
-
-          const tax = subtotal * taxRate;
-
-          let shipping = 0;
-          if (discountSettings.useShippingEstimate) {
-            if (discountSettings.selectedCountry === "Vietnam") {
-              shipping = subtotal > 2000000 ? 0 : 50000;
-            } else {
-              shipping = subtotal > 5000000 ? 0 : 500000;
-            }
-          } else {
-            shipping = subtotal > 2000000 ? 0 : 50000;
-          }
-
-          let couponDiscount = 0;
-          if (
-            discountSettings.useCoupon &&
-            discountSettings.couponDiscount > 0
-          ) {
-            couponDiscount = subtotal * (discountSettings.couponDiscount / 100);
-          }
-
-          let giftCardDiscount = 0;
-          if (
-            discountSettings.useGiftCard &&
-            discountSettings.giftCardAmount > 0
-          ) {
-            giftCardDiscount = Math.min(
-              discountSettings.giftCardAmount,
-              subtotal
-            );
-          }
-
-          const total =
-            subtotal + tax + shipping - couponDiscount - giftCardDiscount;
+          updateTotalArea();
 
           Swal.fire({
-            title: "Xác nhận thanh toán",
-            html: `
-              <div style="text-align: left;">
-                <p><strong>Số sản phẩm:</strong> ${products.reduce(
-                  (sum, p) => sum + p.quantity,
-                  0
-                )}</p>
-                <p><strong>Tổng tiền:</strong> ${formatCurrency(
-                  Math.max(0, total)
-                )}</p>
-              </div>
-            `,
-            icon: "question",
-            showCancelButton: true,
-            confirmButtonText: "Xác nhận thanh toán",
-            cancelButtonText: "Hủy",
-          }).then((result) => {
-            if (result.isConfirmed) {
-              Swal.fire({
-                title: "Thành công!",
-                text: "Đơn hàng của bạn đã được đặt thành công.",
-                icon: "success",
-                confirmButtonText: "OK",
-              });
-            }
+            title: "Cập nhật thành công!",
+            text: `Đã cập nhật thông tin vận chuyển cho ${country}, ${state}`,
+            icon: "success",
+            timer: 2000,
           });
+        } else {
+          Swal.fire({
+            title: "Thông báo!",
+            text: "Vui lòng chọn 'Ước tính vận chuyển và thuế' để sử dụng chức năng này.",
+            icon: "info",
+          });
+        }
+      });
+      $("#thanh_toan").click(function (e) {
+        e.preventDefault();
+
+        if (products.length === 0) {
+          Swal.fire({
+            title: "Giỏ hàng trống!",
+            text: "Vui lòng thêm sản phẩm vào giỏ hàng trước khi thanh toán.",
+            icon: "warning",
+            confirmButtonText: "OK",
+          });
+          return;
+        }
+
+        let subtotal = 0;
+        products.forEach((product) => {
+          subtotal += product.price * product.quantity;
         });
 
-        renderProducts();
+        let taxRate = 0.1;
+        if (discountSettings.useShippingEstimate) {
+          switch (discountSettings.selectedCountry) {
+            case "Vietnam":
+              taxRate = 0.1;
+              break;
+            case "United States":
+              taxRate = 0.08;
+              break;
+            case "Japan":
+              taxRate = 0.1;
+              break;
+            case "Singapore":
+              taxRate = 0.07;
+              break;
+            default:
+              taxRate = 0.1;
+          }
+        }
+
+        const tax = subtotal * taxRate;
+
+        let shipping = 0;
+        if (discountSettings.useShippingEstimate) {
+          if (discountSettings.selectedCountry === "Vietnam") {
+            shipping = subtotal > 2000000 ? 0 : 50000;
+          } else {
+            shipping = subtotal > 5000000 ? 0 : 500000;
+          }
+        } else {
+          shipping = subtotal > 2000000 ? 0 : 50000;
+        }
+
+        let couponDiscount = 0;
+        if (
+          discountSettings.useCoupon &&
+          discountSettings.couponDiscount > 0
+        ) {
+          couponDiscount = subtotal * (discountSettings.couponDiscount / 100);
+        }
+
+        let giftCardDiscount = 0;
+        if (
+          discountSettings.useGiftCard &&
+          discountSettings.giftCardAmount > 0
+        ) {
+          giftCardDiscount = Math.min(
+            discountSettings.giftCardAmount,
+            subtotal
+          );
+        }
+
+        const total =
+          subtotal + tax + shipping - couponDiscount - giftCardDiscount;
+
+        Swal.fire({
+          title: "Xác nhận thanh toán",
+          html: `
+              <div style="text-align: left;">
+                <p><strong>Số sản phẩm:</strong> ${products.reduce(
+            (sum, p) => sum + p.quantity,
+            0
+          )}</p>
+                <p><strong>Tổng tiền:</strong> ${formatCurrency(
+            Math.max(0, total)
+          )}</p>
+              </div>
+            `,
+          icon: "question",
+          showCancelButton: true,
+          confirmButtonText: "Xác nhận thanh toán",
+          cancelButtonText: "Hủy",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire({
+              title: "Thành công!",
+              text: "Đơn hàng của bạn đã được đặt thành công.",
+              icon: "success",
+              confirmButtonText: "OK",
+            });
+          }
+        });
       });
-    </script>
-  </body>
+
+      renderProducts();
+    });
+  </script>
+</body>
+
 </html>
