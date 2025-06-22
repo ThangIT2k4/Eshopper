@@ -62,3 +62,34 @@ $(document).ready(function () {
     });
 });
 
+//hieu ung add-to-cart
+document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.add-to-cart');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+            Swal.fire({
+                icon: 'success',
+                title: 'Đã thêm vào giỏ hàng!',
+                text: 'Sản phẩm của bạn đã được thêm thành công.',
+                showConfirmButton: false,
+                timer: 1500
+            });
+        });
+    });
+});
+
+//hieu ung add-to-wishlist
+$(document).ready(function () {
+    $('.add-to-wishlist').click(function (e) {
+        e.preventDefault(); // Ngăn submit form nếu có
+
+        Swal.fire({
+            title: 'Thành công!',
+            text: 'Sản phẩm đã được thêm vào yêu thích.',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        });
+    });
+});
