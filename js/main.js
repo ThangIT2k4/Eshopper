@@ -150,3 +150,47 @@ $(document).ready(function () {
     });
   });
 });
+
+//nhan ngay
+$(document).ready(function () {
+  // Bắt sự kiện click trên toàn bộ phần sản phẩm
+  $('.get').click(function (e) {
+    e.preventDefault(); // Ngăn hành vi mặc định nếu có
+
+    // Hiển thị hiệu ứng thông báo trước khi chuyển trang
+    Swal.fire({
+      title: 'Đang chuyển hướng...',
+      text: 'Bạn sẽ được đưa đến trang thanh toán.',
+      icon: 'success',
+      showConfirmButton: false,
+      timer: 1500,
+      timerProgressBar: true,
+      didClose: () => {
+        // Sau khi SweetAlert đóng, chuyển hướng
+        window.location.href = 'checkout.html';
+      }
+    });
+  });
+});
+
+//danh giá
+$(document).ready(function () {
+  // Bắt sự kiện click trên toàn bộ phần sản phẩm
+  $('.blog-single').click(function (e) {
+    e.preventDefault(); // Ngăn hành vi mặc định nếu có
+
+    // Hiển thị hiệu ứng thông báo trước khi chuyển trang
+    Swal.fire({
+      title: 'Đang chuyển hướng...',
+      text: 'Bạn sẽ được đưa đến đánh giá cá nhân.',
+      icon: 'success',
+      showConfirmButton: false,
+      timer: 1500,
+      timerProgressBar: true,
+      didClose: () => {
+        // Sau khi SweetAlert đóng, chuyển hướng
+        window.location.href = 'blog-single.html';
+      }
+    });
+  });
+});
