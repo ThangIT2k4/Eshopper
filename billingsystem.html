@@ -1,1526 +1,1164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Hệ Thống Thanh Toán | E-Shopper</title>
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <link href="css/prettyPhoto.css" rel="stylesheet" />
-    <link href="css/price-range.css" rel="stylesheet" />
-    <link href="css/animate.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
-    <link href="css/responsive.css" rel="stylesheet" />
-    <!--[if lt IE 9]>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Hệ Thống Thanh Toán | E-Shop</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/prettyPhoto.css" rel="stylesheet" />
+  <link href="css/price-range.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico" />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="144x144"
-      href="images/ico/apple-touch-icon-144-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="114x114"
-      href="images/ico/apple-touch-icon-114-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="72x72"
-      href="images/ico/apple-touch-icon-72-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="images/ico/apple-touch-icon-57-precomposed.png"
-    />
-    <style>
-      .refund-policy {
-        max-width: 850px;
-        margin: 40px auto;
-        padding: 30px;
-        font-family: "Arial", sans-serif;
-        line-height: 1.8;
-        color: #333;
-      }
+  <link rel="shortcut icon" href="images/ico/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png" />
+  <style>
+    .refund-policy {
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 30px;
+      font-family: "Arial", sans-serif;
+      line-height: 1.8;
+      color: #333;
+    }
 
-      .refund-policy h1 {
-        font-size: 34px;
-        color: #222;
-        margin-bottom: 25px;
-        text-align: center;
-      }
+    .refund-policy h1 {
+      font-size: 34px;
+      color: #222;
+      margin-bottom: 25px;
+      text-align: center;
+    }
 
-      .refund-policy h2 {
-        font-size: 22px;
-        color: #444;
-        margin-top: 20px;
-      }
+    .refund-policy h2 {
+      font-size: 22px;
+      color: #444;
+      margin-top: 20px;
+    }
 
-      .refund-policy p,
-      .refund-policy li {
-        font-size: 20px;
-        color: #555;
-        list-style-type: disc;
-      }
+    .refund-policy p,
+    .refund-policy li {
+      font-size: 20px;
+      color: #555;
+      list-style-type: disc;
+    }
 
-      .refund-policy ul,
-      .refund-policy ol {
-        padding-left: 40px;
-        margin-bottom: 15px;
-      }
+    .refund-policy ul,
+    .refund-policy ol {
+      padding-left: 40px;
+      margin-bottom: 15px;
+    }
 
-      .refund-policy a {
-        color: #007bff;
-        text-decoration: none;
-      }
+    .refund-policy a {
+      color: #007bff;
+      text-decoration: none;
+    }
 
-      .refund-policy a:hover {
-        text-decoration: underline;
-      }
-    </style></head
-  ><!--/head-->
+    .refund-policy a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head><!--/head-->
 
-  <body>
-    <header id="header">
-      <!--header-->
-      <div class="header_top">
-        <!--header_top-->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="contactinfo">
-                <ul class="nav nav-pills">
-                  <li>
-                    <a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a>
-                  </li>
-                  <li>
-                    <a href=""
-                      ><i class="fa fa-envelope"></i> info@domain.com</a
-                    >
-                  </li>
-                </ul>
-              </div>
+<body>
+  <header id="header">
+    <!--header-->
+    <div class="header_top">
+      <!--header_top-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="contactinfo">
+              <ul class="nav nav-pills">
+                <li>
+                  <a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-envelope"></i> info@domain.com</a>
+                </li>
+              </ul>
             </div>
-            <div class="col-sm-6">
-              <div class="social-icons pull-right">
-                <ul class="nav navbar-nav">
-                  <li>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-dribbble"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                  </li>
-                </ul>
-              </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="social-icons pull-right">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <!--/header_top-->
+    </div>
+    <!--/header_top-->
 
-      <div class="header-middle">
-        <!--header-middle-->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="logo pull-left">
-                <a href="index.html"
-                  ><img src="images/home/logo.png" alt=""
-                /></a>
-              </div>
-              <div class="btn-group pull-right">
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-default dropdown-toggle usa"
-                    data-toggle="dropdown"
-                  >
-                    Việt Nam
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Mỹ</a></li>
-                    <li><a href="">Nhật Bản</a></li>
-                  </ul>
-                </div>
-
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-default dropdown-toggle usa"
-                    data-toggle="dropdown"
-                  >
-                    VND
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Canadian Dollar</a></li>
-                    <li><a href="">Dollar</a></li>
-                  </ul>
-                </div>
-              </div>
+    <div class="header-middle">
+      <!--header-middle-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="logo pull-left">
+              <a href="index.html"><img src="images/home/logo.png" alt="" /></a>
             </div>
-            <div class="col-sm-8">
-              <div class="shop-menu pull-right">
-                <ul class="nav navbar-nav">
-                  <li>
-                    <a href="account.html"
-                      ><i class="fa fa-user"></i> Tài khoản</a
-                    >
-                  </li>
-                  <li>
-                    <a href="wishlist.html"
-                      ><i class="fa fa-star"></i> Yêu thích</a
-                    >
-                  </li>
-                  <li>
-                    <a href="checkout.html"
-                      ><i class="fa fa-crosshairs"></i> Thanh toán</a
-                    >
-                  </li>
-                  <li>
-                    <a href="cart.html"
-                      ><i class="fa fa-shopping-cart"></i> Giỏ hàng</a
-                    >
-                  </li>
-                  <li>
-                    <a href="login.html"
-                      ><i class="fa fa-lock"></i> Đăng nhập</a
-                    >
-                  </li>
+            <div class="btn-group pull-right">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                  Việt Nam
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="">Mỹ</a></li>
+                  <li><a href="">Nhật Bản</a></li>
+                </ul>
+              </div>
+
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                  VND
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="">Canadian Dollar</a></li>
+                  <li><a href="">Dollar</a></li>
                 </ul>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div
-        class="header-bottom"
-        style="background-color: #e6f0ff; padding: 15px 0"
-      >
-        <!--header-bottom-->
-        <div class="container" style="margin-bottom: 0">
-          <div class="row">
-            <div class="col-sm-9">
-              <div class="mainmenu pull-left">
-                <ul class="nav navbar-nav collapse navbar-collapse">
-                  <li>
-                    <a href="index.html" style="padding-bottom: 0">Trang Chủ</a>
-                  </li>
-                  <li style="padding-left: 0px">
-                    <i class="fa fa-angle-right"></i>
-                  </li>
-                  <li style="padding-left: 0px; padding-bottom: 0">
-                    <p
-                      style="color: #666663; font-size: 16px; margin-bottom: 0"
-                    >
-                      Chính Sách
-                    </p>
-                  </li>
-                  <li style="padding-left: 0px">
-                    <i class="fa fa-angle-right"></i>
-                  </li>
-                  <li style="padding-left: 0px">
-                    <a class="active" style="padding-bottom: 0"
-                      >Hệ thống thanh toán</a
-                    >
-                  </li>
-                </ul>
-              </div>
+          <div class="col-sm-8">
+            <div class="shop-menu pull-right">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="account.html"><i class="fa fa-user"></i> Tài khoản</a>
+                </li>
+                <li>
+                  <a href="wishlist.html"><i class="fa fa-star"></i> Yêu thích</a>
+                </li>
+                <li>
+                  <a href="checkout.html"><i class="fa fa-crosshairs"></i> Thanh toán</a>
+                </li>
+                <li>
+                  <a href="cart.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a>
+                </li>
+                <li>
+                  <a href="login.html"><i class="fa fa-lock"></i> Đăng nhập</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <!--/header-bottom-->
-    </header>
-    <!--/header-->
+    </div>
 
-    <section>
-      <div class="container page-text">
-        <h1>
-          <span style="line-height: 107%"
-            >I. Trả góp qua công ty tài chính.</span
-          >
-        </h1>
-        <h2 style="text-align: justify">
-          <span
-            style="font-size: 14pt; line-height: 107%; color: rgb(51, 51, 51)"
-            >1. Home Credit và FE credit</span
-          >
-        </h2>
+    <div class="header-bottom" style="background-color: #e6f0ff; padding: 15px 0">
+      <!--header-bottom-->
+      <div class="container" style="margin-bottom: 0">
+        <div class="row">
+          <div class="col-sm-9">
+            <div class="mainmenu pull-left">
+              <ul class="nav navbar-nav collapse navbar-collapse">
+                <li>
+                  <a href="index.html" style="padding-bottom: 0">Trang Chủ</a>
+                </li>
+                <li style="padding-left: 0px">
+                  <i class="fa fa-angle-right"></i>
+                </li>
+                <li style="padding-left: 0px; padding-bottom: 0">
+                  <p style="color: #666663; font-size: 16px; margin-bottom: 0">
+                    Chính Sách
+                  </p>
+                </li>
+                <li style="padding-left: 0px">
+                  <i class="fa fa-angle-right"></i>
+                </li>
+                <li style="padding-left: 0px">
+                  <a class="active" style="padding-bottom: 0">Hệ thống thanh toán</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/header-bottom-->
+  </header>
+  <!--/header-->
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >-Hỗ trợ trả góp 0% cho 1 số dòng sản phẩm chọn lọc trong thời gian
-            khuyến mãi với số lượng có hạn</span
-          >
-        </p>
+  <section>
+    <div class="container page-text">
+      <h1>
+        <span style="line-height: 107%">I. Trả góp qua công ty tài chính.</span>
+      </h1>
+      <h2 style="text-align: justify">
+        <span style="font-size: 14pt; line-height: 107%; color: rgb(51, 51, 51)">1. Home Credit và FE credit</span>
+      </h2>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >-Lãi suất 3.5%-4.5%/tháng</span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">-Hỗ trợ trả góp 0% cho 1 số dòng sản phẩm chọn
+          lọc trong thời gian
+          khuyến mãi với số lượng có hạn</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >-Thời gian vay linh hoạt</span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">-Lãi suất 3.5%-4.5%/tháng</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >-Thời gian thẩm định nhanh</span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">-Thời gian vay linh hoạt</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >-Thủ tục đơn giản ( CCCD/CMT, GPLX)</span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">-Thời gian thẩm định nhanh</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >-Hỗ trợ nhiều đối tượng</span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">-Thủ tục đơn giản ( CCCD/CMT, GPLX)</span>
+      </p>
 
-        <h3 style="text-align: justify">
-          <span
-            style="font-size: 14pt; line-height: 107%; color: rgb(51, 51, 51)"
-            >2. Shinhan Finance</span
-          >
-        </h3>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">-Hỗ trợ nhiều đối tượng</span>
+      </p>
 
-        <h3 style="text-align: justify">
-          <span
-            style="
+      <h3 style="text-align: justify">
+        <span style="font-size: 14pt; line-height: 107%; color: rgb(51, 51, 51)">2. Shinhan Finance</span>
+      </h3>
+
+      <h3 style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: red;
-            "
-            >2.1</span
-          ><span
-            style="
+            ">2.1</span><span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #333333;
-            "
-            >. Chương trình trả góp cho các sản phẩm từ 3 triệu</span
-          >
-        </h3>
+            ">. Chương trình trả góp cho các sản phẩm từ 3 triệu</span>
+      </h3>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            >- Chương trình trả góp 0% qua Shinhan được áp dụng cho các sản phẩm </span
-          ><span
-            style="
+            ">- Chương trình trả góp 0% qua Shinhan được áp dụng cho các sản phẩm </span><span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #e74c3c;
-            "
-            >Các sản phẩm giá từ 3 triệu</span
-          >
-        </p>
-        <p class="MsoNormal" style="text-align: justify; line-height: 1">
-          <span
-            style="color: rgb(51, 51, 51); font-family: Inter; font-size: 10pt"
-            ><b>(Thời gian áp dụng: 3,6,8 tháng)</b></span
-          >
-        </p>
-        <p class="MsoNormal" style="text-align: justify; line-height: 1">
-          <span
-            style="color: rgb(51, 51, 51); font-family: Inter; font-size: 10pt"
-            ><br
-          /></span>
-        </p>
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+            ">Các sản phẩm giá từ 3 triệu</span>
+      </p>
+      <p class="MsoNormal" style="text-align: justify; line-height: 1">
+        <span style="color: rgb(51, 51, 51); font-family: Inter; font-size: 10pt"><b>(Thời gian áp dụng: 3,6,8
+            tháng)</b></span>
+      </p>
+      <p class="MsoNormal" style="text-align: justify; line-height: 1">
+        <span style="color: rgb(51, 51, 51); font-family: Inter; font-size: 10pt"><br /></span>
+      </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            ><i
-              ><span style="font-size: 13.3333px">Bảng tham khảo 6</span
-              ><span style="font-size: 13.3333px"> tháng</span></i
-            ><br
-          /></span>
-        </p>
+            "><i><span style="font-size: 13.3333px">Bảng tham khảo 6</span><span style="font-size: 13.3333px">
+              tháng</span></i><br /></span>
+      </p>
 
-        <table
-          class="MsoNormalTable"
-          cellpadding="0"
-          width="912"
-          style="
+      <table class="MsoNormalTable" cellpadding="0" width="912" style="
             width: 9.5in;
             background: white;
             border: solid #cccccc 1pt;
             border: solid #cccccc 0.75pt;
-          "
-        >
-          <tbody>
-            <tr>
-              <td
-                style="
+          ">
+        <tbody>
+          <tr>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Lãi suất ưu đãi/tháng</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
+                    ">Lãi suất ưu đãi/tháng</span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >0%</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
+                    ">0%</span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >0%</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
+                    ">0%</span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >0,99%</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
+                    ">0,99%</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Gía bán
-                  </span>
-                </p>
-              </td>
-              <td
-                style="
+                    ">Gía bán
+                </span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Trên 25tr</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
+                    ">Trên 25tr</span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Từ 10-25tr
-                  </span>
-                </p>
-              </td>
-              <td
-                style="
+                    ">Từ 10-25tr
+                </span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Từ 3-10tr</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
+                    ">Từ 3-10tr</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Trả trước bắt buộc
-                  </span>
-                </p>
-              </td>
-              <td
-                style="
+                    ">Trả trước bắt buộc
+                </span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                  >
-                    &gt;=55%</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
+                    ">
+                  &gt;=55%</span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                  >
-                    30%-50%
-                  </span>
-                </p>
-              </td>
-              <td
-                style="
+                    ">
+                  30%-50%
+                </span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >10%-30%</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
+                    ">10%-30%</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >%Phí khoản vay
-                  </span>
-                </p>
-              </td>
-              <td
-                style="
+                    ">%Phí khoản vay
+                </span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                  >
-                    6%
-                  </span>
-                </p>
-              </td>
-              <td
-                style="
+                    ">
+                  6%
+                </span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                  >
-                    7%
-                  </span>
-                </p>
-              </td>
-              <td
-                style="
+                    ">
+                  7%
+                </span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >2%</span
-                  >
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                    ">2%</span>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            ><b>-Bước 1</b>: Khách hàng mang theo các giấy tờ tùy thân như
-            CCCD/CMT, giấy phép lái xe/sổ hộ khẩu đến các cửa hàng E-Shopper Gần
-            nhất để làm hồ sơ .</span
-          >
-        </p>
+            "><b>-Bước 1</b>: Khách hàng mang theo các giấy tờ tùy thân như
+          CCCD/CMT, giấy phép lái xe/sổ hộ khẩu đến các cửa hàng E-Shopper Gần
+          nhất để làm hồ sơ .</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            ><b>-Bước 2</b>: Nhân viên tư vẫn trả góp của công ty tài chính sẽ
-            tư vấn cho khách hàng các gói vay phù hợp với điều kiện kinh tế của
-            khách hàng .</span
-          >
-        </p>
+            "><b>-Bước 2</b>: Nhân viên tư vẫn trả góp của công ty tài chính sẽ
+          tư vấn cho khách hàng các gói vay phù hợp với điều kiện kinh tế của
+          khách hàng .</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            ><b>-Bước 3</b>: Công ty tài chính sẽ thẩm định hồ sơ cho khách hàng
-            và ký hợp đồng ngay tại cửa hàng ( lưu ý : khách cần mang theo giấy
-            tờ gốc để đối chiếu )</span
-          >
-        </p>
+            "><b>-Bước 3</b>: Công ty tài chính sẽ thẩm định hồ sơ cho khách hàng
+          và ký hợp đồng ngay tại cửa hàng ( lưu ý : khách cần mang theo giấy
+          tờ gốc để đối chiếu )</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            ><b>-Bước 4</b>: Khách hàng ký hợp đồng và làm thủ tục thanh toán ,
-            lấy máy tại cửa hàng</span
-          >
-        </p>
+            "><b>-Bước 4</b>: Khách hàng ký hợp đồng và làm thủ tục thanh toán ,
+          lấy máy tại cửa hàng</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            ><b> * Điều kiện và giấy tờ gốc cần có:</b></span
-          >
-        </p>
+            "><b> * Điều kiện và giấy tờ gốc cần có:</b></span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            >-Các cá nhân trong độ tuổi từ 19- 70 tuổi ( tính theo ngày tháng
-            năm sinh trên CCCD/CMT)</span
-          >
-        </p>
+            ">-Các cá nhân trong độ tuổi từ 19- 70 tuổi ( tính theo ngày tháng
+          năm sinh trên CCCD/CMT)</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            >-CCCD/CMT còn hạn sử dụng ( 15 năm kể từ ngày cấp)</span
-          >
-        </p>
+            ">-CCCD/CMT còn hạn sử dụng ( 15 năm kể từ ngày cấp)</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            >-Khách hàng đáp ứng đủ điều kện vay và mang đủ giấy tờ</span
-          >
-        </p>
+            ">-Khách hàng đáp ứng đủ điều kện vay và mang đủ giấy tờ</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            >-Với khoản vay trên 20 triệu khách cần thêm sổ hộ khẩu/giấy phép
-            lái xe + chứng minh thu nhập</span
-          >
-        </p>
+            ">-Với khoản vay trên 20 triệu khách cần thêm sổ hộ khẩu/giấy phép
+          lái xe + chứng minh thu nhập</span>
+      </p>
 
-        <h2>II. Chính sách trả góp 0% qua cổng thanh toán Payoo</h2>
+      <h2>II. Chính sách trả góp 0% qua cổng thanh toán Payoo</h2>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="color: #333333"
-            ><b>1. Cổng thanh toán Payoo là gì?</b></span
-          ><span
-            style="font-size: 10pt; line-height: 107%; color: #333333"
-          ></span>
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="color: #333333"><b>1. Cổng thanh toán Payoo là gì?</b></span><span
+          style="font-size: 10pt; line-height: 107%; color: #333333"></span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >Cổng thanh toán Payoo do Công ty Cổ phần Dịch vụ TT Cộng đồng Việt
-            (VietUnion) phát triển. Ví Payoo đóng vai trò trung gian cho các
-            giao dịch thương mại điện tử, hỗ trợ người dùng thực hiện các giao
-            dịch thanh toán hóa đơn, dịch vụ nhanh chóng qua điện thoại.</span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">Cổng thanh toán Payoo do Công ty Cổ phần Dịch
+          vụ TT Cộng đồng Việt
+          (VietUnion) phát triển. Ví Payoo đóng vai trò trung gian cho các
+          giao dịch thương mại điện tử, hỗ trợ người dùng thực hiện các giao
+          dịch thanh toán hóa đơn, dịch vụ nhanh chóng qua điện thoại.</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="color: #333333"
-            ><b
-              >2. Quy định trả góp 0% qua thẻ tín dụng với cổng thanh toán
-              Payoo.</b
-            ></span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="color: #333333"><b>2. Quy định trả góp 0% qua thẻ tín dụng với cổng thanh toán
+            Payoo.</b></span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >Số lượng ngân hàng chấp nhận thanh toán: 27 ngân hàng</span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">Số lượng ngân hàng chấp nhận thanh toán: 27
+          ngân hàng</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >Kỳ hạn trả góp 06 tháng</span
-          >
-        </p>
-        <p class="MsoNormal" style="text-align: justify">
-          <img
-            src="./images/404/ki-han-6-thang.jpg"
-            style="width: 654.375px; height: 408.984px"
-          /><br />
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">Kỳ hạn trả góp 06 tháng</span>
+      </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <img src="./images/404/ki-han-6-thang.jpg" style="width: 654.375px; height: 408.984px" /><br />
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="font-size: 10pt; line-height: 107%; color: #333333"
-          ></span
-          ><span
-            style="font-size: 10pt; line-height: 107%; color: #333333"
-          ></span>
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333"></span><span
+          style="font-size: 10pt; line-height: 107%; color: #333333"></span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >Trả góp qua thẻ tín dụng, khách hàng sẽ được hưởng lãi suất 0% hàng
-            tháng. Khách hàng được mua hàng với giá ưu đãi + phí chuyển đổi trả
-            góp (khoản phí duy nhất khách phải trả)</span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">Trả góp qua thẻ tín dụng, khách hàng sẽ được
+          hưởng lãi suất 0% hàng
+          tháng. Khách hàng được mua hàng với giá ưu đãi + phí chuyển đổi trả
+          góp (khoản phí duy nhất khách phải trả)</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >Phí chuyển đổi trả góp là khoản phí được thu trên số tiền mà khách
-            hàng trả góp.</span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">Phí chuyển đổi trả góp là khoản phí được thu
+          trên số tiền mà khách
+          hàng trả góp.</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="color: #333333"><b>3. Một số lưu ý quan trọng</b></span
-          ><span
-            style="font-size: 10pt; line-height: 107%; color: #333333"
-          ></span>
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="color: #333333"><b>3. Một số lưu ý quan trọng</b></span><span
+          style="font-size: 10pt; line-height: 107%; color: #333333"></span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <img src="./images/404/quy-trinh.png" /><br />
-        </p>
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333">
-            <!--[endif]--></span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <img src="./images/404/quy-trinh.png" /><br />
+      </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">
+          <!--[endif]--></span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >Khách hàng chỉ cần thao tác trả góp trên máy Payoo. Máy sẽ in ra
-            đầy đủ các liên cho khách hàng ký là đã hoàn thành trả góp cho
-            khách.</span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">Khách hàng chỉ cần thao tác trả góp trên máy
+          Payoo. Máy sẽ in ra
+          đầy đủ các liên cho khách hàng ký là đã hoàn thành trả góp cho
+          khách.</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >Khách hàng không phải điền thông tin vào bất cứ đường link nào
-            khác. Một số ngân hàng khi khách quẹt thẻ xong sẽ gửi tin nhắn để
-            mời điền thông tin theo link để trả góp, làm theo link này thì sẽ bị
-            mất phí theo quy định của ngân hàng.</span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">Khách hàng không phải điền thông tin vào bất cứ
+          đường link nào
+          khác. Một số ngân hàng khi khách quẹt thẻ xong sẽ gửi tin nhắn để
+          mời điền thông tin theo link để trả góp, làm theo link này thì sẽ bị
+          mất phí theo quy định của ngân hàng.</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >Hiện khách hàng sẽ chỉ tham gia trả góp kỳ hạn 06 tháng của 26 ngân
-            hàng (FE Credit không trả góp được vì ngân hàng này không hỗ trợ trả
-            góp 06 tháng)</span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">Hiện khách hàng sẽ chỉ tham gia trả góp kỳ hạn
+          06 tháng của 26 ngân
+          hàng (FE Credit không trả góp được vì ngân hàng này không hỗ trợ trả
+          góp 06 tháng)</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >Ngân hàng Techcombank khi tham gia trả góp, khách hàng sẽ mất thêm
-            phí 1.1% – tối đa 150.000đ. Khoản này ngân hàng sẽ thu trực tiếp
-            trên thẻ khách hàng. E-Shopper không thu thêm của khách.</span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">Ngân hàng Techcombank khi tham gia trả góp,
+          khách hàng sẽ mất thêm
+          phí 1.1% – tối đa 150.000đ. Khoản này ngân hàng sẽ thu trực tiếp
+          trên thẻ khách hàng. E-Shopper không thu thêm của khách.</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >Ngoài trả góp 0%, khách hàng sử dụng thẻ tín dụng của VIB được lựa
-            chọn thêm một phương án trả góp lãi suất 1%/tháng. Kì hạn 3/6/9/12
-            tháng, với phí chuyển đổi trả góp 0 đồng (ngân hàng thu của
-            khách)</span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">Ngoài trả góp 0%, khách hàng sử dụng thẻ tín
+          dụng của VIB được lựa
+          chọn thêm một phương án trả góp lãi suất 1%/tháng. Kì hạn 3/6/9/12
+          tháng, với phí chuyển đổi trả góp 0 đồng (ngân hàng thu của
+          khách)</span>
+      </p>
 
-        <h2>
-          <span style="line-height: 107%">III. TRẢ GÓP QUA HOMEPAYLATER</span>
-        </h2>
+      <h2>
+        <span style="line-height: 107%">III. TRẢ GÓP QUA HOMEPAYLATER</span>
+      </h2>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #333333;
-            "
-            >1. Hình thức:</span
-          ><span
-            style="
+            ">1. Hình thức:</span><span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-          >
-            Mua trước trả sau (vay trả góp)
-          </span>
-        </p>
+            ">
+          Mua trước trả sau (vay trả góp)
+        </span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #333333;
-            "
-            >2. Đơn vị: </span
-          ><span
-            style="
+            ">2. Đơn vị: </span><span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            >HomePaylater (là đơn vị trực thuộc Homecredit) - với cổng thanh
-            toán Bảo Kim
-          </span>
-        </p>
+            ">HomePaylater (là đơn vị trực thuộc Homecredit) - với cổng thanh
+          toán Bảo Kim
+        </span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #333333;
-            "
-            >3. Nội dung dịch vụ: </span
-          ><span
-            style="
+            ">3. Nội dung dịch vụ: </span><span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            >Dịch vụ hỗ trợ Mua trước trả sau qua Home Credit cho phép người
-            dùng mua sắm ngay lập tức mà không cần trả trước, đồng thời có thể
-            chọn phương án thanh toán sau 1 tháng – 3 tháng - 6 tháng - 12
-            tháng</span
-          >
-        </p>
+            ">Dịch vụ hỗ trợ Mua trước trả sau qua Home Credit cho phép người
+          dùng mua sắm ngay lập tức mà không cần trả trước, đồng thời có thể
+          chọn phương án thanh toán sau 1 tháng – 3 tháng - 6 tháng - 12
+          tháng</span>
+      </p>
 
-        <p class="MsoNormal">
-          <span style="line-height: 107%"
-            >4. Nội dung Chương trình khuyến mãi: </span
-          ><span
-            style="
+      <p class="MsoNormal">
+        <span style="line-height: 107%">4. Nội dung Chương trình khuyến mãi: </span><span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: In;
               color: #333333;
-            "
-          >
-          </span>
-        </p>
-        <b
-          ><a
-            href="https://hoanghamobile.com/tin-tuc/uu-dai-tra-gop-voi-homepaylater-tai-hoang-ha-mobile/"
-            target="_blank"
-          >
-            =&gt;&gt; Xem tại đây</a
-          ></b
-        ><br />
+            ">
+        </span>
+      </p>
+      <b><a href="https://hoanghamobile.com/tin-tuc/uu-dai-tra-gop-voi-homepaylater-tai-hoang-ha-mobile/"
+          target="_blank">
+          =&gt;&gt; Xem tại đây</a></b><br />
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            >- Quá trình xét duyệt hồ sơ nhanh gọn: chỉ 30 giây - 3 phút.</span
-          >
-        </p>
+            ">- Quá trình xét duyệt hồ sơ nhanh gọn: chỉ 30 giây - 3 phút.</span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            >- Hồ sơ xét duyệt đơn giản: Chỉ cần có chứng minh thư hoặc căn cước
-            công dân và số điện thoại chính chủ đang sử dụng
-          </span>
-        </p>
+            ">- Hồ sơ xét duyệt đơn giản: Chỉ cần có chứng minh thư hoặc căn cước
+          công dân và số điện thoại chính chủ đang sử dụng
+        </span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            >- Quá trình xét duyệt Online thông qua App hoặc thông qua trang
-            website (không cần tải app)
-          </span>
-        </p>
+            ">- Quá trình xét duyệt Online thông qua App hoặc thông qua trang
+          website (không cần tải app)
+        </span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #333333;
-            "
-            >- Mức phí: </span
-          ><span
-            style="
+            ">- Mức phí: </span><span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-          ></span>
-        </p>
+            "></span>
+      </p>
 
-        <table
-          class="MsoNormalTable"
-          cellpadding="0"
-          width="912"
-          style="
+      <table class="MsoNormalTable" cellpadding="0" width="912" style="
             width: 9.5in;
             background: white;
             border: solid #cccccc 1pt;
             border: solid #cccccc 0.75pt;
-          "
-        >
-          <tbody>
-            <tr>
-              <td
-                style="
+          ">
+        <tbody>
+          <tr>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Gói 1 tháng</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
+                    ">Gói 1 tháng</span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Khách hàng mất phí 0%</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
+                    ">Khách hàng mất phí 0%</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Gói 3 tháng</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
+                    ">Gói 3 tháng</span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Khách hàng mất phí 3%/tháng x số tháng ( theo dư nợ giảm
-                    dần)</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
+                    ">Khách hàng mất phí 3%/tháng x số tháng ( theo dư nợ giảm
+                  dần)</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Gói 6 tháng</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
+                    ">Gói 6 tháng</span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Khách hàng mất phí 3,55%/tháng x số tháng (theo dư nợ giảm
-                    dần)</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
+                    ">Khách hàng mất phí 3,55%/tháng x số tháng (theo dư nợ giảm
+                  dần)</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Gói 12 tháng</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
+                    ">Gói 12 tháng</span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Khách hàng mất phí 3,75%/tháng x số tháng (theo dư nợ giảm
-                    dần)</span
-                  >
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                    ">Khách hàng mất phí 3,75%/tháng x số tháng (theo dư nợ giảm
+                  dần)</span>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #333333;
-            "
-            >- Giá trị khoản vay </span
-          ><span
-            style="
+            ">- Giá trị khoản vay </span><span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-          ></span>
-        </p>
+            "></span>
+      </p>
 
-        <table
-          class="MsoNormalTable"
-          cellpadding="0"
-          width="912"
-          style="
+      <table class="MsoNormalTable" cellpadding="0" width="912" style="
             width: 9.5in;
             background: white;
             border: solid #cccccc 1pt;
             border: solid #cccccc 0.75pt;
-          "
-        >
-          <tbody>
-            <tr>
-              <td
-                style="
+          ">
+        <tbody>
+          <tr>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Gói 1 tháng</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
+                    ">Gói 1 tháng</span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Giá trị khoản vay từ 200K - 1.5M</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
+                    ">Giá trị khoản vay từ 200K - 1.5M</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Gói 3 tháng</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
+                    ">Gói 3 tháng</span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Giá trị khoản vay từ 400K - 5M</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
+                    ">Giá trị khoản vay từ 400K - 5M</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Gói 6 tháng</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
+                    ">Gói 6 tháng</span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Giá trị khoản vay từ 2M - 10M</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
+                    ">Giá trị khoản vay từ 2M - 10M</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Gói 12 tháng</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
+                    ">Gói 12 tháng</span>
+              </p>
+            </td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Giá trị khoản vay từ 4M - 25M</span
-                  >
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                    ">Giá trị khoản vay từ 4M - 25M</span>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            ><br />
-            <!--[endif]--></span
-          >
-        </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333"><br />
+          <!--[endif]--></span>
+      </p>
 
-        <h2><span style="line-height: 107%">IV. Trả góp qua Kredivo</span></h2>
+      <h2><span style="line-height: 107%">IV. Trả góp qua Kredivo</span></h2>
 
-        <p class="MsoNormal">
-          <span
-            style="
+      <p class="MsoNormal">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #333333;
-            "
-            ><b>1. Tên chương trình:</b> </span
-          ><span style="line-height: 107%">Ưu đãi trả góp qua Kredivo</span
-          ><span
-            style="
+            "><b>1. Tên chương trình:</b> </span><span style="line-height: 107%">Ưu đãi trả góp qua Kredivo</span><span
+          style="
               font-size: 10pt;
               line-height: 107%;
               font-family: In;
               color: #333333;
-            "
-          ></span>
-        </p>
+            "></span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #333333;
-            "
-            >- Nội dung ưu đãi</span
-          >
-        </p>
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+            ">- Nội dung ưu đãi</span>
+      </p>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #333333;
-            "
-          ></span>
-        </p>
-        <table
-          style="
+            "></span>
+      </p>
+      <table style="
             margin: 0px 0px 10px;
             padding: 0px;
             font-family: Inter, sans-serif;
@@ -1530,29 +1168,23 @@
             background-color: rgb(255, 255, 255);
             border: none !important;
             table-layout: auto !important;
-          "
-        >
-          <tbody
-            style="
+          ">
+        <tbody style="
               margin: 0px;
               padding: 0px;
               font-family: inherit;
               font-size: inherit;
               color: inherit;
-            "
-          >
-            <tr
-              style="
+            ">
+          <tr style="
                 margin: 0px;
                 padding: 0px;
                 font-family: inherit;
                 font-size: inherit;
                 color: inherit;
                 border: none !important;
-              "
-            >
-              <td
-                style="
+              ">
+            <td style="
                   margin: 0px;
                   padding: 0.4em;
                   font-family: inherit;
@@ -1563,31 +1195,24 @@
                   background-clip: padding-box;
                   width: 396px;
                   text-align: center;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     margin: 0px;
                     padding: 0px;
                     font-family: inherit;
                     font-size: inherit;
                     color: inherit;
-                  "
-                >
-                  <span
-                    style="
+                  ">
+                <span style="
                       margin: 0px;
                       padding: 0px;
                       font-family: inherit;
                       color: rgb(0, 0, 0);
                       vertical-align: baseline;
-                    "
-                    >Nội dung ưu đãi</span
-                  >
-                </div>
-              </td>
-              <td
-                style="
+                    ">Nội dung ưu đãi</span>
+              </div>
+            </td>
+            <td style="
                   margin: 0px;
                   padding: 0.4em;
                   font-family: inherit;
@@ -1597,32 +1222,25 @@
                   border: 1px solid rgb(225, 225, 225);
                   background-clip: padding-box;
                   width: 252px;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     margin: 0px;
                     padding: 0px;
                     font-family: inherit;
                     font-size: inherit;
                     color: inherit;
                     text-align: center;
-                  "
-                >
-                  <span
-                    style="
+                  ">
+                <span style="
                       margin: 0px;
                       padding: 0px;
                       font-family: inherit;
                       color: rgb(0, 0, 0);
                       vertical-align: baseline;
-                    "
-                    >Đối tượng áp dụng: Người dùng mới</span
-                  >
-                </div>
-              </td>
-              <td
-                style="
+                    ">Đối tượng áp dụng: Người dùng mới</span>
+              </div>
+            </td>
+            <td style="
                   margin: 0px;
                   padding: 0.4em;
                   font-family: inherit;
@@ -1632,43 +1250,34 @@
                   border: 1px solid rgb(225, 225, 225);
                   background-clip: padding-box;
                   width: 249px;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     margin: 0px;
                     padding: 0px;
                     font-family: inherit;
                     font-size: inherit;
                     color: inherit;
                     text-align: center;
-                  "
-                >
-                  <span
-                    style="
+                  ">
+                <span style="
                       margin: 0px;
                       padding: 0px;
                       font-family: inherit;
                       color: rgb(0, 0, 0);
                       vertical-align: baseline;
-                    "
-                    >Đối tượng áp dụng: Người dùng hiện hữu</span
-                  >
-                </div>
-              </td>
-            </tr>
-            <tr
-              style="
+                    ">Đối tượng áp dụng: Người dùng hiện hữu</span>
+              </div>
+            </td>
+          </tr>
+          <tr style="
                 margin: 0px;
                 padding: 0px;
                 font-family: inherit;
                 font-size: inherit;
                 color: inherit;
                 border: none !important;
-              "
-            >
-              <td
-                style="
+              ">
+            <td style="
                   margin: 0px;
                   padding: 0.4em;
                   font-family: inherit;
@@ -1677,40 +1286,31 @@
                   position: relative;
                   border: 1px solid rgb(225, 225, 225);
                   background-clip: padding-box;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     margin: 0px;
                     padding: 0px;
                     font-family: inherit;
                     font-size: inherit;
                     color: inherit;
-                  "
-                >
-                  <span
-                    style="
+                  ">
+                <span style="
                       margin: 0px;
                       padding: 0px;
                       font-family: inherit;
                       color: rgb(0, 0, 0);
                       vertical-align: baseline;
-                    "
-                    >Giảm 300.000đ cho đơn từ 7.000.000đ (3/6/12 tháng)
-                    <br
-                      style="
+                    ">Giảm 300.000đ cho đơn từ 7.000.000đ (3/6/12 tháng)
+                  <br style="
                         margin: 0px;
                         padding: 0px;
                         font-family: inherit;
                         font-size: inherit;
                         color: inherit;
-                      "
-                    />Áp dụng: Đến hết ngày 31/7/2024</span
-                  >
-                </div>
-              </td>
-              <td
-                style="
+                      " />Áp dụng: Đến hết ngày 31/7/2024</span>
+              </div>
+            </td>
+            <td style="
                   margin: 0px;
                   padding: 0.4em;
                   font-family: inherit;
@@ -1719,41 +1319,31 @@
                   position: relative;
                   border: 1px solid rgb(225, 225, 225);
                   background-clip: padding-box;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     margin: 0px;
                     padding: 0px;
                     font-family: inherit;
                     font-size: inherit;
                     color: inherit;
                     text-align: center;
-                  "
-                >
-                  <em
-                    style="
+                  ">
+                <em style="
                       margin: 0px;
                       padding: 0px;
                       font-family: inherit;
                       font-size: inherit;
                       color: inherit;
-                    "
-                    ><span
-                      style="
+                    "><span style="
                         margin: 0px;
                         padding: 0px;
                         font-family: inherit;
                         color: rgb(0, 0, 0);
                         vertical-align: baseline;
-                      "
-                      >x</span
-                    ></em
-                  >
-                </div>
-              </td>
-              <td
-                style="
+                      ">x</span></em>
+              </div>
+            </td>
+            <td style="
                   margin: 0px;
                   padding: 0.4em;
                   font-family: inherit;
@@ -1762,57 +1352,45 @@
                   position: relative;
                   border: 1px solid rgb(225, 225, 225);
                   background-clip: padding-box;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     margin: 0px;
                     padding: 0px;
                     font-family: inherit;
                     font-size: inherit;
                     color: inherit;
-                  "
-                >
-                  <em
-                    style="
+                  ">
+                <em style="
                       margin: 0px;
                       padding: 0px;
                       font-family: inherit;
                       font-size: inherit;
                       color: inherit;
-                    "
-                    ><span
-                      style="
+                    "><span style="
                         margin: 0px;
                         padding: 0px;
                         font-family: inherit;
                         color: rgb(0, 0, 0);
                         vertical-align: baseline;
-                      "
-                      ><br
-                        style="
+                      "><br style="
                           margin: 0px;
                           padding: 0px;
                           font-family: inherit;
                           font-size: inherit;
                           color: inherit;
-                        " /></span
-                  ></em>
-                </div>
-              </td>
-            </tr>
-            <tr
-              style="
+                        " /></span></em>
+              </div>
+            </td>
+          </tr>
+          <tr style="
                 margin: 0px;
                 padding: 0px;
                 font-family: inherit;
                 font-size: inherit;
                 color: inherit;
                 border: none !important;
-              "
-            >
-              <td
-                style="
+              ">
+            <td style="
                   margin: 0px;
                   padding: 0.4em;
                   font-family: inherit;
@@ -1821,53 +1399,40 @@
                   position: relative;
                   border: 1px solid rgb(225, 225, 225);
                   background-clip: padding-box;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     margin: 0px;
                     padding: 0px;
                     font-family: inherit;
                     font-size: inherit;
                     color: inherit;
-                  "
-                >
-                  ​<span
-                    style="
+                  ">
+                ​<span style="
                       margin: 0px;
                       padding: 0px;
                       color: rgb(0, 0, 0);
                       vertical-align: baseline;
-                    "
-                    >Giảm 700.000đ cho đơn từ 10.000.000đ (3/6/12 tháng)<br
-                      style="
+                    ">Giảm 700.000đ cho đơn từ 10.000.000đ (3/6/12 tháng)<br style="
                         margin: 0px;
                         padding: 0px;
                         font-family: inherit;
                         font-size: inherit;
                         color: inherit;
-                      " /></span
-                  >​<span
-                    style="
+                      " /></span>​<span style="
                       margin: 0px;
                       padding: 0px;
                       color: rgb(0, 0, 0);
                       vertical-align: baseline;
-                    "
-                    >Áp dụng: Đến hết ngày 31/7/2024 </span
-                  >​<br
-                    style="
+                    ">Áp dụng: Đến hết ngày 31/7/2024 </span>​<br style="
                       margin: 0px;
                       padding: 0px;
                       font-family: inherit;
                       font-size: inherit;
                       color: inherit;
-                    "
-                  />
-                </div>
-              </td>
-              <td
-                style="
+                    " />
+              </div>
+            </td>
+            <td style="
                   margin: 0px;
                   padding: 0.4em;
                   font-family: inherit;
@@ -1876,28 +1441,22 @@
                   position: relative;
                   border: 1px solid rgb(225, 225, 225);
                   background-clip: padding-box;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     margin: 0px;
                     padding: 0px;
                     font-family: inherit;
                     font-size: inherit;
                     color: inherit;
                     text-align: center;
-                  "
-                >
-                  ​<em
-                    style="
+                  ">
+                ​<em style="
                       margin: 0px;
                       padding: 0px;
                       -webkit-user-drag: none;
                       overflow: visible;
-                    "
-                  >
-                    <span
-                      style="
+                    ">
+                  <span style="
                         margin: 0px;
                         padding: 0px;
                         font-family: inherit;
@@ -1905,22 +1464,16 @@
                         vertical-align: baseline;
                         -webkit-user-drag: none;
                         overflow: visible;
-                      "
-                      >x</span
-                    > </em
-                  >​<br
-                    style="
+                      ">x</span> </em>​<br style="
                       margin: 0px;
                       padding: 0px;
                       font-family: inherit;
                       font-size: inherit;
                       color: inherit;
-                    "
-                  />
-                </div>
-              </td>
-              <td
-                style="
+                    " />
+              </div>
+            </td>
+            <td style="
                   margin: 0px;
                   padding: 0.4em;
                   font-family: inherit;
@@ -1929,41 +1482,33 @@
                   position: relative;
                   border: 1px solid rgb(225, 225, 225);
                   background-clip: padding-box;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     margin: 0px;
                     padding: 0px;
                     font-family: inherit;
                     font-size: inherit;
                     color: inherit;
-                  "
-                >
-                  <br
-                    style="
+                  ">
+                <br style="
                       margin: 0px;
                       padding: 0px;
                       font-family: inherit;
                       font-size: inherit;
                       color: inherit;
-                    "
-                  />
-                </div>
-              </td>
-            </tr>
-            <tr
-              style="
+                    " />
+              </div>
+            </td>
+          </tr>
+          <tr style="
                 margin: 0px;
                 padding: 0px;
                 font-family: inherit;
                 font-size: inherit;
                 color: inherit;
                 border: none !important;
-              "
-            >
-              <td
-                style="
+              ">
+            <td style="
                   margin: 0px;
                   padding: 0.4em;
                   font-family: inherit;
@@ -1972,41 +1517,33 @@
                   position: relative;
                   border: 1px solid rgb(225, 225, 225);
                   background-clip: padding-box;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     margin: 0px;
                     padding: 0px;
                     font-family: inherit;
                     font-size: inherit;
                     color: inherit;
-                  "
-                >
-                  <span
-                    style="
+                  ">
+                <span style="
                       margin: 0px;
                       padding: 0px;
                       font-family: inherit;
                       color: rgb(0, 0, 0);
                       vertical-align: baseline;
-                    "
-                    >Giảm 5% tối đa 200k từ đơn hàng 700.000đ (6/12 tháng)
-                    <br
-                      style="
+                    ">Giảm 5% tối đa 200k từ đơn hàng 700.000đ (6/12 tháng)
+                  <br style="
                         margin: 0px;
                         padding: 0px;
                         font-family: inherit;
                         font-size: inherit;
                         color: inherit;
-                      "
-                    />(Voucher này trên hệ thống Kredivo sẽ tự động có trong giỏ
-                    nếu khách hàng đủ điều kiện nhận)
-                  </span>
-                </div>
-              </td>
-              <td
-                style="
+                      " />(Voucher này trên hệ thống Kredivo sẽ tự động có trong giỏ
+                  nếu khách hàng đủ điều kiện nhận)
+                </span>
+              </div>
+            </td>
+            <td style="
                   margin: 0px;
                   padding: 0.4em;
                   font-family: inherit;
@@ -2015,47 +1552,37 @@
                   position: relative;
                   border: 1px solid rgb(225, 225, 225);
                   background-clip: padding-box;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     margin: 0px;
                     padding: 0px;
                     font-family: inherit;
                     font-size: inherit;
                     color: inherit;
-                  "
-                >
-                  <em
-                    style="
+                  ">
+                <em style="
                       margin: 0px;
                       padding: 0px;
                       font-family: inherit;
                       font-size: inherit;
                       color: inherit;
-                    "
-                  >
-                    <span
-                      style="
+                    ">
+                  <span style="
                         margin: 0px;
                         padding: 0px;
                         font-family: inherit;
                         color: rgb(0, 0, 0);
                         vertical-align: baseline;
-                      "
-                      ><br
-                        style="
+                      "><br style="
                           margin: 0px;
                           padding: 0px;
                           font-family: inherit;
                           font-size: inherit;
                           color: inherit;
-                        " /></span
-                  ></em>
-                </div>
-              </td>
-              <td
-                style="
+                        " /></span></em>
+              </div>
+            </td>
+            <td style="
                   margin: 0px;
                   padding: 0.4em;
                   font-family: inherit;
@@ -2064,46 +1591,36 @@
                   position: relative;
                   border: 1px solid rgb(225, 225, 225);
                   background-clip: padding-box;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     margin: 0px;
                     padding: 0px;
                     font-family: inherit;
                     font-size: inherit;
                     color: inherit;
                     text-align: center;
-                  "
-                >
-                  <em
-                    style="
+                  ">
+                <em style="
                       margin: 0px;
                       padding: 0px;
                       font-family: inherit;
                       font-size: inherit;
                       color: inherit;
-                    "
-                  >
-                    <span
-                      style="
+                    ">
+                  <span style="
                         margin: 0px;
                         padding: 0px;
                         font-family: inherit;
                         color: rgb(0, 0, 0);
                         vertical-align: baseline;
-                      "
-                      >x</span
-                    ></em
-                  >
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+                      ">x</span></em>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               margin: 0px;
               padding: 0px;
               font-weight: 700;
@@ -2112,10 +1629,8 @@
               text-align: left;
               -webkit-user-drag: none;
               overflow: visible;
-            "
-          >
-            <span
-              style="
+            ">
+          <span style="
                 margin: 0px;
                 padding: 0px;
                 font-family: Inter, sans-serif;
@@ -2123,1061 +1638,835 @@
                 color: rgb(51, 51, 51);
                 vertical-align: baseline;
                 font-weight: 400;
-              "
-            >
-              <i
-                >Tất cả voucher đều không áp dụng lại nếu Trả góp của khách hàng
-                bị loại/hủy</i
-              ></span
-            ></span
-          ><br />
-        </p>
+              ">
+            <i>Tất cả voucher đều không áp dụng lại nếu Trả góp của khách hàng
+              bị loại/hủy</i></span></span><br />
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #6600ff;
-            "
-            >Lưu ý: </span
-          ><span
-            style="
+            ">Lưu ý: </span><span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-          ></span>
-        </p>
+            "></span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #0055ff;
-            "
-            >1. Với voucher giảm 5% tối đa 200k chỉ áp dụng cho KH thoả mãn các
-            điều kiện sau:</span
-          ><span
-            style="
+            ">1. Với voucher giảm 5% tối đa 200k chỉ áp dụng cho KH thoả mãn các
+          điều kiện sau:</span><span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-          ></span>
-        </p>
+            "></span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #0055ff;
-            "
-            >- Thực hiện giao dịch từ lần thứ 2 qua Kredivo </span
-          ><span
-            style="
+            ">- Thực hiện giao dịch từ lần thứ 2 qua Kredivo </span><span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: In;
               color: #333333;
-            "
-          ></span>
-        </p>
+            "></span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #0055ff;
-            "
-            >- Kì hạn trả góp: 6/12 tháng</span
-          ><span
-            style="
+            ">- Kì hạn trả góp: 6/12 tháng</span><span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-          ></span>
-        </p>
+            "></span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
               color: #0055ff;
-            "
-            >- Giá trị đơn hàng tối thiểu: 700.000đ</span
-          ><span
-            style="
+            ">- Giá trị đơn hàng tối thiểu: 700.000đ</span><span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: In;
               color: #333333;
-            "
-          ></span>
-        </p>
+            "></span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            ><b
-              >2. Voucher chỉ được áp dụng 1 lần/người trong thời gian diễn ra
-              khuyến mãi</b
-            ></span
-          >
-        </p>
+            "><b>2. Voucher chỉ được áp dụng 1 lần/người trong thời gian diễn ra
+            khuyến mãi</b></span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: Inter;
               color: #333333;
-            "
-            ><b
-              >3. Voucher sẽ không được sử dụng lại nếu đơn hàng bị hủy</b
-            ></span
-          >
-        </p>
+            "><b>3. Voucher sẽ không được sử dụng lại nếu đơn hàng bị hủy</b></span>
+      </p>
 
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: 'inherit', serif;
-            "
-            ><i><b>* Thông tin chi tiết về các gói trả góp Kredivo</b></i></span
-          ><span
-            style="
+            "><i><b>* Thông tin chi tiết về các gói trả góp Kredivo</b></i></span><span style="
               font-size: 10pt;
               line-height: 107%;
               font-family: In;
               color: #333333;
-            "
-          ></span>
-        </p>
+            "></span>
+      </p>
 
-        <table
-          class="MsoNormalTable"
-          cellpadding="0"
-          width="912"
-          style="
+      <table class="MsoNormalTable" cellpadding="0" width="912" style="
             width: 9.5in;
             background: white;
             border: solid #cccccc 1pt;
             border: solid #cccccc 0.75pt;
-          "
-        >
-          <tbody>
-            <tr>
-              <td
-                style="
+          ">
+        <tbody>
+          <tr>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              ></td>
-              <td
-                style="
+                "></td>
+            <td style="
                   border: solid #e1e1e1 1pt;
                   border: solid #e1e1e1 0.75pt;
                   padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
                       font-size: 10pt;
                       line-height: 107%;
                       font-family: 'inherit', serif;
                       color: #333333;
-                    "
-                    >Thanh toán sau 30 ngày</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Thanh toán sau 3 tháng</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Trả góp 6-12 tháng</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Sản phẩm áp dụng</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Tất cả sản phẩm</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Tất cả sản phẩm</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Tất cả sản phẩm</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Mức giao dịch</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Min: 0đ<br />
-                    Max: 5.000.000đ</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Min: 800.000đ<br />
-                    Max: 5.000.000đ (với người dùng cơ bản)<br />
-                    Max: 50.000.000đ (Với người dùng cao cấp)</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Min: 750.000đ<br />
-                    Max: 50.000.000đ</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Áp dụng cho</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Người dùng cơ bản, Người dùng cao cấp</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Người dùng cơ bản, Người dùng cao cấp</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Người dùng cao cấp</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Lãi suất</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >0%</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >0%</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Cố định 2.5%/tháng</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Phí dịch vụ</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >1%</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >- Với người dùng cao cấp: 1%/tháng<br />
-                    - Với người dùng cơ bản: 2%/tháng</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >0%</span
-                  >
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >Phí lãi chậm trả cho KH</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >5.25%/tháng</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >5.25%/tháng</span
-                  >
-                </p>
-              </td>
-              <td
-                style="
-                  border: solid #e1e1e1 1pt;
-                  border: solid #e1e1e1 0.75pt;
-                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
-                "
-              >
-                <p class="MsoNormal" style="text-align: justify">
-                  <span
-                    style="
-                      font-size: 10pt;
-                      line-height: 107%;
-                      font-family: 'inherit', serif;
-                      color: #333333;
-                    "
-                    >5.25%/tháng</span
-                  >
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
-              font-size: 10pt;
-              line-height: 107%;
-              font-family: 'inherit', serif;
-              color: #333333;
-            "
-            ><i><b>Lưu ý:</b></i></span
-          ><span
-            style="
-              font-size: 10pt;
-              line-height: 107%;
-              font-family: Inter;
-              color: #333333;
-            "
-          ></span>
-        </p>
-
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
-              font-size: 10pt;
-              line-height: 107%;
-              font-family: 'inherit', serif;
-              color: #333333;
-            "
-            >- Người dùng cơ bản: được cấp hạn mức tối đa 6 triệu, có 2 kỳ hạn
-            30 ngày và 3 tháng. </span
-          ><span
-            style="
-              font-size: 10pt;
-              line-height: 107%;
-              font-family: Inter;
-              color: #333333;
-            "
-          ></span>
-        </p>
-
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
-              font-size: 10pt;
-              line-height: 107%;
-              font-family: 'inherit', serif;
-              color: #333333;
-            "
-            >- Người dùng cao cấp: được cấp hạn mức lên tới 50triệu, có thêm 2
-            kỳ hạn 6 và 12 tháng</span
-          ><span
-            style="
-              font-size: 10pt;
-              line-height: 107%;
-              font-family: Inter;
-              color: #333333;
-            "
-          ></span>
-        </p>
-
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
-              font-size: 10pt;
-              line-height: 107%;
-              font-family: 'inherit', serif;
-            "
-            ><b
-              ><i
-                ><font color="#3984c6"
-                  >* Quy trình đăng kí người dùng mới Kredivo:</font
-                ></i
-              ></b
-            ></span
-          >
-        </p>
-
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
-              font-size: 10pt;
-              line-height: 107%;
-              font-family: 'inherit', serif;
-            "
-            ><b
-              ><i><font color="#3984c6">* Quy trình thanh toán: </font></i></b
-            ></span
-          ><span
-            style="
-              font-size: 10pt;
-              line-height: 107%;
-              font-family: Inter;
-              color: #333333;
-            "
-          ></span>
-        </p>
-
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
-              font-size: 10pt;
-              line-height: 107%;
-              font-family: Inter;
-              color: #333333;
-            "
-            >- Bước 1: Truy cập Website E-Shopper, sau đó thêm sản phẩm muốn mua
-            vào giỏ hàng</span
-          >
-        </p>
-
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
-              font-size: 10pt;
-              line-height: 107%;
-              font-family: Inter;
-              color: #333333;
-            "
-            >- Bước 2: Tiến hành nhập đầy đủ thông tin đặt hàng tại Hoàng Hà
-            Mobile, sau đó hoàn tất đặt hàng =&gt; Hệ thống sẽ chuyển sang giao
-            diện thanh toán, khách hàng chọn hình thức thanh toán bằng
-            Kredivo</span
-          >
-        </p>
-
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
-              font-size: 10pt;
-              line-height: 107%;
-              font-family: Inter;
-              color: #333333;
-            "
-            >- Bước 3: KH được chuyển sang giao diện thanh toán của
-            Kredivo</span
-          >
-        </p>
-
-        <p class="MsoNormal" style="text-align: justify">
-          <span
-            style="
-              font-size: 10pt;
-              line-height: 107%;
-              font-family: Inter;
-              color: #333333;
-            "
-            >- Bước 4: KH hoàn tất thanh toán bằng Kredivo bằng cách nhập mã PIN
-            nhận được qua SMS.</span
-          >
-        </p>
-
-        <p class="MsoNormal" style="text-align: justify">
-          <span style="font-size: 10pt; line-height: 107%; color: #333333"
-            >E-Shopper xin trân trọng cảm ơn các quý khách hàng!</span
-          >
-        </p>
-
-        <p class="MsoNormal" style="text-align: justify"><o:p> </o:p></p>
-      </div>
-    </section>
-    <div class="text-center">
-      <a href="./index.html" class="btn btn-primary" style="margin-bottom: 20px"
-        >Quay lại Trang chủ</a
-      >
-    </div>
-  </body>
-  <footer id="footer">
-    <!--Footer-->
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-2">
-            <div class="companyinfo">
-              <h2><span>e</span>-shop</h2>
-              <p>
-                Một hệ thống bán quần áo online uy tín số một Việt Nam. Dễ
-                  dàng sử dụng, thanh toán nhanh chóng, tiện lợi.
+                    ">Thanh toán sau 30 ngày</span>
               </p>
-            </div>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Thanh toán sau 3 tháng</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Trả góp 6-12 tháng</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Sản phẩm áp dụng</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Tất cả sản phẩm</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Tất cả sản phẩm</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Tất cả sản phẩm</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Mức giao dịch</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Min: 0đ<br />
+                  Max: 5.000.000đ</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Min: 800.000đ<br />
+                  Max: 5.000.000đ (với người dùng cơ bản)<br />
+                  Max: 50.000.000đ (Với người dùng cao cấp)</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Min: 750.000đ<br />
+                  Max: 50.000.000đ</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Áp dụng cho</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Người dùng cơ bản, Người dùng cao cấp</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Người dùng cơ bản, Người dùng cao cấp</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Người dùng cao cấp</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Lãi suất</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">0%</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">0%</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Cố định 2.5%/tháng</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Phí dịch vụ</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">1%</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">- Với người dùng cao cấp: 1%/tháng<br />
+                  - Với người dùng cơ bản: 2%/tháng</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">0%</span>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">Phí lãi chậm trả cho KH</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">5.25%/tháng</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">5.25%/tháng</span>
+              </p>
+            </td>
+            <td style="
+                  border: solid #e1e1e1 1pt;
+                  border: solid #e1e1e1 0.75pt;
+                  padding: 4.8pt 4.8pt 4.8pt 4.8pt;
+                ">
+              <p class="MsoNormal" style="text-align: justify">
+                <span style="
+                      font-size: 10pt;
+                      line-height: 107%;
+                      font-family: 'inherit', serif;
+                      color: #333333;
+                    ">5.25%/tháng</span>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
+              font-size: 10pt;
+              line-height: 107%;
+              font-family: 'inherit', serif;
+              color: #333333;
+            "><i><b>Lưu ý:</b></i></span><span style="
+              font-size: 10pt;
+              line-height: 107%;
+              font-family: Inter;
+              color: #333333;
+            "></span>
+      </p>
+
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
+              font-size: 10pt;
+              line-height: 107%;
+              font-family: 'inherit', serif;
+              color: #333333;
+            ">- Người dùng cơ bản: được cấp hạn mức tối đa 6 triệu, có 2 kỳ hạn
+          30 ngày và 3 tháng. </span><span style="
+              font-size: 10pt;
+              line-height: 107%;
+              font-family: Inter;
+              color: #333333;
+            "></span>
+      </p>
+
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
+              font-size: 10pt;
+              line-height: 107%;
+              font-family: 'inherit', serif;
+              color: #333333;
+            ">- Người dùng cao cấp: được cấp hạn mức lên tới 50triệu, có thêm 2
+          kỳ hạn 6 và 12 tháng</span><span style="
+              font-size: 10pt;
+              line-height: 107%;
+              font-family: Inter;
+              color: #333333;
+            "></span>
+      </p>
+
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
+              font-size: 10pt;
+              line-height: 107%;
+              font-family: 'inherit', serif;
+            "><b><i>
+              <font color="#3984c6">* Quy trình đăng kí người dùng mới Kredivo:</font>
+            </i></b></span>
+      </p>
+
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
+              font-size: 10pt;
+              line-height: 107%;
+              font-family: 'inherit', serif;
+            "><b><i>
+              <font color="#3984c6">* Quy trình thanh toán: </font>
+            </i></b></span><span style="
+              font-size: 10pt;
+              line-height: 107%;
+              font-family: Inter;
+              color: #333333;
+            "></span>
+      </p>
+
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
+              font-size: 10pt;
+              line-height: 107%;
+              font-family: Inter;
+              color: #333333;
+            ">- Bước 1: Truy cập Website E-Shopper, sau đó thêm sản phẩm muốn mua
+          vào giỏ hàng</span>
+      </p>
+
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
+              font-size: 10pt;
+              line-height: 107%;
+              font-family: Inter;
+              color: #333333;
+            ">- Bước 2: Tiến hành nhập đầy đủ thông tin đặt hàng tại Hoàng Hà
+          Mobile, sau đó hoàn tất đặt hàng =&gt; Hệ thống sẽ chuyển sang giao
+          diện thanh toán, khách hàng chọn hình thức thanh toán bằng
+          Kredivo</span>
+      </p>
+
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
+              font-size: 10pt;
+              line-height: 107%;
+              font-family: Inter;
+              color: #333333;
+            ">- Bước 3: KH được chuyển sang giao diện thanh toán của
+          Kredivo</span>
+      </p>
+
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="
+              font-size: 10pt;
+              line-height: 107%;
+              font-family: Inter;
+              color: #333333;
+            ">- Bước 4: KH hoàn tất thanh toán bằng Kredivo bằng cách nhập mã PIN
+          nhận được qua SMS.</span>
+      </p>
+
+      <p class="MsoNormal" style="text-align: justify">
+        <span style="font-size: 10pt; line-height: 107%; color: #333333">E-Shopper xin trân trọng cảm ơn các quý khách
+          hàng!</span>
+      </p>
+
+      <p class="MsoNormal" style="text-align: justify">
+        <o:p> </o:p>
+      </p>
+    </div>
+  </section>
+  <div class="text-center">
+    <a href="./index.html" class="btn btn-primary" style="margin-bottom: 20px">Quay lại Trang chủ</a>
+  </div>
+</body>
+<footer id="footer">
+  <!--Footer-->
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="companyinfo">
+            <h2><span>e</span>-shop</h2>
+            <p>
+              Một hệ thống bán quần áo online uy tín số một Việt Nam. Dễ
+              dàng sử dụng, thanh toán nhanh chóng, tiện lợi.
+            </p>
           </div>
-          <div class="col-sm-7">
-            <div class="col-sm-3">
-              <div class="video-gallery text-center">
-                <a href="#">
-                  <div class="iframe-img">
-                    <img src="images/home/iframe1.png" alt="" />
-                  </div>
-                  <div class="overlay-icon">
-                    <i class="fa fa-play-circle-o"></i>
-                  </div>
-                </a>
-                <p>Circle of Hands</p>
-                <h2>24 DEC 2025</h2>
-              </div>
-            </div>
-
-            <div class="col-sm-3">
-              <div class="video-gallery text-center">
-                <a href="#">
-                  <div class="iframe-img">
-                    <img src="images/home/iframe2.png" alt="" />
-                  </div>
-                  <div class="overlay-icon">
-                    <i class="fa fa-play-circle-o"></i>
-                  </div>
-                </a>
-                <p>Circle of Hands</p>
-                <h2>24 DEC 2025</h2>
-              </div>
-            </div>
-
-            <div class="col-sm-3">
-              <div class="video-gallery text-center">
-                <a href="#">
-                  <div class="iframe-img">
-                    <img src="images/home/iframe3.png" alt="" />
-                  </div>
-                  <div class="overlay-icon">
-                    <i class="fa fa-play-circle-o"></i>
-                  </div>
-                </a>
-                <p>Circle of Hands</p>
-                <h2>24 DEC 2025</h2>
-              </div>
-            </div>
-
-            <div class="col-sm-3">
-              <div class="video-gallery text-center">
-                <a href="#">
-                  <div class="iframe-img">
-                    <img src="images/home/iframe4.png" alt="" />
-                  </div>
-                  <div class="overlay-icon">
-                    <i class="fa fa-play-circle-o"></i>
-                  </div>
-                </a>
-                <p>Circle of Hands</p>
-                <h2>24 DEC 2025</h2>
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="col-sm-7">
           <div class="col-sm-3">
-            <div class="address">
-              <img src="images/home/map.png" alt="" />
+            <div class="video-gallery text-center">
+              <a href="#">
+                <div class="iframe-img">
+                  <img src="images/home/iframe1.png" alt="" />
+                </div>
+                <div class="overlay-icon">
+                  <i class="fa fa-play-circle-o"></i>
+                </div>
+              </a>
+              <p>Circle of Hands</p>
+              <h2>24 DEC 2025</h2>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="video-gallery text-center">
+              <a href="#">
+                <div class="iframe-img">
+                  <img src="images/home/iframe2.png" alt="" />
+                </div>
+                <div class="overlay-icon">
+                  <i class="fa fa-play-circle-o"></i>
+                </div>
+              </a>
+              <p>Circle of Hands</p>
+              <h2>24 DEC 2025</h2>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="video-gallery text-center">
+              <a href="#">
+                <div class="iframe-img">
+                  <img src="images/home/iframe3.png" alt="" />
+                </div>
+                <div class="overlay-icon">
+                  <i class="fa fa-play-circle-o"></i>
+                </div>
+              </a>
+              <p>Circle of Hands</p>
+              <h2>24 DEC 2025</h2>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="video-gallery text-center">
+              <a href="#">
+                <div class="iframe-img">
+                  <img src="images/home/iframe4.png" alt="" />
+                </div>
+                <div class="overlay-icon">
+                  <i class="fa fa-play-circle-o"></i>
+                </div>
+              </a>
+              <p>Circle of Hands</p>
+              <h2>24 DEC 2025</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="address">
+            <img src="images/home/map.png" alt="" />
+            <p>
+              Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội, Việt Nam
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-widget">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="single-widget">
+            <h2>Dịch vụ</h2>
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="./onlinehelp.html">Trợ giúp trực tuyến</a></li>
+              <li><a href="./contactus.html">Liên hệ chúng tôi</a></li>
+              <li><a href="./orderstatus.html">Trạng thái đơn hàng</a></li>
+              <li><a href="./changelocation.html">Thay đổi vị trí</a></li>
+              <li><a href="./faq.html">FAQ’s</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="single-widget">
+            <h2>Cửa hàng</h2>
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="./tshirt.html">Áo thun</a></li>
+              <li><a href="mens.html">Nam giới</a></li>
+              <li><a href="womens.html">Nữ giới</a></li>
+              <li><a href="./giftcart.html">Thẻ quà tặng</a></li>
+              <li><a href="shoes.html">Giày</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="single-widget">
+            <h2>Chính sách</h2>
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="./termofuse.html">Điều khoản sử dụng</a></li>
+              <li>
+                <a href="./privercypolicy.html">Chính sách bảo mật</a>
+              </li>
+              <li>
+                <a href="./refundpolicy.html">Chính sách hoàn tiền</a>
+              </li>
+              <li>
+                <a href="./billingsystem.html">Hệ thống thanh toán</a>
+              </li>
+              <li><a href="./ticketsystem.html">Hệ thống vé</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="single-widget">
+            <h2>About Shop</h2>
+            <ul class="nav nav-pills nav-stacked">
+              <li>
+                <a href="./companyinformation.html">Thông tin công ty</a>
+              </li>
+              <li><a href="./careers.html">Nghề nghiệp</a></li>
+              <li><a href="./storelocation.html">Vị trí cửa hàng</a></li>
+              <li><a href="./affilateprogram.html">Liên kết</a></li>
+              <li><a href="./coppyright.html">Bản quyền</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1">
+          <div class="single-widget">
+            <h2>About Shopper</h2>
+            <form action="#" class="searchform">
+              <input type="text" placeholder="Your email address" />
+              <button type="submit" class="btn btn-default">
+                <i class="fa fa-arrow-circle-o-right"></i>
+              </button>
               <p>
-                Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội, Việt Nam
+                Nhận những cập nhật mới nhất từ <br />trang web của chúng tôi
+                và tự cập nhật...
               </p>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="footer-widget">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-2">
-            <div class="single-widget">
-              <h2>Dịch vụ</h2>
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="./onlinehelp.html">Trợ giúp trực tuyến</a></li>
-                <li><a href="./contactus.html">Liên hệ chúng tôi</a></li>
-                <li><a href="./orderstatus.html">Trạng thái đơn hàng</a></li>
-                <li><a href="./changelocation.html">Thay đổi vị trí</a></li>
-                <li><a href="./faq.html">FAQ’s</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="single-widget">
-              <h2>Cửa hàng</h2>
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="./tshirt.html">Áo thun</a></li>
-                <li><a href="mens.html">Nam giới</a></li>
-                <li><a href="womens.html">Nữ giới</a></li>
-                <li><a href="./giftcart.html">Thẻ quà tặng</a></li>
-                <li><a href="shoes.html">Giày</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="single-widget">
-              <h2>Chính sách</h2>
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="./termofuse.html">Điều khoản sử dụng</a></li>
-                <li>
-                  <a href="./privercypolicy.html">Chính sách bảo mật</a>
-                </li>
-                <li>
-                  <a href="./refundpolicy.html">Chính sách hoàn tiền</a>
-                </li>
-                <li>
-                  <a href="./billingsystem.html">Hệ thống thanh toán</a>
-                </li>
-                <li><a href="./ticketsystem.html">Hệ thống vé</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="single-widget">
-              <h2>About Shop</h2>
-              <ul class="nav nav-pills nav-stacked">
-                <li>
-                  <a href="./companyinformation.html">Thông tin công ty</a>
-                </li>
-                <li><a href="./careers.html">Nghề nghiệp</a></li>
-                <li><a href="./storelocation.html">Vị trí cửa hàng</a></li>
-                <li><a href="./affilateprogram.html">Liên kết</a></li>
-                <li><a href="./coppyright.html">Bản quyền</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-3 col-sm-offset-1">
-            <div class="single-widget">
-              <h2>About Shopper</h2>
-              <form action="#" class="searchform">
-                <input type="text" placeholder="Your email address" />
-                <button type="submit" class="btn btn-default">
-                  <i class="fa fa-arrow-circle-o-right"></i>
-                </button>
-                <p>
-                  Nhận những cập nhật mới nhất từ <br />trang web của chúng tôi
-                  và tự cập nhật...
-                </p>
-              </form>
-            </div>
-          </div>
-        </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <p class="pull-left">
+          Copyright © 2025 E-SHOP Inc. All rights reserved.
+        </p>
+        <p class="pull-right">
+          Designed by <span><a target="_blank" href="#">Nhóm 11</a></span>
+        </p>
       </div>
     </div>
+  </div>
+</footer>
 
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <p class="pull-left">
-            Copyright © 2025 E-SHOP Inc. All rights reserved.
-          </p>
-          <p class="pull-right">
-            Designed by <span><a target="_blank" href="#">Nhóm 11</a></span>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
+<script src="js/jquery.js"></script>
+<script src="js/price-range.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/main.js"></script>
 
-  <script src="js/jquery.js"></script>
-  <script src="js/price-range.js"></script>
-  <script src="js/jquery.scrollUp.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.prettyPhoto.js"></script>
-  <script src="js/main.js"></script>
 </html>

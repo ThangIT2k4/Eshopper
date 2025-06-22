@@ -1,441 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Yêu thích | E-Shopper</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <link href="css/prettyPhoto.css" rel="stylesheet" />
-    <link href="css/price-range.css" rel="stylesheet" />
-    <link href="css/animate.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
-    <link href="css/responsive.css" rel="stylesheet" />
-    <!--[if lt IE 9]>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Yêu thích | E-Shop</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/prettyPhoto.css" rel="stylesheet" />
+  <link href="css/price-range.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico" />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="144x144"
-      href="images/ico/apple-touch-icon-144-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="114x114"
-      href="images/ico/apple-touch-icon-114-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="72x72"
-      href="images/ico/apple-touch-icon-72-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="images/ico/apple-touch-icon-57-precomposed.png"
-    /></head
-  ><!--/head-->
+  <link rel="shortcut icon" href="images/ico/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png" />
+</head><!--/head-->
 
-  <body>
-    <header id="header">
-      <!--header-->
-      <div class="header_top">
-        <!--header_top-->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="contactinfo">
-                <ul class="nav nav-pills">
-                  <li>
-                    <a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a>
-                  </li>
-                  <li>
-                    <a href=""
-                      ><i class="fa fa-envelope"></i> info@domain.com</a
-                    >
-                  </li>
-                </ul>
-              </div>
+<body>
+  <header id="header">
+    <!--header-->
+    <div class="header_top">
+      <!--header_top-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="contactinfo">
+              <ul class="nav nav-pills">
+                <li>
+                  <a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-envelope"></i> info@domain.com</a>
+                </li>
+              </ul>
             </div>
-            <div class="col-sm-6">
-              <div class="social-icons pull-right">
-                <ul class="nav navbar-nav">
-                  <li>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-dribbble"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                  </li>
-                </ul>
-              </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="social-icons pull-right">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <!--/header_top-->
+    </div>
+    <!--/header_top-->
 
-      <div class="header-middle">
-        <!--header-middle-->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="logo pull-left">
-                <a href="index.html"
-                  ><img src="images/home/logo.png" alt=""
-                /></a>
-              </div>
-              <div class="btn-group pull-right">
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-default dropdown-toggle usa"
-                    data-toggle="dropdown"
-                  >
-                    USA
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Canada</a></li>
-                    <li><a href="">UK</a></li>
-                  </ul>
-                </div>
-
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-default dropdown-toggle usa"
-                    data-toggle="dropdown"
-                  >
-                    DOLLAR
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Canadian Dollar</a></li>
-                    <li><a href="">Pound</a></li>
-                  </ul>
-                </div>
-              </div>
+    <div class="header-middle">
+      <!--header-middle-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="logo pull-left">
+              <a href="index.html"><img src="images/home/logo.png" alt="" /></a>
             </div>
-            <div class="col-sm-8">
-              <div class="shop-menu pull-right">
-                <ul class="nav navbar-nav">
-                  <li class="dropdown">
-                    <a href="#"><i class="fa fa-user"></i>Tài khoản</a>
-                    <ul role="menu" class="dropdown-menu sub-menu">
-                      <li>
-                        <a
-                          href="account.html"
-                          style="color: rgb(94, 90, 90); font-weight: 300"
-                          >Người dùng</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="admin/index3.html"
-                          style="color: rgb(94, 90, 90); font-weight: 300"
-                          >Quản trị</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="wishlist.html"
-                      ><i class="fa fa-star"></i> Yêu thích</a
-                    >
-                  </li>
-                  <li>
-                    <a href="checkout.html"
-                      ><i class="fa fa-crosshairs"></i> Thanh toán</a
-                    >
-                  </li>
-                  <li>
-                    <a href="cart.html"
-                      ><i class="fa fa-shopping-cart"></i> Giỏ hàng</a
-                    >
-                  </li>
-                  <li>
-                    <a href="login.html" class="active"
-                      ><i class="fa fa-lock"></i> Đăng nhập</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/header-middle-->
-
-      <div class="header-bottom">
-        <!--header-bottom-->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-9">
-              <div class="navbar-header">
-                <button
-                  type="button"
-                  class="navbar-toggle"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse"
-                >
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
+            <div class="btn-group pull-right">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                  USA
+                  <span class="caret"></span>
                 </button>
+                <ul class="dropdown-menu">
+                  <li><a href="">Canada</a></li>
+                  <li><a href="">UK</a></li>
+                </ul>
               </div>
-              <div class="mainmenu pull-left">
-                <ul class="nav navbar-nav collapse navbar-collapse">
-                  <li><a href="index.html">Trang chủ</a></li>
-                  <li class="dropdown">
-                    <a href="#">Cửa hàng<i class="fa fa-angle-down"></i></a>
-                    <ul role="menu" class="sub-menu">
-                      <li><a href="shop.html">Sản phẩm</a></li>
-                      <li>
-                        <a href="product-details.html">Thông tin sản phẩm</a>
-                      </li>
-                      <li><a href="checkout.html">Thanh toán</a></li>
-                      <li><a href="cart.html">Giỏ hàng</a></li>
-                      <li><a href="login.html" class="active">Đăng nhập</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#">Đánh giá<i class="fa fa-angle-down"></i></a>
-                    <ul role="menu" class="sub-menu">
-                      <li><a href="blog.html">Danh sách đánh giá</a></li>
-                      <li><a href="blog-single.html">Đánh giá của bạn</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="404.html">404</a></li>
-                  <li><a href="contact-us.html">Liên hệ</a></li>
+
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                  DOLLAR
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="">Canadian Dollar</a></li>
+                  <li><a href="">Pound</a></li>
                 </ul>
               </div>
             </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="shop-menu pull-right">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="#"><i class="fa fa-user"></i>Tài khoản</a>
+                  <ul role="menu" class="dropdown-menu sub-menu">
+                    <li>
+                      <a href="account.html" style="color: rgb(94, 90, 90); font-weight: 300">Người dùng</a>
+                    </li>
+                    <li>
+                      <a href="admin/index3.html" style="color: rgb(94, 90, 90); font-weight: 300">Quản trị</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="wishlist.html"><i class="fa fa-star"></i> Yêu thích</a>
+                </li>
+                <li>
+                  <a href="checkout.html"><i class="fa fa-crosshairs"></i> Thanh toán</a>
+                </li>
+                <li>
+                  <a href="cart.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a>
+                </li>
+                <li>
+                  <a href="login.html" class="active"><i class="fa fa-lock"></i> Đăng nhập</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/header-middle-->
+
+    <div class="header-bottom">
+      <!--header-bottom-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="mainmenu pull-left">
+              <ul class="nav navbar-nav collapse navbar-collapse">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li class="dropdown">
+                  <a href="#">Cửa hàng<i class="fa fa-angle-down"></i></a>
+                  <ul role="menu" class="sub-menu">
+                    <li><a href="shop.html">Sản phẩm</a></li>
+                    <li>
+                      <a href="product-details.html">Thông tin sản phẩm</a>
+                    </li>
+                    <li><a href="checkout.html">Thanh toán</a></li>
+                    <li><a href="cart.html">Giỏ hàng</a></li>
+                    <li><a href="login.html" class="active">Đăng nhập</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Đánh giá<i class="fa fa-angle-down"></i></a>
+                  <ul role="menu" class="sub-menu">
+                    <li><a href="blog.html">Danh sách đánh giá</a></li>
+                    <li><a href="blog-single.html">Đánh giá của bạn</a></li>
+                  </ul>
+                </li>
+                <li><a href="404.html">404</a></li>
+                <li><a href="contact-us.html">Liên hệ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="search_box pull-right">
+              <input type="text" placeholder="Tìm kiếm" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/header-bottom-->
+  </header>
+  <!--/header-->
+
+  <!-- wishlist container -->
+  <section id="wishlist" class="container py-5">
+    <div class="breadcrumbs">
+      <ol class="breadcrumb">
+        <li><a href="#">Trang chủ</a></li>
+        <li class="active">Yêu thích</li>
+      </ol>
+    </div>
+    <!--/breadcrums-->
+    <h2 class="text-center mb-4">Danh sách yêu thích</h2>
+    <div class="wishlist-container">
+      <!-- Wishlist items sẽ được thêm động bằng jQuery -->
+    </div>
+    <!-- Pagination -->
+    <nav aria-label="Page navigation" class="mt-4">
+      <ul class="pagination justify-content-center">
+        <!-- Pagination items sẽ được thêm động bằng jQuery -->
+      </ul>
+    </nav>
+  </section>
+
+  <footer id="footer">
+    <!--Footer-->
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="companyinfo">
+              <h2><span>e</span>-shop</h2>
+              <p>
+                Một hệ thống bán quần áo online uy tín số một Việt Nam. Dễ
+                dàng sử dụng, thanh toán nhanh chóng, tiện lợi.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-7">
             <div class="col-sm-3">
-              <div class="search_box pull-right">
-                <input type="text" placeholder="Tìm kiếm" />
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe1.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!--/header-bottom-->
-    </header>
-    <!--/header-->
 
-    <!-- wishlist container -->
-    <section id="wishlist" class="container py-5">
-      <div class="breadcrumbs">
-        <ol class="breadcrumb">
-          <li><a href="#">Trang chủ</a></li>
-          <li class="active">Yêu thích</li>
-        </ol>
-      </div>
-      <!--/breadcrums-->
-      <h2 class="text-center mb-4">Danh sách yêu thích</h2>
-      <div class="wishlist-container">
-        <!-- Wishlist items sẽ được thêm động bằng jQuery -->
-      </div>
-      <!-- Pagination -->
-      <nav aria-label="Page navigation" class="mt-4">
-        <ul class="pagination justify-content-center">
-          <!-- Pagination items sẽ được thêm động bằng jQuery -->
-        </ul>
-      </nav>
-    </section>
-
-    <footer id="footer">
-      <!--Footer-->
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-2">
-              <div class="companyinfo">
-                <h2><span>e</span>-shop</h2>
-                <p>
-                  Một hệ thống bán quần áo online uy tín số một Việt Nam. Dễ
-                  dàng sử dụng, thanh toán nhanh chóng, tiện lợi.
-                </p>
-              </div>
-            </div>
-            <div class="col-sm-7">
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe1.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe2.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe3.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe4.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-            </div>
             <div class="col-sm-3">
-              <div class="address">
-                <img src="images/home/map.png" alt="" />
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe2.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe3.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe4.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="address">
+              <img src="images/home/map.png" alt="" />
+              <p>
+                Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội, Việt Nam
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-widget">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>Dịch vụ</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="">Trợ giúp trực tuyến</a></li>
+                <li><a href="">Liên hệ chúng tôi</a></li>
+                <li><a href="">Trạng thái đơn hàng</a></li>
+                <li><a href="">Thay đổi vị trí</a></li>
+                <li><a href="">FAQ’s</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>Cửa hàng</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="">Áo thun</a></li>
+                <li><a href="">Nam giới</a></li>
+                <li><a href="">Nữ giới</a></li>
+                <li><a href="">Thẻ quà tặng</a></li>
+                <li><a href="">Quần âu</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>Chính sách</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="">Điều khoản sử dụng</a></li>
+                <li><a href="">Chính sách bảo mật</a></li>
+                <li><a href="">Chính sách hoàn tiền</a></li>
+                <li><a href="">Hệ thống thanh toán</a></li>
+                <li><a href="">Hệ thống vé</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>About Shop</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="">Thông tin công ty</a></li>
+                <li><a href="">Nghề nghiệp</a></li>
+                <li><a href="">Vị trí cửa hàng</a></li>
+                <li><a href="">Liên kết</a></li>
+                <li><a href="">Bản quyền</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1">
+            <div class="single-widget">
+              <h2>About Shopper</h2>
+              <form action="#" class="searchform">
+                <input type="text" placeholder="Your email address" />
+                <button type="submit" class="btn btn-default">
+                  <i class="fa fa-arrow-circle-o-right"></i>
+                </button>
                 <p>
-                  Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội, Việt Nam
+                  Nhận những cập nhật mới nhất từ <br />trang web của chúng
+                  tôi và tự cập nhật...
                 </p>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="footer-widget">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>Dịch vụ</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="">Trợ giúp trực tuyến</a></li>
-                  <li><a href="">Liên hệ chúng tôi</a></li>
-                  <li><a href="">Trạng thái đơn hàng</a></li>
-                  <li><a href="">Thay đổi vị trí</a></li>
-                  <li><a href="">FAQ’s</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>Cửa hàng</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="">Áo thun</a></li>
-                  <li><a href="">Nam giới</a></li>
-                  <li><a href="">Nữ giới</a></li>
-                  <li><a href="">Thẻ quà tặng</a></li>
-                  <li><a href="">Quần âu</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>Chính sách</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="">Điều khoản sử dụng</a></li>
-                  <li><a href="">Chính sách bảo mật</a></li>
-                  <li><a href="">Chính sách hoàn tiền</a></li>
-                  <li><a href="">Hệ thống thanh toán</a></li>
-                  <li><a href="">Hệ thống vé</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>About Shop</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="">Thông tin công ty</a></li>
-                  <li><a href="">Nghề nghiệp</a></li>
-                  <li><a href="">Vị trí cửa hàng</a></li>
-                  <li><a href="">Liên kết</a></li>
-                  <li><a href="">Bản quyền</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-3 col-sm-offset-1">
-              <div class="single-widget">
-                <h2>About Shopper</h2>
-                <form action="#" class="searchform">
-                  <input type="text" placeholder="Your email address" />
-                  <button type="submit" class="btn btn-default">
-                    <i class="fa fa-arrow-circle-o-right"></i>
-                  </button>
-                  <p>
-                    Nhận những cập nhật mới nhất từ <br />trang web của chúng
-                    tôi và tự cập nhật...
-                  </p>
-                </form>
-              </div>
-            </div>
-          </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <p class="pull-left">
+            Copyright © 2025 E-SHOP Inc. All rights reserved.
+          </p>
+          <p class="pull-right">
+            Designed by <span><a target="_blank" href="#">Nhóm 11</a></span>
+          </p>
         </div>
       </div>
+    </div>
+  </footer>
+  <!--/Footer-->
 
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <p class="pull-left">
-              Copyright © 2025 E-SHOP Inc. All rights reserved.
-            </p>
-            <p class="pull-right">
-              Designed by <span><a target="_blank" href="#">Nhóm 11</a></span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--/Footer-->
+  <script src="js/jquery.js"></script>
+  <script src="js/price-range.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/main.js"></script>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/price-range.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- <script>
+  <!-- <script>
         $(document).ready(function () {
             // Cập nhật thông tin từ form vào profile-card
             $('#account-form').on('submit', function (e) {
@@ -455,103 +408,103 @@
             });
         });
     </script> -->
-    <script>
-      $(document).ready(function () {
-        // Dữ liệu mẫu cho wishlist
-        const wishlistItems = [
-          {
-            id: 1,
-            name: "Stylish T-Shirt",
-            category: "Clothing",
-            price: "250.000 VNĐ",
-            image: "images/home/gallery1.jpg",
-            availability: "còn hàng",
-          },
-          {
-            id: 2,
-            name: "Elegant Dress",
-            category: "Fashion",
-            price: "450.000 VNĐ",
-            image: "images/home/gallery2.jpg",
-            availability: "hết hàng",
-          },
-          {
-            id: 3,
-            name: "Running Shoes",
-            category: "Footwear",
-            price: "600.000 VNĐ",
-            image: "images/home/gallery3.jpg",
-            availability: "còn hàng",
-          },
-          {
-            id: 4,
-            name: "Casual Shirt",
-            category: "Clothing",
-            price: "300.000 VNĐ",
-            image: "images/home/gallery4.jpg",
-            availability: "còn hàng",
-          },
-          {
-            id: 5,
-            name: "Leather Jacket",
-            category: "Fashion",
-            price: "120.000 VNĐ",
-            image: "images/home/gallery1.jpg",
-            availability: "còn hàng",
-          },
-          {
-            id: 6,
-            name: "Sports Watch",
-            category: "Accessories",
-            price: "800.000 VNĐ",
-            image: "images/home/gallery2.jpg",
-            availability: "còn hàng",
-          },
-          {
-            id: 7,
-            name: "Formal Shoes",
-            category: "Footwear",
-            price: "700.000 VNĐ",
-            image: "images/home/gallery4.jpg",
-            availability: "hết hàng",
-          },
-          {
-            id: 8,
-            name: "Denim Jeans",
-            category: "Clothing",
-            price: "500.000 VNĐ",
-            image: "images/home/gallery3.jpg",
-            availability: "còn hàng",
-          },
-          {
-            id: 9,
-            name: "Sunglasses",
-            category: "Accessories",
-            price: "250.000 VNĐ",
-            image: "images/home/gallery1.jpg",
-            availability: "còn hàng",
-          },
-          {
-            id: 10,
-            name: "Handbag",
-            category: "Fashion",
-            price: "900.000 VNĐ",
-            image: "images/shop/product7.jpg",
-            availability: "còn hàng",
-          },
-        ];
+  <script>
+    $(document).ready(function () {
+      // Dữ liệu mẫu cho wishlist
+      const wishlistItems = [
+        {
+          id: 1,
+          name: "Stylish T-Shirt",
+          category: "Clothing",
+          price: "250.000 VNĐ",
+          image: "images/home/gallery1.jpg",
+          availability: "còn hàng",
+        },
+        {
+          id: 2,
+          name: "Elegant Dress",
+          category: "Fashion",
+          price: "450.000 VNĐ",
+          image: "images/home/gallery2.jpg",
+          availability: "hết hàng",
+        },
+        {
+          id: 3,
+          name: "Running Shoes",
+          category: "Footwear",
+          price: "600.000 VNĐ",
+          image: "images/home/gallery3.jpg",
+          availability: "còn hàng",
+        },
+        {
+          id: 4,
+          name: "Casual Shirt",
+          category: "Clothing",
+          price: "300.000 VNĐ",
+          image: "images/home/gallery4.jpg",
+          availability: "còn hàng",
+        },
+        {
+          id: 5,
+          name: "Leather Jacket",
+          category: "Fashion",
+          price: "120.000 VNĐ",
+          image: "images/home/gallery1.jpg",
+          availability: "còn hàng",
+        },
+        {
+          id: 6,
+          name: "Sports Watch",
+          category: "Accessories",
+          price: "800.000 VNĐ",
+          image: "images/home/gallery2.jpg",
+          availability: "còn hàng",
+        },
+        {
+          id: 7,
+          name: "Formal Shoes",
+          category: "Footwear",
+          price: "700.000 VNĐ",
+          image: "images/home/gallery4.jpg",
+          availability: "hết hàng",
+        },
+        {
+          id: 8,
+          name: "Denim Jeans",
+          category: "Clothing",
+          price: "500.000 VNĐ",
+          image: "images/home/gallery3.jpg",
+          availability: "còn hàng",
+        },
+        {
+          id: 9,
+          name: "Sunglasses",
+          category: "Accessories",
+          price: "250.000 VNĐ",
+          image: "images/home/gallery1.jpg",
+          availability: "còn hàng",
+        },
+        {
+          id: 10,
+          name: "Handbag",
+          category: "Fashion",
+          price: "900.000 VNĐ",
+          image: "images/shop/product7.jpg",
+          availability: "còn hàng",
+        },
+      ];
 
-        const itemsPerPage = 5; // Số sản phẩm trên mỗi trang
-        let currentPage = 1;
+      const itemsPerPage = 5; // Số sản phẩm trên mỗi trang
+      let currentPage = 1;
 
-        // Hàm tạo HTML cho một wishlist item
-        function createWishlistItem(item) {
-          const availabilityClass =
-            item.availability === "còn hàng" ? "text-success" : "text-danger";
-          const addToCartDisabled =
-            item.availability === "còn hàng" ? "" : "disabled";
+      // Hàm tạo HTML cho một wishlist item
+      function createWishlistItem(item) {
+        const availabilityClass =
+          item.availability === "còn hàng" ? "text-success" : "text-danger";
+        const addToCartDisabled =
+          item.availability === "còn hàng" ? "" : "disabled";
 
-          return `
+        return `
                         <div class="wishlist-item shadow-sm">
                             <div class="row align-items-center">
                                 <div class="col-md-3">
@@ -572,97 +525,93 @@
                             </div>
                         </div>
                     `;
-        }
+      }
 
-        // Hàm hiển thị các sản phẩm trên trang hiện tại
-        function displayItems(page) {
-          $(".wishlist-container").empty();
-          const startIndex = (page - 1) * itemsPerPage;
-          const endIndex = startIndex + itemsPerPage;
-          const itemsToDisplay = wishlistItems.slice(startIndex, endIndex);
+      // Hàm hiển thị các sản phẩm trên trang hiện tại
+      function displayItems(page) {
+        $(".wishlist-container").empty();
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const itemsToDisplay = wishlistItems.slice(startIndex, endIndex);
 
-          itemsToDisplay.forEach((item) => {
-            $(".wishlist-container").append(createWishlistItem(item));
-          });
-        }
+        itemsToDisplay.forEach((item) => {
+          $(".wishlist-container").append(createWishlistItem(item));
+        });
+      }
 
-        // Hàm tạo pagination
-        function createPagination() {
-          $(".pagination").empty();
-          const totalPages = Math.ceil(wishlistItems.length / itemsPerPage);
+      // Hàm tạo pagination
+      function createPagination() {
+        $(".pagination").empty();
+        const totalPages = Math.ceil(wishlistItems.length / itemsPerPage);
 
-          // Nút "Previous"
-          $(".pagination").append(`
-                        <li class="page-item ${
-                          currentPage === 1 ? "disabled" : ""
-                        }">
-                            <a class="page-link" href="#" aria-label="Previous" data-page="${
-                              currentPage - 1
-                            }">
+        // Nút "Previous"
+        $(".pagination").append(`
+                        <li class="page-item ${currentPage === 1 ? "disabled" : ""
+          }">
+                            <a class="page-link" href="#" aria-label="Previous" data-page="${currentPage - 1
+          }">
                                 <span aria-hidden="true">&laquo;</span>
                             </a>
                         </li>
                     `);
 
-          // Các nút số trang
-          for (let i = 1; i <= totalPages; i++) {
-            $(".pagination").append(`
-                            <li class="page-item ${
-                              currentPage === i ? "active" : ""
-                            }">
+        // Các nút số trang
+        for (let i = 1; i <= totalPages; i++) {
+          $(".pagination").append(`
+                            <li class="page-item ${currentPage === i ? "active" : ""
+            }">
                                 <a class="page-link" href="#" data-page="${i}">${i}</a>
                             </li>
                         `);
-          }
+        }
 
-          // Nút "Next"
-          $(".pagination").append(`
-                        <li class="page-item ${
-                          currentPage === totalPages ? "disabled" : ""
-                        }">
-                            <a class="page-link" href="#" aria-label="Next" data-page="${
-                              currentPage + 1
-                            }">
+        // Nút "Next"
+        $(".pagination").append(`
+                        <li class="page-item ${currentPage === totalPages ? "disabled" : ""
+          }">
+                            <a class="page-link" href="#" aria-label="Next" data-page="${currentPage + 1
+          }">
                                 <span aria-hidden="true">&raquo;</span>
                             </a>
                         </li>
                     `);
-        }
+      }
 
-        // Xử lý sự kiện chuyển trang
-        $(document).on("click", ".page-link", function (e) {
-          e.preventDefault();
-          const page = parseInt($(this).data("page"));
-          if (
-            page >= 1 &&
-            page <= Math.ceil(wishlistItems.length / itemsPerPage)
-          ) {
-            currentPage = page;
-            displayItems(currentPage);
-            createPagination();
-          }
-        });
-
-        // Xử lý sự kiện "Remove"
-        $(document).on("click", ".remove-item", function () {
-          const index = $(this).closest(".wishlist-item").index();
-          const globalIndex = (currentPage - 1) * itemsPerPage + index;
-          wishlistItems.splice(globalIndex, 1);
-
-          // Cập nhật lại giao diện
+      // Xử lý sự kiện chuyển trang
+      $(document).on("click", ".page-link", function (e) {
+        e.preventDefault();
+        const page = parseInt($(this).data("page"));
+        if (
+          page >= 1 &&
+          page <= Math.ceil(wishlistItems.length / itemsPerPage)
+        ) {
+          currentPage = page;
           displayItems(currentPage);
           createPagination();
-        });
+        }
+      });
 
-        // Xử lý sự kiện "Add to Cart"
-        $(document).on("click", ".add-to-cart", function () {
-          alert("Item added to cart!");
-        });
+      // Xử lý sự kiện "Remove"
+      $(document).on("click", ".remove-item", function () {
+        const index = $(this).closest(".wishlist-item").index();
+        const globalIndex = (currentPage - 1) * itemsPerPage + index;
+        wishlistItems.splice(globalIndex, 1);
 
-        // Hiển thị trang đầu tiên và tạo pagination
+        // Cập nhật lại giao diện
         displayItems(currentPage);
         createPagination();
       });
-    </script>
-  </body>
+
+      // Xử lý sự kiện "Add to Cart"
+      $(document).on("click", ".add-to-cart", function () {
+        alert("Item added to cart!");
+      });
+
+      // Hiển thị trang đầu tiên và tạo pagination
+      displayItems(currentPage);
+      createPagination();
+    });
+  </script>
+</body>
+
 </html>

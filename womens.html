@@ -1,1145 +1,958 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Thời trang Nữ | E-Shopper</title>
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <link href="css/prettyPhoto.css" rel="stylesheet" />
-    <link href="css/price-range.css" rel="stylesheet" />
-    <link href="css/animate.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
-    <link href="css/responsive.css" rel="stylesheet" />
-    <!--[if lt IE 9]>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Thời trang Nữ | E-Shopper</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/prettyPhoto.css" rel="stylesheet" />
+  <link href="css/price-range.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico" />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="144x144"
-      href="images/ico/apple-touch-icon-144-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="114x114"
-      href="images/ico/apple-touch-icon-114-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="72x72"
-      href="images/ico/apple-touch-icon-72-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="images/ico/apple-touch-icon-57-precomposed.png"
-    />
-    <style>
-      .productinfo img {
-        width: 237px;
-        height: 255px;
-        object-fit: cover;
+  <link rel="shortcut icon" href="images/ico/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png" />
+  <style>
+    .productinfo img {
+      width: 237px;
+      height: 255px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 991.98px) {
+      #text {
+        top: 10%;
       }
-      @media (max-width: 991.98px) {
-        #text {
-          top: 10%;
-        }
-        #text h1 {
-          font-size: 20px;
-          margin: 0;
-        }
-        #text p {
-          font-size: 15px !important;
-        }
+
+      #text h1 {
+        font-size: 20px;
+        margin: 0;
       }
-      @media (max-width: 500px) {
-        #text {
-          display: none;
-        }
+
+      #text p {
+        font-size: 15px !important;
       }
-    </style></head
-  ><!--/head-->
+    }
 
-  <body>
-    <header id="header">
-      <!--header-->
-      <div class="header_top">
-        <!--header_top-->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="contactinfo">
-                <ul class="nav nav-pills">
-                  <li>
-                    <a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a>
-                  </li>
-                  <li>
-                    <a href=""
-                      ><i class="fa fa-envelope"></i> info@domain.com</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="social-icons pull-right">
-                <ul class="nav navbar-nav">
-                  <li>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-dribbble"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/header_top-->
+    @media (max-width: 500px) {
+      #text {
+        display: none;
+      }
+    }
+  </style>
+</head><!--/head-->
 
-      <div class="header-middle">
-        <!--header-middle-->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="logo pull-left">
-                <a href="index.html"
-                  ><img src="images/home/logo.png" alt=""
-                /></a>
-              </div>
-              <div class="btn-group pull-right">
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-default dropdown-toggle usa"
-                    data-toggle="dropdown"
-                  >
-                    Việt Nam
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Mỹ</a></li>
-                    <li><a href="">Nhật Bản</a></li>
-                  </ul>
-                </div>
-
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-default dropdown-toggle usa"
-                    data-toggle="dropdown"
-                  >
-                    VND
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Canadian Dollar</a></li>
-                    <li><a href="">Dollar</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-8">
-              <div class="shop-menu pull-right">
-                <ul class="nav navbar-nav">
-                  <li>
-                    <a href="account.html"
-                      ><i class="fa fa-user"></i> Tài khoản</a
-                    >
-                  </li>
-                  <li>
-                    <a href="wishlist.html"
-                      ><i class="fa fa-star"></i> Yêu thích</a
-                    >
-                  </li>
-                  <li>
-                    <a href="checkout.html"
-                      ><i class="fa fa-crosshairs"></i> Thanh toán</a
-                    >
-                  </li>
-                  <li>
-                    <a href="cart.html"
-                      ><i class="fa fa-shopping-cart"></i> Giỏ hàng</a
-                    >
-                  </li>
-                  <li>
-                    <a href="login.html"
-                      ><i class="fa fa-lock"></i> Đăng nhập</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/header-middle-->
-
-      <div
-        class="header-bottom"
-        style="background-color: #e6f0ff; padding: 15px 0"
-      >
-        <!--header-bottom-->
-        <div class="container" style="margin-bottom: 0">
-          <div class="row">
-            <div class="col-sm-9">
-              <div class="mainmenu pull-left">
-                <ul class="nav navbar-nav collapse navbar-collapse">
-                  <li>
-                    <a href="index.html" style="padding-bottom: 0">Trang Chủ</a>
-                  </li>
-                  <li style="padding-left: 0px">
-                    <i class="fa fa-angle-right"></i>
-                  </li>
-                  <li style="padding-left: 0px; padding-bottom: 0">
-                    <p
-                      style="color: #666663; font-size: 16px; margin-bottom: 0"
-                    >
-                      Cửa Hàng
-                    </p>
-                  </li>
-                  <li style="padding-left: 0px">
-                    <i class="fa fa-angle-right"></i>
-                  </li>
-                  <li style="padding-left: 0px">
-                    <a class="active" style="padding-bottom: 0"
-                      >Thời trang Nữ</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/header-bottom-->
-    </header>
-    <!--/header-->
-    <section>
-      <div class="banner-conatainer" style="padding: 20px">
-        <img
-          src="./images/womens/banner-hlmd-1.jpg"
-          alt=""
-          width="100%"
-          height="auto"
-        />
-      </div>
+<body>
+  <header id="header">
+    <!--header-->
+    <div class="header_top">
+      <!--header_top-->
       <div class="container">
         <div class="row">
-          <div class="col-sm-3">
-            <div class="left-sidebar" style="padding-top: 10px">
-              <h2>Thể loại</h2>
-              <div class="panel-group category-products" id="accordian">
-                <!--category-productsr-->
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a
-                        data-toggle="collapse"
-                        data-parent="#accordian"
-                        href="#sportswear"
-                      >
-                        <span class="badge pull-right"
-                          ><i class="fa fa-plus"></i
-                        ></span>
-                        Đồ thể thao
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="sportswear" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <ul>
-                        <li><a href="">Nike </a></li>
-                        <li><a href="">Under Armour </a></li>
-                        <li><a href="">Adidas </a></li>
-                        <li><a href="">Puma</a></li>
-                        <li><a href="">ASICS </a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a
-                        data-toggle="collapse"
-                        data-parent="#accordian"
-                        href="#mens"
-                      >
-                        <span class="badge pull-right"
-                          ><i class="fa fa-plus"></i
-                        ></span>
-                        Nam giới
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="mens" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <ul>
-                        <li><a href="">Fendi</a></li>
-                        <li><a href="">Guess</a></li>
-                        <li><a href="">Valentino</a></li>
-                        <li><a href="">Dior</a></li>
-                        <li><a href="">Versace</a></li>
-                        <li><a href="">Armani</a></li>
-                        <li><a href="">Prada</a></li>
-                        <li><a href="">Dolce and Gabbana</a></li>
-                        <li><a href="">Chanel</a></li>
-                        <li><a href="">Gucci</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+          <div class="col-sm-6">
+            <div class="contactinfo">
+              <ul class="nav nav-pills">
+                <li>
+                  <a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-envelope"></i> info@domain.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="social-icons pull-right">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/header_top-->
 
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a
-                        data-toggle="collapse"
-                        data-parent="#accordian"
-                        href="#womens"
-                      >
-                        <span class="badge pull-right"
-                          ><i class="fa fa-plus"></i
-                        ></span>
-                        Nữ giới
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="womens" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <ul>
-                        <li><a href="">Fendi</a></li>
-                        <li><a href="">Guess</a></li>
-                        <li><a href="">Valentino</a></li>
-                        <li><a href="">Dior</a></li>
-                        <li><a href="">Versace</a></li>
-                      </ul>
-                    </div>
-                  </div>
+    <div class="header-middle">
+      <!--header-middle-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="logo pull-left">
+              <a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+            </div>
+            <div class="btn-group pull-right">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                  Việt Nam
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="">Mỹ</a></li>
+                  <li><a href="">Nhật Bản</a></li>
+                </ul>
+              </div>
+
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                  VND
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="">Canadian Dollar</a></li>
+                  <li><a href="">Dollar</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="shop-menu pull-right">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="account.html"><i class="fa fa-user"></i> Tài khoản</a>
+                </li>
+                <li>
+                  <a href="wishlist.html"><i class="fa fa-star"></i> Yêu thích</a>
+                </li>
+                <li>
+                  <a href="checkout.html"><i class="fa fa-crosshairs"></i> Thanh toán</a>
+                </li>
+                <li>
+                  <a href="cart.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a>
+                </li>
+                <li>
+                  <a href="login.html"><i class="fa fa-lock"></i> Đăng nhập</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/header-middle-->
+
+    <div class="header-bottom" style="background-color: #e6f0ff; padding: 15px 0">
+      <!--header-bottom-->
+      <div class="container" style="margin-bottom: 0">
+        <div class="row">
+          <div class="col-sm-9">
+            <div class="mainmenu pull-left">
+              <ul class="nav navbar-nav collapse navbar-collapse">
+                <li>
+                  <a href="index.html" style="padding-bottom: 0">Trang Chủ</a>
+                </li>
+                <li style="padding-left: 0px">
+                  <i class="fa fa-angle-right"></i>
+                </li>
+                <li style="padding-left: 0px; padding-bottom: 0">
+                  <p style="color: #666663; font-size: 16px; margin-bottom: 0">
+                    Cửa Hàng
+                  </p>
+                </li>
+                <li style="padding-left: 0px">
+                  <i class="fa fa-angle-right"></i>
+                </li>
+                <li style="padding-left: 0px">
+                  <a class="active" style="padding-bottom: 0">Thời trang Nữ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/header-bottom-->
+  </header>
+  <!--/header-->
+  <section>
+    <div class="banner-conatainer" style="padding: 20px">
+      <img src="./images/womens/banner-hlmd-1.jpg" alt="" width="100%" height="auto" />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="left-sidebar" style="padding-top: 10px">
+            <h2>Thể loại</h2>
+            <div class="panel-group category-products" id="accordian">
+              <!--category-productsr-->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
+                      <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                      Thể thao
+                    </a>
+                  </h4>
                 </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title"><a href="#">Trẻ em</a></h4>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title"><a href="#">Thời trang</a></h4>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title"><a href="#">Hộ gia đình</a></h4>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title"><a href="#">Nội thất</a></h4>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title"><a href="#">Quần áo</a></h4>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title"><a href="#">Túi xách</a></h4>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title"><a href="#">Giày</a></h4>
+                <div id="sportswear" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <ul>
+                      <li><a href="#">Nike</a></li>
+                      <li><a href="#">Under Armour</a></li>
+                      <li><a href="#">Adidas</a></li>
+                      <li><a href="#">Puma</a></li>
+                      <li><a href="#">ASICS</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <!--/category-products-->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#mens">
+                      <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                      Nam giới
+                    </a>
+                  </h4>
+                </div>
+                <div id="mens" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <ul>
+                      <li><a href="./tshirt.html">T-Shirt</a></li>
+                      <li><a href="./mens.html">Mens</a></li>
+                      <li><a href="#">Valentino</a></li>
+                      <li><a href="#">Dior</a></li>
+                      <li><a href="#">Versace</a></li>
+                      <li><a href="#">Armani</a></li>
+                      <li><a href="#">Prada</a></li>
+                      <li><a href="#">Dolce and Gabbana</a></li>
+                      <li><a href="#">Chanel</a></li>
+                      <li><a href="#">Gucci</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-              <div class="brands_products">
-                <!--brands_products-->
-                <h2>Thương hiệu</h2>
-                <div class="brands-name">
-                  <ul class="nav nav-pills nav-stacked">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#womens">
+                      <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                      Nữ giới
+                    </a>
+                  </h4>
+                </div>
+                <div id="womens" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <ul>
+                      <li><a href="./womens.html">Womens</a></li>
+                      <li><a href="#">Fendi</a></li>
+                      <li><a href="#">Guess</a></li>
+                      <li><a href="#">Valentino</a></li>
+                      <li><a href="#">Dior</a></li>
+                      <li><a href="#">Versace</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a href="#">Trẻ em</a></h4>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a href="#">Thời trang</a></h4>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a href="shop.html">Nội thất</a></h4>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a href="#">Quần áo</a></h4>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a href="#">Túi xách</a></h4>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a href="./shoes.html">Giày dép</a></h4>
+                </div>
+              </div>
+            </div>
+            <!--/category-products-->
+
+            <div class="brands_products">
+              <!--brands_products-->
+              <h2>Thương hiệu</h2>
+              <div class="brands-name">
+                <ul class="nav nav-pills nav-stacked">
+                  <li>
+                    <a href=""> <span class="pull-right">(50)</span>Gucci</a>
+                  </li>
+                  <li>
+                    <a href=""> <span class="pull-right">(56)</span>Chanel</a>
+                  </li>
+                  <li>
+                    <a href=""> <span class="pull-right">(27)</span>Prada</a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span class="pull-right">(32)</span>Louis Vuitton</a>
+                  </li>
+                  <li>
+                    <a href=""> <span class="pull-right">(5)</span>Dior</a>
+                  </li>
+                  <li>
+                    <a href=""> <span class="pull-right">(9)</span>Chanel</a>
+                  </li>
+                  <li>
+                    <a href=""> <span class="pull-right">(4)</span>Juno</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--/brands_products-->
+
+            <div class="price-range">
+              <!--price-range-->
+              <h2>Khoảng giá</h2>
+              <div class="well">
+                <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5"
+                  data-slider-value="[250,450]" id="sl2" /><br />
+                <b>0 VND</b> <b class="pull-right">6.000.000 VND</b>
+              </div>
+            </div>
+            <!--/price-range-->
+
+            <div class="shipping text-center">
+              <!--shipping-->
+              <img src="images/home/shipping.jpg" alt="" />
+            </div>
+            <!--/shipping-->
+          </div>
+        </div>
+
+        <div class="col-sm-9 padding-right">
+          <div class="features_items">
+            <!--features_items-->
+            <h2 class="title text-center" style="margin: 10px 0">
+              Thời trang cho Nữ giới
+            </h2>
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/womens/551_1.jpg" alt="" />
+                    <h2>1,444,000 VND</h2>
+                    <p>Áo sơ mi hồng Pence</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                      Hàng</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
+                      <h2>1,444,000 VND</h2>
+                      <p>Áo sơ mi hồng Pence</p>
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                        Hàng</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
                     <li>
-                      <a href=""> <span class="pull-right">(50)</span>Gucci</a>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm vào Danh
+                        Sách</a>
                     </li>
                     <li>
-                      <a href=""> <span class="pull-right">(56)</span>Chanel</a>
-                    </li>
-                    <li>
-                      <a href=""> <span class="pull-right">(27)</span>Prada</a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span class="pull-right">(32)</span>Louis Vuitton</a
-                      >
-                    </li>
-                    <li>
-                      <a href=""> <span class="pull-right">(5)</span>Dior</a>
-                    </li>
-                    <li>
-                      <a href=""> <span class="pull-right">(9)</span>Chanel</a>
-                    </li>
-                    <li>
-                      <a href=""> <span class="pull-right">(4)</span>Juno</a>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm để so sánh</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <!--/brands_products-->
-
-              <div class="price-range">
-                <!--price-range-->
-                <h2>Khoảng giá</h2>
-                <div class="well">
-                  <input
-                    type="text"
-                    class="span2"
-                    value=""
-                    data-slider-min="0"
-                    data-slider-max="600"
-                    data-slider-step="5"
-                    data-slider-value="[250,450]"
-                    id="sl2"
-                  /><br />
-                  <b>0 VND</b> <b class="pull-right">6.000.000 VND</b>
-                </div>
-              </div>
-              <!--/price-range-->
-
-              <div class="shipping text-center">
-                <!--shipping-->
-                <img src="images/home/shipping.jpg" alt="" />
-              </div>
-              <!--/shipping-->
             </div>
-          </div>
-
-          <div class="col-sm-9 padding-right">
-            <div class="features_items">
-              <!--features_items-->
-              <h2 class="title text-center" style="margin: 10px 0">
-                Thời trang cho Nữ giới
-              </h2>
-              <div class="col-sm-4">
-                <div class="product-image-wrapper">
-                  <div class="single-products">
-                    <div class="productinfo text-center">
-                      <img src="images/womens/551_1.jpg" alt="" />
-                      <h2>1,444,000 VND</h2>
-                      <p>Áo sơ mi hồng Pence</p>
-                      <a href="#" class="btn btn-default add-to-cart"
-                        ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ Hàng</a
-                      >
-                    </div>
-                    <div class="product-overlay">
-                      <div class="overlay-content">
-                        <h2>1,444,000 VND</h2>
-                        <p>Áo sơ mi hồng Pence</p>
-                        <a href="#" class="btn btn-default add-to-cart"
-                          ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
-                          Hàng</a
-                        >
-                      </div>
-                    </div>
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/womens/1.2.17.1.23.004.124.04.40600017_2__4.jpg" alt="" />
+                    <h2>1,111,000 VND</h2>
+                    <p>Sơ mi nữ Croptop</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                      Hàng</a>
                   </div>
-                  <div class="choose">
-                    <ul class="nav nav-pills nav-justified">
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm vào Danh
-                          Sách</a
-                        >
-                      </li>
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm để so sánh</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="product-image-wrapper">
-                  <div class="single-products">
-                    <div class="productinfo text-center">
-                      <img
-                        src="images/womens/1.2.17.1.23.004.124.04.40600017_2__4.jpg"
-                        alt=""
-                      />
+                  <div class="product-overlay">
+                    <div class="overlay-content">
                       <h2>1,111,000 VND</h2>
                       <p>Sơ mi nữ Croptop</p>
-                      <a href="#" class="btn btn-default add-to-cart"
-                        ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ Hàng</a
-                      >
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                        Hàng</a>
                     </div>
-                    <div class="product-overlay">
-                      <div class="overlay-content">
-                        <h2>1,111,000 VND</h2>
-                        <p>Sơ mi nữ Croptop</p>
-                        <a href="#" class="btn btn-default add-to-cart"
-                          ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
-                          Hàng</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="choose">
-                    <ul class="nav nav-pills nav-justified">
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm vào Danh
-                          Sách</a
-                        >
-                      </li>
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm để so sánh</a
-                        >
-                      </li>
-                    </ul>
                   </div>
                 </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm vào Danh
+                        Sách</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm để so sánh</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="col-sm-4">
-                <div class="product-image-wrapper">
-                  <div class="single-products">
-                    <div class="productinfo text-center">
-                      <img
-                        src="images/womens/461250827-8243268352424989-6751843212581096927-n.webp"
-                        alt=""
-                      />
+            </div>
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/womens/461250827-8243268352424989-6751843212581096927-n.webp" alt="" />
+                    <h2>1,111,000 VND</h2>
+                    <p>Chân váy xòe</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                      Hàng</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
                       <h2>1,111,000 VND</h2>
                       <p>Chân váy xòe</p>
-                      <a href="#" class="btn btn-default add-to-cart"
-                        ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ Hàng</a
-                      >
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                        Hàng</a>
                     </div>
-                    <div class="product-overlay">
-                      <div class="overlay-content">
-                        <h2>1,111,000 VND</h2>
-                        <p>Chân váy xòe</p>
-                        <a href="#" class="btn btn-default add-to-cart"
-                          ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
-                          Hàng</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="choose">
-                    <ul class="nav nav-pills nav-justified">
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm vào Danh
-                          Sách</a
-                        >
-                      </li>
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm để so sánh</a
-                        >
-                      </li>
-                    </ul>
                   </div>
                 </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm vào Danh
+                        Sách</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm để so sánh</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="col-sm-4">
-                <div class="product-image-wrapper">
-                  <div class="single-products">
-                    <div class="productinfo text-center">
-                      <img
-                        src="images/womens/1.2.25.1.23.002.124.23.11300011_2__5.jpg"
-                        alt=""
-                      />
+            </div>
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/womens/1.2.25.1.23.002.124.23.11300011_2__5.jpg" alt="" />
+                    <h2>1,666,000 VND</h2>
+                    <p>Chân váy nữ xếp ly</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                      Hàng</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
                       <h2>1,666,000 VND</h2>
                       <p>Chân váy nữ xếp ly</p>
-                      <a href="#" class="btn btn-default add-to-cart"
-                        ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ Hàng</a
-                      >
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                        Hàng</a>
                     </div>
-                    <div class="product-overlay">
-                      <div class="overlay-content">
-                        <h2>1,666,000 VND</h2>
-                        <p>Chân váy nữ xếp ly</p>
-                        <a href="#" class="btn btn-default add-to-cart"
-                          ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
-                          Hàng</a
-                        >
-                      </div>
-                    </div>
-                    <img src="images/home/new.png" class="new" alt="" />
                   </div>
-                  <div class="choose">
-                    <ul class="nav nav-pills nav-justified">
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm vào Danh
-                          Sách</a
-                        >
-                      </li>
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm để so sánh</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
+                  <img src="images/home/new.png" class="new" alt="" />
+                </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm vào Danh
+                        Sách</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm để so sánh</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="col-sm-4">
-                <div class="product-image-wrapper">
-                  <div class="single-products">
-                    <div class="productinfo text-center">
-                      <img
-                        src="images/womens/vn-11134207-7r98o-llrnonx9t6fz5f-1713504638418.webp"
-                        alt=""
-                      />
+            </div>
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/womens/vn-11134207-7r98o-llrnonx9t6fz5f-1713504638418.webp" alt="" />
+                    <h2>1,888,000 VND</h2>
+                    <p>Áo dài đỏ trơn truyền thống</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                      Hàng</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
                       <h2>1,888,000 VND</h2>
                       <p>Áo dài đỏ trơn truyền thống</p>
-                      <a href="#" class="btn btn-default add-to-cart"
-                        ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ Hàng</a
-                      >
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                        Hàng</a>
                     </div>
-                    <div class="product-overlay">
-                      <div class="overlay-content">
-                        <h2>1,888,000 VND</h2>
-                        <p>Áo dài đỏ trơn truyền thống</p>
-                        <a href="#" class="btn btn-default add-to-cart"
-                          ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
-                          Hàng</a
-                        >
-                      </div>
-                    </div>
-                    <img src="images/home/sale.png" class="new" alt="" />
                   </div>
-                  <div class="choose">
-                    <ul class="nav nav-pills nav-justified">
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm vào Danh
-                          Sách</a
-                        >
-                      </li>
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm để so sánh</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
+                  <img src="images/home/sale.png" class="new" alt="" />
+                </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm vào Danh
+                        Sách</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm để so sánh</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="col-sm-4">
-                <div class="product-image-wrapper">
-                  <div class="single-products">
-                    <div class="productinfo text-center">
-                      <img
-                        src="images/womens/z523863456698137f56cacde2fc2ef2dbc89255dd6c5b8-3147.jpg"
-                        alt=""
-                      />
+            </div>
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/womens/z523863456698137f56cacde2fc2ef2dbc89255dd6c5b8-3147.jpg" alt="" />
+                    <h2>1,222,000 VND</h2>
+                    <p>Áo dài trắng tuyệt đẹp</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                      Hàng</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
                       <h2>1,222,000 VND</h2>
                       <p>Áo dài trắng tuyệt đẹp</p>
-                      <a href="#" class="btn btn-default add-to-cart"
-                        ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ Hàng</a
-                      >
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                        Hàng</a>
                     </div>
-                    <div class="product-overlay">
-                      <div class="overlay-content">
-                        <h2>1,222,000 VND</h2>
-                        <p>Áo dài trắng tuyệt đẹp</p>
-                        <a href="#" class="btn btn-default add-to-cart"
-                          ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
-                          Hàng</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="choose">
-                    <ul class="nav nav-pills nav-justified">
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm vào Danh
-                          Sách</a
-                        >
-                      </li>
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm để so sánh</a
-                        >
-                      </li>
-                    </ul>
                   </div>
                 </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm vào Danh
+                        Sách</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm để so sánh</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </div>
 
-              <div class="col-sm-4">
-                <div class="product-image-wrapper">
-                  <div class="single-products">
-                    <div class="productinfo text-center">
-                      <img
-                        src="images/womens/e9c2518d-f0a1-4c2a-8fba-ae98b24bded9.webp"
-                        alt=""
-                      />
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/womens/e9c2518d-f0a1-4c2a-8fba-ae98b24bded9.webp" alt="" />
+                    <h2>2,999,000 VND</h2>
+                    <p>Đầm BabyDoll</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                      Hàng</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
                       <h2>2,999,000 VND</h2>
                       <p>Đầm BabyDoll</p>
-                      <a href="#" class="btn btn-default add-to-cart"
-                        ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ Hàng</a
-                      >
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                        Hàng</a>
                     </div>
-                    <div class="product-overlay">
-                      <div class="overlay-content">
-                        <h2>2,999,000 VND</h2>
-                        <p>Đầm BabyDoll</p>
-                        <a href="#" class="btn btn-default add-to-cart"
-                          ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
-                          Hàng</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="choose">
-                    <ul class="nav nav-pills nav-justified">
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm vào Danh
-                          Sách</a
-                        >
-                      </li>
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm để so sánh</a
-                        >
-                      </li>
-                    </ul>
                   </div>
                 </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm vào Danh
+                        Sách</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm để so sánh</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </div>
 
-              <div class="col-sm-4">
-                <div class="product-image-wrapper">
-                  <div class="single-products">
-                    <div class="productinfo text-center">
-                      <img
-                        src="images/womens/___12957625414_2087646882_aa2ec680ef134606ba1ee3a117835aaa.webp"
-                        alt=""
-                      />
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/womens/___12957625414_2087646882_aa2ec680ef134606ba1ee3a117835aaa.webp" alt="" />
+                    <h2>359,000 VND</h2>
+                    <p>Đầm Công Sở</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                      Hàng</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
                       <h2>359,000 VND</h2>
                       <p>Đầm Công Sở</p>
-                      <a href="#" class="btn btn-default add-to-cart"
-                        ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ Hàng</a
-                      >
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                        Hàng</a>
                     </div>
-                    <div class="product-overlay">
-                      <div class="overlay-content">
-                        <h2>359,000 VND</h2>
-                        <p>Đầm Công Sở</p>
-                        <a href="#" class="btn btn-default add-to-cart"
-                          ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
-                          Hàng</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="choose">
-                    <ul class="nav nav-pills nav-justified">
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm vào Danh
-                          Sách</a
-                        >
-                      </li>
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm để so sánh</a
-                        >
-                      </li>
-                    </ul>
                   </div>
                 </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm vào Danh
+                        Sách</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm để so sánh</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </div>
 
-              <div class="col-sm-4">
-                <div class="product-image-wrapper">
-                  <div class="single-products">
-                    <div class="productinfo text-center">
-                      <img
-                        src="images/womens/wk-fuw014_-_199k__3__49d52e45bd36411cb651eed4a80160b2_master.webp"
-                        alt=""
-                      />
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/womens/wk-fuw014_-_199k__3__49d52e45bd36411cb651eed4a80160b2_master.webp" alt="" />
+                    <h2>999,000 VND</h2>
+                    <p>Quần lót vải ren</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                      Hàng</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
                       <h2>999,000 VND</h2>
                       <p>Quần lót vải ren</p>
-                      <a href="#" class="btn btn-default add-to-cart"
-                        ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ Hàng</a
-                      >
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                        Hàng</a>
                     </div>
-                    <div class="product-overlay">
-                      <div class="overlay-content">
-                        <h2>999,000 VND</h2>
-                        <p>Quần lót vải ren</p>
-                        <a href="#" class="btn btn-default add-to-cart"
-                          ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
-                          Hàng</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="choose">
-                    <ul class="nav nav-pills nav-justified">
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm vào Danh
-                          Sách</a
-                        >
-                      </li>
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm để so sánh</a
-                        >
-                      </li>
-                    </ul>
                   </div>
                 </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm vào Danh
+                        Sách</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm để so sánh</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </div>
 
-              <div class="col-sm-4">
-                <div class="product-image-wrapper">
-                  <div class="single-products">
-                    <div class="productinfo text-center">
-                      <img
-                        src="images/womens/wk_fbr038__b__698k__1__0e64c949a241417c88512984017e4979_master.webp"
-                        alt=""
-                      />
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/womens/wk_fbr038__b__698k__1__0e64c949a241417c88512984017e4979_master.webp"
+                      alt="" />
+                    <h2>5,999,000 VND</h2>
+                    <p>Áo lót vải ren cao cấp</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                      Hàng</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
                       <h2>5,999,000 VND</h2>
                       <p>Áo lót vải ren cao cấp</p>
-                      <a href="#" class="btn btn-default add-to-cart"
-                        ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ Hàng</a
-                      >
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                        Hàng</a>
                     </div>
-                    <div class="product-overlay">
-                      <div class="overlay-content">
-                        <h2>5,999,000 VND</h2>
-                        <p>Áo lót vải ren cao cấp</p>
-                        <a href="#" class="btn btn-default add-to-cart"
-                          ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
-                          Hàng</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="choose">
-                    <ul class="nav nav-pills nav-justified">
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm vào Danh
-                          Sách</a
-                        >
-                      </li>
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm để so sánh</a
-                        >
-                      </li>
-                    </ul>
                   </div>
                 </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm vào Danh
+                        Sách</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm để so sánh</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </div>
 
-              <div class="col-sm-4">
-                <div class="product-image-wrapper">
-                  <div class="single-products">
-                    <div class="productinfo text-center">
-                      <img src="images/womens/nuahoa.webp" alt="" />
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/womens/nuahoa.webp" alt="" />
+                    <h2>1,123,000 VND</h2>
+                    <p>Nước hoa Pantio Blue Hawaii</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                      Hàng</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
                       <h2>1,123,000 VND</h2>
                       <p>Nước hoa Pantio Blue Hawaii</p>
-                      <a href="#" class="btn btn-default add-to-cart"
-                        ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ Hàng</a
-                      >
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                        Hàng</a>
                     </div>
-                    <div class="product-overlay">
-                      <div class="overlay-content">
-                        <h2>1,123,000 VND</h2>
-                        <p>Nước hoa Pantio Blue Hawaii</p>
-                        <a href="#" class="btn btn-default add-to-cart"
-                          ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
-                          Hàng</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="choose">
-                    <ul class="nav nav-pills nav-justified">
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm vào Danh
-                          Sách</a
-                        >
-                      </li>
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm để so sánh</a
-                        >
-                      </li>
-                    </ul>
                   </div>
                 </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm vào Danh
+                        Sách</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm để so sánh</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </div>
 
-              <div class="col-sm-4">
-                <div class="product-image-wrapper">
-                  <div class="single-products">
-                    <div class="productinfo text-center">
-                      <img
-                        src="images/womens/fbo040_-_1898k__11__de5b4e3167b049d585fa526226190cb8_master.jpg"
-                        alt=""
-                      />
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/womens/fbo040_-_1898k__11__de5b4e3167b049d585fa526226190cb8_master.jpg" alt="" />
+                    <h2>4,999,000 VND</h2>
+                    <p>Túi sách da Hổ cao cấp</p>
+                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                      Hàng</a>
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
                       <h2>4,999,000 VND</h2>
                       <p>Túi sách da Hổ cao cấp</p>
-                      <a href="#" class="btn btn-default add-to-cart"
-                        ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ Hàng</a
-                      >
+                      <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
+                        Hàng</a>
                     </div>
-                    <div class="product-overlay">
-                      <div class="overlay-content">
-                        <h2>4,999,000 VND</h2>
-                        <p>Túi sách da Hổ cao cấp</p>
-                        <a href="#" class="btn btn-default add-to-cart"
-                          ><i class="fa fa-shopping-cart"></i>Thêm vào Giỏ
-                          Hàng</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="choose">
-                    <ul class="nav nav-pills nav-justified">
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm vào Danh
-                          Sách</a
-                        >
-                      </li>
-                      <li>
-                        <a href=""
-                          ><i class="fa fa-plus-square"></i>Thêm để so sánh</a
-                        >
-                      </li>
-                    </ul>
                   </div>
                 </div>
+                <div class="choose">
+                  <ul class="nav nav-pills nav-justified">
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm vào Danh
+                        Sách</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-plus-square"></i>Thêm để so sánh</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </div>
 
-              <ul class="pagination">
-                <li class="active"><a href="">1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">&raquo;</a></li>
+            <ul class="pagination">
+              <li class="active"><a href="">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">&raquo;</a></li>
+            </ul>
+          </div>
+          <!--features_items-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <!--Footer-->
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="companyinfo">
+              <h2><span>e</span>-shop</h2>
+              <p>
+                Một hệ thống bán quần áo online uy tín số một Việt Nam. Dễ
+                dàng sử dụng, thanh toán nhanh chóng, tiện lợi.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe1.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe2.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe3.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe4.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="address">
+              <img src="images/home/map.png" alt="" />
+              <p>
+                Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội, Việt Nam
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-widget">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>Dịch vụ</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="./onlinehelp.html">Trợ giúp trực tuyến</a></li>
+                <li><a href="./contactus.html">Liên hệ chúng tôi</a></li>
+                <li><a href="./orderstatus.html">Trạng thái đơn hàng</a></li>
+                <li><a href="./changelocation.html">Thay đổi vị trí</a></li>
+                <li><a href="./faq.html">FAQ’s</a></li>
               </ul>
             </div>
-            <!--features_items-->
           </div>
-        </div>
-      </div>
-    </section>
-    <footer id="footer">
-      <!--Footer-->
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-2">
-              <div class="companyinfo">
-                <h2><span>e</span>-shop</h2>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>Cửa hàng</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="./tshirt.html">Áo thun</a></li>
+                <li><a href="mens.html">Nam giới</a></li>
+                <li><a href="womens.html">Nữ giới</a></li>
+                <li><a href="./giftcart.html">Thẻ quà tặng</a></li>
+                <li><a href="shoes.html">Giày</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>Chính sách</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="./termofuse.html">Điều khoản sử dụng</a></li>
+                <li>
+                  <a href="./privercypolicy.html">Chính sách bảo mật</a>
+                </li>
+                <li>
+                  <a href="./refundpolicy.html">Chính sách hoàn tiền</a>
+                </li>
+                <li>
+                  <a href="./billingsystem.html">Hệ thống thanh toán</a>
+                </li>
+                <li><a href="./ticketsystem.html">Hệ thống vé</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>About Shop</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li>
+                  <a href="./companyinformation.html">Thông tin công ty</a>
+                </li>
+                <li><a href="./careers.html">Nghề nghiệp</a></li>
+                <li><a href="./storelocation.html">Vị trí cửa hàng</a></li>
+                <li><a href="./affilateprogram.html">Liên kết</a></li>
+                <li><a href="./coppyright.html">Bản quyền</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1">
+            <div class="single-widget">
+              <h2>About Shopper</h2>
+              <form action="#" class="searchform">
+                <input type="text" placeholder="Your email address" />
+                <button type="submit" class="btn btn-default">
+                  <i class="fa fa-arrow-circle-o-right"></i>
+                </button>
                 <p>
-                  Một hệ thống bán quần áo online uy tín số một Việt Nam. Dễ
-                  dàng sử dụng, thanh toán nhanh chóng, tiện lợi.
+                  Nhận những cập nhật mới nhất từ <br />trang web của chúng
+                  tôi và tự cập nhật...
                 </p>
-              </div>
-            </div>
-            <div class="col-sm-7">
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe1.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe2.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe3.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe4.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="address">
-                <img src="images/home/map.png" alt="" />
-                <p>
-                  Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội, Việt Nam
-                </p>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="footer-widget">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>Dịch vụ</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="./onlinehelp.html">Trợ giúp trực tuyến</a></li>
-                  <li><a href="./contactus.html">Liên hệ chúng tôi</a></li>
-                  <li><a href="./orderstatus.html">Trạng thái đơn hàng</a></li>
-                  <li><a href="./changelocation.html">Thay đổi vị trí</a></li>
-                  <li><a href="./faq.html">FAQ’s</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>Cửa hàng</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="./tshirt.html">Áo thun</a></li>
-                  <li><a href="mens.html">Nam giới</a></li>
-                  <li><a href="womens.html">Nữ giới</a></li>
-                  <li><a href="./giftcart.html">Thẻ quà tặng</a></li>
-                  <li><a href="shoes.html">Giày</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>Chính sách</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="./termofuse.html">Điều khoản sử dụng</a></li>
-                  <li>
-                    <a href="./privercypolicy.html">Chính sách bảo mật</a>
-                  </li>
-                  <li>
-                    <a href="./refundpolicy.html">Chính sách hoàn tiền</a>
-                  </li>
-                  <li>
-                    <a href="./billingsystem.html">Hệ thống thanh toán</a>
-                  </li>
-                  <li><a href="./ticketsystem.html">Hệ thống vé</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>About Shop</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li>
-                    <a href="./companyinformation.html">Thông tin công ty</a>
-                  </li>
-                  <li><a href="./careers.html">Nghề nghiệp</a></li>
-                  <li><a href="./storelocation.html">Vị trí cửa hàng</a></li>
-                  <li><a href="./affilateprogram.html">Liên kết</a></li>
-                  <li><a href="./coppyright.html">Bản quyền</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-3 col-sm-offset-1">
-              <div class="single-widget">
-                <h2>About Shopper</h2>
-                <form action="#" class="searchform">
-                  <input type="text" placeholder="Your email address" />
-                  <button type="submit" class="btn btn-default">
-                    <i class="fa fa-arrow-circle-o-right"></i>
-                  </button>
-                  <p>
-                    Nhận những cập nhật mới nhất từ <br />trang web của chúng
-                    tôi và tự cập nhật...
-                  </p>
-                </form>
-              </div>
-            </div>
-          </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <p class="pull-left">
+            Copyright © 2025 E-SHOP Inc. All rights reserved.
+          </p>
+          <p class="pull-right">
+            Designed by <span><a target="_blank" href="#">Nhóm 11</a></span>
+          </p>
         </div>
       </div>
+    </div>
+  </footer>
+  <!--/Footer-->
 
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <p class="pull-left">
-              Copyright © 2025 E-SHOP Inc. All rights reserved.
-            </p>
-            <p class="pull-right">
-              Designed by <span><a target="_blank" href="#">Nhóm 11</a></span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--/Footer-->
+  <script src="js/jquery.js"></script>
+  <script src="js/price-range.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</body>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/price-range.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-  </body>
 </html>
