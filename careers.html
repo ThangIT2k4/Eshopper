@@ -1,666 +1,545 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Tuyển Dụng | E-Shopper</title>
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <link href="css/prettyPhoto.css" rel="stylesheet" />
-    <link href="css/price-range.css" rel="stylesheet" />
-    <link href="css/animate.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
-    <link href="css/responsive.css" rel="stylesheet" />
-    <!--[if lt IE 9]>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Tuyển Dụng | E-Shop</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/prettyPhoto.css" rel="stylesheet" />
+  <link href="css/price-range.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico" />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="144x144"
-      href="images/ico/apple-touch-icon-144-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="114x114"
-      href="images/ico/apple-touch-icon-114-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="72x72"
-      href="images/ico/apple-touch-icon-72-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="images/ico/apple-touch-icon-57-precomposed.png"
-    />
-    <style>
-      .image-container {
-        position: relative;
-        display: inline-block;
-        overflow: hidden;
-        border-radius: 8px;
-      }
+  <link rel="shortcut icon" href="images/ico/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png" />
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      border-radius: 8px;
+    }
 
-      .image-container img {
-        display: block;
+    .image-container img {
+      display: block;
 
-        transition: all 0.4s ease;
-      }
+      transition: all 0.4s ease;
+    }
 
-      .image-container::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.4);
-        opacity: 0;
-        transition: all 0.4s ease;
-        pointer-events: none; /* 👈 Quan trọng để không chặn click */
-      }
+    .image-container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: all 0.4s ease;
+      pointer-events: none;
+      /* 👈 Quan trọng để không chặn click */
+    }
 
-      .image-container:hover img {
-        filter: brightness(1.2);
-        transform: scale(1.05);
-      }
+    .image-container:hover img {
+      filter: brightness(1.2);
+      transform: scale(1.05);
+    }
 
-      .image-container:hover::after {
-        opacity: 1;
-      }
-    </style></head
-  ><!--/head-->
+    .image-container:hover::after {
+      opacity: 1;
+    }
+  </style>
+</head><!--/head-->
 
-  <body>
-    <header id="header">
-      <!--header-->
-      <div class="header_top">
-        <!--header_top-->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="contactinfo">
-                <ul class="nav nav-pills">
-                  <li>
-                    <a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a>
-                  </li>
-                  <li>
-                    <a href=""
-                      ><i class="fa fa-envelope"></i> info@domain.com</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="social-icons pull-right">
-                <ul class="nav navbar-nav">
-                  <li>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-dribbble"></i></a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/header_top-->
-
-      <div class="header-middle">
-        <!--header-middle-->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="logo pull-left">
-                <a href="index.html"
-                  ><img src="images/home/logo.png" alt=""
-                /></a>
-              </div>
-              <div class="btn-group pull-right">
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-default dropdown-toggle usa"
-                    data-toggle="dropdown"
-                  >
-                    Việt Nam
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Mỹ</a></li>
-                    <li><a href="">Nhật Bản</a></li>
-                  </ul>
-                </div>
-
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-default dropdown-toggle usa"
-                    data-toggle="dropdown"
-                  >
-                    VND
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Canadian Dollar</a></li>
-                    <li><a href="">Dollar</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-8">
-              <div class="shop-menu pull-right">
-                <ul class="nav navbar-nav">
-                  <li>
-                    <a href="account.html"
-                      ><i class="fa fa-user"></i> Tài khoản</a
-                    >
-                  </li>
-                  <li>
-                    <a href="wishlist.html"
-                      ><i class="fa fa-star"></i> Yêu thích</a
-                    >
-                  </li>
-                  <li>
-                    <a href="checkout.html"
-                      ><i class="fa fa-crosshairs"></i> Thanh toán</a
-                    >
-                  </li>
-                  <li>
-                    <a href="cart.html"
-                      ><i class="fa fa-shopping-cart"></i> Giỏ hàng</a
-                    >
-                  </li>
-                  <li>
-                    <a href="login.html"
-                      ><i class="fa fa-lock"></i> Đăng nhập</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/header-middle-->
-
-      <div
-        class="header-bottom"
-        style="background-color: #e6f0ff; padding: 15px 0"
-      >
-        <!--header-bottom-->
-        <div class="container" style="margin-bottom: 0">
-          <div class="row">
-            <div class="col-sm-9">
-              <div class="mainmenu pull-left">
-                <ul class="nav navbar-nav collapse navbar-collapse">
-                  <li>
-                    <a href="index.html" style="padding-bottom: 0">Trang Chủ</a>
-                  </li>
-                  <li style="padding-left: 0px">
-                    <i class="fa fa-angle-right"></i>
-                  </li>
-                  <li style="padding-left: 0px; padding-bottom: 0">
-                    <p
-                      style="color: #666663; font-size: 16px; margin-bottom: 0"
-                    >
-                      ABOUT SHOP
-                    </p>
-                  </li>
-                  <li style="padding-left: 0px">
-                    <i class="fa fa-angle-right"></i>
-                  </li>
-                  <li style="padding-left: 0px">
-                    <a class="active" style="padding-bottom: 0"
-                      >Thông tin tuyển dụng</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/header-bottom-->
-    </header>
-    <!--/header-->
-    <div class="main-content">
-      <div class="container" style="margin: 30px auto">
-        <div class="row">
-          <div class="col-12 col-lg-6">
-            <div class="headcontent" style="margin-top: 15%">
-              <div class="date">10/05/2025 9:48</div>
-              <div class="title">
-                <a href="" style="color: black"
-                  ><h4>TUYỂN DỤNG CHUYÊN VIÊN RA RẬP</h4></a
-                >
-              </div>
-              <div>
-                Thời trang E-Shopper tuyển dụng vị trí "Chuyên viên Ra rập" với
-                JD công việc dưới đây
-              </div>
-              <div style="margin-top: 50px">
-                <a href=""
-                  ><strong style="color: black"
-                    >Xem chi tiết <i class="fa fa-angle-right"></i></strong
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="image-container">
-              <a href=""
-                ><img
-                  src="./images/404/careers/20250429_YiD7gPPB.png"
-                  alt=""
-                  width="555"
-                  height="400"
-                  style="border-radius: 10px"
-              /></a>
-            </div>
-          </div>
-        </div>
-        <hr
-          style="border: 0; height: 1px; background: #e0e0e0; margin: 20px 0"
-        />
-      </div>
+<body>
+  <header id="header">
+    <!--header-->
+    <div class="header_top">
+      <!--header_top-->
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-4 col-md-6" style="margin-bottom: 50px">
-            <div class="image-container">
-              <a href=""
-                ><img
-                  src="./images/404/careers/20250429_7ejBchl4.jpeg"
-                  alt=""
-                  height="250"
-                  width="360"
-                  style="border-radius: 10px"
-              /></a>
-            </div>
-            <div class="date" style="margin-top: 5px">15/07/2004 11:45</div>
-            <div>
-              <a href=""><h4 style="color: black">TUYỂN DỤNG TRADE MKT</h4></a>
-            </div>
-            <div>
-              Thời trang E-Shopper tuyển dụng vị trí "Trade MKT" với JD công
-              việc dưới đây
-            </div>
-            <div style="margin-top: 20px">
-              <a href=""
-                ><strong style="color: black"
-                  >Xem chi tiết <i class="fa fa-angle-right"></i></strong
-              ></a>
+          <div class="col-sm-6">
+            <div class="contactinfo">
+              <ul class="nav nav-pills">
+                <li>
+                  <a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-envelope"></i> info@domain.com</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div
-            class="col-12 col-lg-4 col-md-6 col-sm-6"
-            style="margin-bottom: 50px"
-          >
-            <div class="image-container">
-              <a href=""
-                ><img
-                  src="./images/404/careers/20250429_Cajf7C5e.jpeg"
-                  alt=""
-                  height="250"
-                  width="360"
-                  style="border-radius: 10px"
-              /></a>
-            </div>
-            <div class="date" style="margin-top: 5px">15/07/2004 11:45</div>
-            <div>
-              <a href=""
-                ><h4 style="color: black">TUYỂN DỤNG VIDEO EDITOR</h4></a
-              >
-            </div>
-            <div>
-              Thời trang E-Shopper tuyển dụng vị trí “Video Editor” với JD công
-              việc dưới đây
-            </div>
-            <div style="margin-top: 20px">
-              <a href=""
-                ><strong style="color: black"
-                  >Xem chi tiết <i class="fa fa-angle-right"></i></strong
-              ></a>
-            </div>
-          </div>
-          <div
-            class="col-12 col-lg-4 col-md-6 col-sm-6"
-            style="margin-bottom: 50px"
-          >
-            <div class="image-container">
-              <a href=""
-                ><img
-                  src="./images/404/careers/20240402_Mxp5O94T.jpeg"
-                  alt=""
-                  height="250"
-                  width="360"
-                  style="border-radius: 10px"
-              /></a>
-            </div>
-            <div class="date" style="margin-top: 5px">15/07/2004 11:45</div>
-            <div>
-              <a href=""
-                ><h4 style="color: black">TUYỂN DỤNG QUẢN LÝ CỬA HÀNG</h4></a
-              >
-            </div>
-            <div>
-              Thời trang E-Shopper tuyển dụng vị trí “Quản lý cửa hàng” với JD
-              công việc dưới đây
-            </div>
-            <div style="margin-top: 20px">
-              <a href=""
-                ><strong style="color: black"
-                  >Xem chi tiết <i class="fa fa-angle-right"></i></strong
-              ></a>
-            </div>
-          </div>
-          <div
-            class="col-12 col-lg-4 col-md-6 col-sm-6"
-            style="margin-bottom: 50px"
-          >
-            <div class="image-container">
-              <a href=""
-                ><img
-                  src="./images/404/careers/20240401_ytCU1CHz.jpeg"
-                  alt=""
-                  height="250"
-                  width="360"
-                  style="border-radius: 10px"
-              /></a>
-            </div>
-            <div class="date" style="margin-top: 5px">15/07/2004 11:45</div>
-            <div>
-              <a href=""
-                ><h4 style="color: black">
-                  TUYỂN DỤNG NHÂN VIÊN BÁN HÀNG FULL TIME
-                </h4></a
-              >
-            </div>
-            <div>
-              Thời trang E-Shopper tuyển dụng vị trí nhân viên bán hàng full
-              time với JD dưới đây
-            </div>
-            <div style="margin-top: 20px">
-              <a href=""
-                ><strong style="color: black"
-                  >Xem chi tiết <i class="fa fa-angle-right"></i></strong
-              ></a>
-            </div>
-          </div>
-          <div
-            class="col-12 col-lg-4 col-md-6 col-sm-6"
-            style="margin-bottom: 50px"
-          >
-            <div class="image-container">
-              <a href=""
-                ><img
-                  src="./images/404/careers//20240402_ttWhsLRT.jpeg"
-                  alt=""
-                  height="250"
-                  width="360"
-                  style="border-radius: 10px"
-              /></a>
-            </div>
-            <div class="date" style="margin-top: 5px">15/07/2004 11:45</div>
-            <div>
-              <a href=""
-                ><h4 style="color: black">TUYỂN DỤNG VISUAL MERCHANDISER</h4></a
-              >
-            </div>
-            <div>
-              Thời trang E-Shopper tuyển dụng vị trí “Visual Merchandiser” với
-              JD công việc dưới đây
-            </div>
-            <div style="margin-top: 20px">
-              <a href=""
-                ><strong style="color: black"
-                  >Xem chi tiết <i class="fa fa-angle-right"></i></strong
-              ></a>
-            </div>
-          </div>
-          <div
-            class="col-12 col-lg-4 col-md-6 col-sm-6"
-            style="margin-bottom: 50px"
-          >
-            <div class="image-container">
-              <a href=""
-                ><img
-                  src="./images/404/careers//20231002_bx9PQt6k.png"
-                  alt=""
-                  height="250"
-                  width="360"
-                  style="border-radius: 10px"
-              /></a>
-            </div>
-            <div class="date" style="margin-top: 5px">15/07/2004 11:45</div>
-            <div>
-              <a href=""
-                ><h4 style="color: black">
-                  TUYỂN DỤNG BẢO VỆ CỬA HÀNG PART TIME
-                </h4></a
-              >
-            </div>
-            <div>
-              Thời trang E-Shopper tuyển dụng vị trí “Bảo vệ cửa hàng part time”
-              với JD công việc dưới đây
-            </div>
-            <div style="margin-top: 20px">
-              <a href=""
-                ><strong style="color: black"
-                  >Xem chi tiết <i class="fa fa-angle-right"></i></strong
-              ></a>
+          <div class="col-sm-6">
+            <div class="social-icons pull-right">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <hr
-          style="border: 0; height: 1px; background: #e0e0e0; margin: 20px 0"
-        />
+      </div>
+    </div>
+    <!--/header_top-->
+
+    <div class="header-middle">
+      <!--header-middle-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="logo pull-left">
+              <a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+            </div>
+            <div class="btn-group pull-right">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                  Việt Nam
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="">Mỹ</a></li>
+                  <li><a href="">Nhật Bản</a></li>
+                </ul>
+              </div>
+
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                  VND
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="">Canadian Dollar</a></li>
+                  <li><a href="">Dollar</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="shop-menu pull-right">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="account.html"><i class="fa fa-user"></i> Tài khoản</a>
+                </li>
+                <li>
+                  <a href="wishlist.html"><i class="fa fa-star"></i> Yêu thích</a>
+                </li>
+                <li>
+                  <a href="checkout.html"><i class="fa fa-crosshairs"></i> Thanh toán</a>
+                </li>
+                <li>
+                  <a href="cart.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a>
+                </li>
+                <li>
+                  <a href="login.html"><i class="fa fa-lock"></i> Đăng nhập</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/header-middle-->
+
+    <div class="header-bottom" style="background-color: #e6f0ff; padding: 15px 0">
+      <!--header-bottom-->
+      <div class="container" style="margin-bottom: 0">
+        <div class="row">
+          <div class="col-sm-9">
+            <div class="mainmenu pull-left">
+              <ul class="nav navbar-nav collapse navbar-collapse">
+                <li>
+                  <a href="index.html" style="padding-bottom: 0">Trang Chủ</a>
+                </li>
+                <li style="padding-left: 0px">
+                  <i class="fa fa-angle-right"></i>
+                </li>
+                <li style="padding-left: 0px; padding-bottom: 0">
+                  <p style="color: #666663; font-size: 16px; margin-bottom: 0">
+                    ABOUT SHOP
+                  </p>
+                </li>
+                <li style="padding-left: 0px">
+                  <i class="fa fa-angle-right"></i>
+                </li>
+                <li style="padding-left: 0px">
+                  <a class="active" style="padding-bottom: 0">Thông tin tuyển dụng</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/header-bottom-->
+  </header>
+  <!--/header-->
+  <div class="main-content">
+    <div class="container" style="margin: 30px auto">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="headcontent" style="margin-top: 15%">
+            <div class="date">10/05/2025 9:48</div>
+            <div class="title">
+              <a href="" style="color: black">
+                <h4>TUYỂN DỤNG CHUYÊN VIÊN RA RẬP</h4>
+              </a>
+            </div>
+            <div>
+              Thời trang E-Shop tuyển dụng vị trí "Chuyên viên Ra rập" với
+              JD công việc dưới đây
+            </div>
+            <div style="margin-top: 50px">
+              <a href=""><strong style="color: black">Xem chi tiết <i class="fa fa-angle-right"></i></strong></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="image-container">
+            <a href=""><img src="./images/404/careers/20250429_YiD7gPPB.png" alt="" width="555" height="400"
+                style="border-radius: 10px" /></a>
+          </div>
+        </div>
+      </div>
+      <hr style="border: 0; height: 1px; background: #e0e0e0; margin: 20px 0" />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4 col-md-6" style="margin-bottom: 50px">
+          <div class="image-container">
+            <a href=""><img src="./images/404/careers/20250429_7ejBchl4.jpeg" alt="" height="250" width="360"
+                style="border-radius: 10px" /></a>
+          </div>
+          <div class="date" style="margin-top: 5px">15/07/2004 11:45</div>
+          <div>
+            <a href="">
+              <h4 style="color: black">TUYỂN DỤNG TRADE MKT</h4>
+            </a>
+          </div>
+          <div>
+            Thời trang E-Shop tuyển dụng vị trí "Trade MKT" với JD công
+            việc dưới đây
+          </div>
+          <div style="margin-top: 20px">
+            <a href=""><strong style="color: black">Xem chi tiết <i class="fa fa-angle-right"></i></strong></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 col-sm-6" style="margin-bottom: 50px">
+          <div class="image-container">
+            <a href=""><img src="./images/404/careers/20250429_Cajf7C5e.jpeg" alt="" height="250" width="360"
+                style="border-radius: 10px" /></a>
+          </div>
+          <div class="date" style="margin-top: 5px">15/07/2004 11:45</div>
+          <div>
+            <a href="">
+              <h4 style="color: black">TUYỂN DỤNG VIDEO EDITOR</h4>
+            </a>
+          </div>
+          <div>
+            Thời trang E-Shop tuyển dụng vị trí “Video Editor” với JD công
+            việc dưới đây
+          </div>
+          <div style="margin-top: 20px">
+            <a href=""><strong style="color: black">Xem chi tiết <i class="fa fa-angle-right"></i></strong></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 col-sm-6" style="margin-bottom: 50px">
+          <div class="image-container">
+            <a href=""><img src="./images/404/careers/20240402_Mxp5O94T.jpeg" alt="" height="250" width="360"
+                style="border-radius: 10px" /></a>
+          </div>
+          <div class="date" style="margin-top: 5px">15/07/2004 11:45</div>
+          <div>
+            <a href="">
+              <h4 style="color: black">TUYỂN DỤNG QUẢN LÝ CỬA HÀNG</h4>
+            </a>
+          </div>
+          <div>
+            Thời trang E-Shop tuyển dụng vị trí “Quản lý cửa hàng” với JD
+            công việc dưới đây
+          </div>
+          <div style="margin-top: 20px">
+            <a href=""><strong style="color: black">Xem chi tiết <i class="fa fa-angle-right"></i></strong></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 col-sm-6" style="margin-bottom: 50px">
+          <div class="image-container">
+            <a href=""><img src="./images/404/careers/20240401_ytCU1CHz.jpeg" alt="" height="250" width="360"
+                style="border-radius: 10px" /></a>
+          </div>
+          <div class="date" style="margin-top: 5px">15/07/2004 11:45</div>
+          <div>
+            <a href="">
+              <h4 style="color: black">
+                TUYỂN DỤNG NHÂN VIÊN BÁN HÀNG FULL TIME
+              </h4>
+            </a>
+          </div>
+          <div>
+            Thời trang E-Shop tuyển dụng vị trí nhân viên bán hàng full
+            time với JD dưới đây
+          </div>
+          <div style="margin-top: 20px">
+            <a href=""><strong style="color: black">Xem chi tiết <i class="fa fa-angle-right"></i></strong></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 col-sm-6" style="margin-bottom: 50px">
+          <div class="image-container">
+            <a href=""><img src="./images/404/careers//20240402_ttWhsLRT.jpeg" alt="" height="250" width="360"
+                style="border-radius: 10px" /></a>
+          </div>
+          <div class="date" style="margin-top: 5px">15/07/2004 11:45</div>
+          <div>
+            <a href="">
+              <h4 style="color: black">TUYỂN DỤNG VISUAL MERCHANDISER</h4>
+            </a>
+          </div>
+          <div>
+            Thời trang E-Shop tuyển dụng vị trí “Visual Merchandiser” với
+            JD công việc dưới đây
+          </div>
+          <div style="margin-top: 20px">
+            <a href=""><strong style="color: black">Xem chi tiết <i class="fa fa-angle-right"></i></strong></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 col-sm-6" style="margin-bottom: 50px">
+          <div class="image-container">
+            <a href=""><img src="./images/404/careers//20231002_bx9PQt6k.png" alt="" height="250" width="360"
+                style="border-radius: 10px" /></a>
+          </div>
+          <div class="date" style="margin-top: 5px">15/07/2004 11:45</div>
+          <div>
+            <a href="">
+              <h4 style="color: black">
+                TUYỂN DỤNG BẢO VỆ CỬA HÀNG PART TIME
+              </h4>
+            </a>
+          </div>
+          <div>
+            Thời trang E-Shop tuyển dụng vị trí “Bảo vệ cửa hàng part time”
+            với JD công việc dưới đây
+          </div>
+          <div style="margin-top: 20px">
+            <a href=""><strong style="color: black">Xem chi tiết <i class="fa fa-angle-right"></i></strong></a>
+          </div>
+        </div>
+      </div>
+      <hr style="border: 0; height: 1px; background: #e0e0e0; margin: 20px 0" />
+    </div>
+  </div>
+
+  <footer id="footer">
+    <!--Footer-->
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="companyinfo">
+              <h2><span>e</span>-shop</h2>
+              <p>
+                Một hệ thống bán quần áo online uy tín số một Việt Nam. Dễ
+                dàng sử dụng, thanh toán nhanh chóng, tiện lợi.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe1.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe2.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe3.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="#">
+                  <div class="iframe-img">
+                    <img src="images/home/iframe4.png" alt="" />
+                  </div>
+                  <div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div>
+                </a>
+                <p>Circle of Hands</p>
+                <h2>24 DEC 2025</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="address">
+              <img src="images/home/map.png" alt="" />
+              <p>
+                Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội, Việt Nam
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <footer id="footer">
-      <!--Footer-->
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-2">
-              <div class="companyinfo">
-                <h2><span>e</span>-shop</h2>
+    <div class="footer-widget">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>Dịch vụ</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="./onlinehelp.html">Trợ giúp trực tuyến</a></li>
+                <li><a href="./contactus.html">Liên hệ chúng tôi</a></li>
+                <li><a href="./orderstatus.html">Trạng thái đơn hàng</a></li>
+                <li><a href="./changelocation.html">Thay đổi vị trí</a></li>
+                <li><a href="./faq.html">FAQ’s</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>Cửa hàng</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="./tshirt.html">Áo thun</a></li>
+                <li><a href="mens.html">Nam giới</a></li>
+                <li><a href="womens.html">Nữ giới</a></li>
+                <li><a href="./giftcart.html">Thẻ quà tặng</a></li>
+                <li><a href="shoes.html">Giày</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>Chính sách</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="./termofuse.html">Điều khoản sử dụng</a></li>
+                <li>
+                  <a href="./privercypolicy.html">Chính sách bảo mật</a>
+                </li>
+                <li>
+                  <a href="./refundpolicy.html">Chính sách hoàn tiền</a>
+                </li>
+                <li>
+                  <a href="./billingsystem.html">Hệ thống thanh toán</a>
+                </li>
+                <li><a href="./ticketsystem.html">Hệ thống vé</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>About Shop</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li>
+                  <a href="./companyinformation.html">Thông tin công ty</a>
+                </li>
+                <li><a href="./careers.html">Nghề nghiệp</a></li>
+                <li><a href="./storelocation.html">Vị trí cửa hàng</a></li>
+                <li><a href="./affilateprogram.html">Liên kết</a></li>
+                <li><a href="./coppyright.html">Bản quyền</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1">
+            <div class="single-widget">
+              <h2>About Shopper</h2>
+              <form action="#" class="searchform">
+                <input type="text" placeholder="Your email address" />
+                <button type="submit" class="btn btn-default">
+                  <i class="fa fa-arrow-circle-o-right"></i>
+                </button>
                 <p>
-                  Một hệ thống bán quần áo online uy tín số một Việt Nam. Dễ
-                  dàng sử dụng, thanh toán nhanh chóng, tiện lợi.
+                  Nhận những cập nhật mới nhất từ <br />trang web của chúng
+                  tôi và tự cập nhật...
                 </p>
-              </div>
-            </div>
-            <div class="col-sm-7">
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe1.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe2.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe3.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="video-gallery text-center">
-                  <a href="#">
-                    <div class="iframe-img">
-                      <img src="images/home/iframe4.png" alt="" />
-                    </div>
-                    <div class="overlay-icon">
-                      <i class="fa fa-play-circle-o"></i>
-                    </div>
-                  </a>
-                  <p>Circle of Hands</p>
-                  <h2>24 DEC 2025</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="address">
-                <img src="images/home/map.png" alt="" />
-                <p>
-                  Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội, Việt Nam
-                </p>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="footer-widget">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>Dịch vụ</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="./onlinehelp.html">Trợ giúp trực tuyến</a></li>
-                  <li><a href="./contactus.html">Liên hệ chúng tôi</a></li>
-                  <li><a href="./orderstatus.html">Trạng thái đơn hàng</a></li>
-                  <li><a href="./changelocation.html">Thay đổi vị trí</a></li>
-                  <li><a href="./faq.html">FAQ’s</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>Cửa hàng</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="./tshirt.html">Áo thun</a></li>
-                  <li><a href="mens.html">Nam giới</a></li>
-                  <li><a href="womens.html">Nữ giới</a></li>
-                  <li><a href="./giftcart.html">Thẻ quà tặng</a></li>
-                  <li><a href="shoes.html">Giày</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>Chính sách</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="./termofuse.html">Điều khoản sử dụng</a></li>
-                  <li>
-                    <a href="./privercypolicy.html">Chính sách bảo mật</a>
-                  </li>
-                  <li>
-                    <a href="./refundpolicy.html">Chính sách hoàn tiền</a>
-                  </li>
-                  <li>
-                    <a href="./billingsystem.html">Hệ thống thanh toán</a>
-                  </li>
-                  <li><a href="./ticketsystem.html">Hệ thống vé</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-2">
-              <div class="single-widget">
-                <h2>About Shop</h2>
-                <ul class="nav nav-pills nav-stacked">
-                  <li>
-                    <a href="./companyinformation.html">Thông tin công ty</a>
-                  </li>
-                  <li><a href="./careers.html">Nghề nghiệp</a></li>
-                  <li><a href="./storelocation.html">Vị trí cửa hàng</a></li>
-                  <li><a href="./affilateprogram.html">Liên kết</a></li>
-                  <li><a href="./coppyright.html">Bản quyền</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-3 col-sm-offset-1">
-              <div class="single-widget">
-                <h2>About Shopper</h2>
-                <form action="#" class="searchform">
-                  <input type="text" placeholder="Your email address" />
-                  <button type="submit" class="btn btn-default">
-                    <i class="fa fa-arrow-circle-o-right"></i>
-                  </button>
-                  <p>
-                    Nhận những cập nhật mới nhất từ <br />trang web của chúng
-                    tôi và tự cập nhật...
-                  </p>
-                </form>
-              </div>
-            </div>
-          </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <p class="pull-left">
+            Copyright © 2025 E-SHOP Inc. All rights reserved.
+          </p>
+          <p class="pull-right">
+            Designed by <span><a target="_blank" href="#">Nhóm 11</a></span>
+          </p>
         </div>
       </div>
+    </div>
+  </footer>
+  <!--/Footer-->
 
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <p class="pull-left">
-              Copyright © 2025 E-SHOP Inc. All rights reserved.
-            </p>
-            <p class="pull-right">
-              Designed by <span><a target="_blank" href="#">Nhóm 11</a></span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--/Footer-->
+  <script src="js/jquery.js"></script>
+  <script src="js/price-range.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script></script>
+</body>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/price-range.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-    <script></script>
-  </body>
 </html>
